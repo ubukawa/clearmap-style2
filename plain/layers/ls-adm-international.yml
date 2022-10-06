@@ -1,0 +1,35 @@
+filter:
+  - all
+  - - '=='
+    - bdytyp
+    - 1
+id: ls-adm-international
+layout:
+  line-cap: round
+  line-join: round
+maxzoom: 6
+minzoom: 0
+paint:
+  line-color:
+    stops:
+      - - 3
+        - '#737B80'
+      - - 4
+        - '#454A4C'
+      - - 5
+        - '#505659'
+  line-width:
+    stops:
+      - - 0
+        - 0.2
+      - - 1
+        - 0.3
+      - - 2
+        - 0.4
+      - - 4
+        - 0.5
+      - - 5
+        - 0.666667
+source: v
+source-layer: bndl
+type: line

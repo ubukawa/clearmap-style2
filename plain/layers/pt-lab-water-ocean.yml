@@ -1,0 +1,52 @@
+filter:
+  - any
+  - - '=='
+    - annotationclassid
+    - 0
+id: pt-lab-water-ocean
+layout:
+  text-allow-overlap: true
+  text-field: '{textstring}'
+  text-font:
+    - Open Sans Semibold Italic
+  text-optional: true
+  text-size:
+    stops:
+      - - 0
+        - 9
+      - - 1
+        - 12
+      - - 2
+        - 17
+      - - 3
+        - 20
+      - - 4
+        - 22
+      - - 5
+        - 24
+maxzoom: 6
+minzoom: 0.56
+paint:
+  text-color:
+    stops:
+      - - 2
+        - '#5F93BF'
+      - - 3
+        - '#629BC4'
+      - - 4
+        - '#6094BF'
+  text-halo-color:
+    stops:
+      - - 2
+        - rgba(225,235,240,0.5)
+      - - 3
+        - rgba(206,228,242,0.5)
+  text-halo-width:
+    stops:
+      - - 2
+        - 0.5
+      - - 3
+        - 1
+source: v
+source-layer: lab_water
+type: symbol

@@ -1,0 +1,26 @@
+filter:
+  - all
+  - - '=='
+    - type
+    - 1
+  - - '=='
+    - perenniality
+    - 1
+id: ls-dral10
+layout:
+  line-cap: round
+  line-join: round
+maxzoom: 6
+paint:
+  line-color: rgba(157,189,209,0.7)
+  line-width:
+    stops:
+      - - 3
+        - 0.4
+      - - 4
+        - 0.5
+      - - 5
+        - 0.6
+source: v
+source-layer: dral10
+type: line
