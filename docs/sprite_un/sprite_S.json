@@ -1,0 +1,722 @@
+{
+    "POI_Airport_S": {
+        "x": 5,
+        "y": 5,
+        "width": 14,
+        "height": 14,
+        "pixelRatio": 1,
+        "sdf": false
+    },
+    "POI_Airport": {
+        "x": 28,
+        "y": 4,
+        "width": 16,
+        "height": 16,
+        "pixelRatio": 1,
+        "sdf": false
+    },
+    "POI_Airfield": {
+        "x": 52,
+        "y": 4,
+        "width": 16,
+        "height": 16,
+        "pixelRatio": 1,
+        "sdf": false
+    },
+    "POI_Helipad": {
+        "x": 76,
+        "y": 4,
+        "width": 16,
+        "height": 16,
+        "pixelRatio": 1,
+        "sdf": false
+    },
+    "POI_Rail": {
+        "x": 101,
+        "y": 5,
+        "width": 14,
+        "height": 14,
+        "pixelRatio": 1,
+        "sdf": false
+    },
+    "POI_Bus": {
+        "x": 125,
+        "y": 5,
+        "width": 14,
+        "height": 14,
+        "pixelRatio": 1,
+        "sdf": false
+    },
+    "POI_Taxi": {
+        "x": 149,
+        "y": 5,
+        "width": 14,
+        "height": 14,
+        "pixelRatio": 1,
+        "sdf": false
+    },
+    "POI_Ferry": {
+        "x": 173,
+        "y": 5,
+        "width": 14,
+        "height": 14,
+        "pixelRatio": 1,
+        "sdf": false
+    },
+    "POI_Stop_R": {
+        "x": 196,
+        "y": 4,
+        "width": 16,
+        "height": 16,
+        "pixelRatio": 1,
+        "sdf": false
+    },
+    "POI_Stop_B": {
+        "x": 220,
+        "y": 4,
+        "width": 16,
+        "height": 16,
+        "pixelRatio": 1,
+        "sdf": false
+    },
+    "POI_Stop_T": {
+        "x": 244,
+        "y": 4,
+        "width": 16,
+        "height": 16,
+        "pixelRatio": 1,
+        "sdf": false
+    },
+    "POI_Townhall": {
+        "x": 5,
+        "y": 29,
+        "width": 14,
+        "height": 14,
+        "pixelRatio": 1,
+        "sdf": false
+    },
+    "POI_Public": {
+        "x": 29,
+        "y": 29,
+        "width": 14,
+        "height": 14,
+        "pixelRatio": 1,
+        "sdf": false
+    },
+    "POI_Embassy": {
+        "x": 53,
+        "y": 29,
+        "width": 14,
+        "height": 14,
+        "pixelRatio": 1,
+        "sdf": false
+    },
+    "POI_Police": {
+        "x": 77,
+        "y": 29,
+        "width": 14,
+        "height": 14,
+        "pixelRatio": 1,
+        "sdf": false
+    },
+    "POI_Prison": {
+        "x": 101,
+        "y": 29,
+        "width": 14,
+        "height": 14,
+        "pixelRatio": 1,
+        "sdf": false
+    },
+    "POI_Fire": {
+        "x": 125,
+        "y": 29,
+        "width": 14,
+        "height": 14,
+        "pixelRatio": 1,
+        "sdf": false
+    },
+    "POI_Court": {
+        "x": 149,
+        "y": 29,
+        "width": 14,
+        "height": 14,
+        "pixelRatio": 1,
+        "sdf": false
+    },
+    "POI_Post": {
+        "x": 173,
+        "y": 29,
+        "width": 14,
+        "height": 14,
+        "pixelRatio": 1,
+        "sdf": false
+    },
+    "POI_UN": {
+        "x": 197,
+        "y": 29,
+        "width": 14,
+        "height": 14,
+        "pixelRatio": 1,
+        "sdf": false
+    },
+    "POI_NGO": {
+        "x": 221,
+        "y": 29,
+        "width": 14,
+        "height": 14,
+        "pixelRatio": 1,
+        "sdf": false
+    },
+    "POI_Military": {
+        "x": 245,
+        "y": 29,
+        "width": 14,
+        "height": 14,
+        "pixelRatio": 1,
+        "sdf": false
+    },
+    "POI_Camp": {
+        "x": 264,
+        "y": 24,
+        "width": 24,
+        "height": 24,
+        "pixelRatio": 1,
+        "sdf": false
+    },
+    "POI_Hospital": {
+        "x": 5,
+        "y": 53,
+        "width": 14,
+        "height": 14,
+        "pixelRatio": 1,
+        "sdf": false
+    },
+    "POI_College": {
+        "x": 29,
+        "y": 53,
+        "width": 14,
+        "height": 14,
+        "pixelRatio": 1,
+        "sdf": false
+    },
+    "POI_School": {
+        "x": 53,
+        "y": 53,
+        "width": 14,
+        "height": 14,
+        "pixelRatio": 1,
+        "sdf": false
+    },
+    "POI_Hotel": {
+        "x": 77,
+        "y": 53,
+        "width": 14,
+        "height": 14,
+        "pixelRatio": 1,
+        "sdf": false
+    },
+    "POI_Restaurant": {
+        "x": 101,
+        "y": 53,
+        "width": 14,
+        "height": 14,
+        "pixelRatio": 1,
+        "sdf": false
+    },
+    "POI_Bar": {
+        "x": 125,
+        "y": 53,
+        "width": 14,
+        "height": 14,
+        "pixelRatio": 1,
+        "sdf": false
+    },
+    "POI_Supply": {
+        "x": 149,
+        "y": 53,
+        "width": 14,
+        "height": 14,
+        "pixelRatio": 1,
+        "sdf": false
+    },
+    "POI_Storage": {
+        "x": 173,
+        "y": 53,
+        "width": 14,
+        "height": 14,
+        "pixelRatio": 1,
+        "sdf": false
+    },
+    "POI_Church": {
+        "x": 197,
+        "y": 53,
+        "width": 14,
+        "height": 14,
+        "pixelRatio": 1,
+        "sdf": false
+    },
+    "POI_Synagogue": {
+        "x": 221,
+        "y": 53,
+        "width": 14,
+        "height": 14,
+        "pixelRatio": 1,
+        "sdf": false
+    },
+    "POI_Mosque": {
+        "x": 245,
+        "y": 53,
+        "width": 14,
+        "height": 14,
+        "pixelRatio": 1,
+        "sdf": false
+    },
+    "POI_Worship": {
+        "x": 269,
+        "y": 53,
+        "width": 14,
+        "height": 14,
+        "pixelRatio": 1,
+        "sdf": false
+    },
+    "POI_Museum": {
+        "x": 5,
+        "y": 77,
+        "width": 14,
+        "height": 14,
+        "pixelRatio": 1,
+        "sdf": false
+    },
+    "POI_Cultural": {
+        "x": 29,
+        "y": 77,
+        "width": 14,
+        "height": 14,
+        "pixelRatio": 1,
+        "sdf": false
+    },
+    "POI_Castle": {
+        "x": 53,
+        "y": 77,
+        "width": 14,
+        "height": 14,
+        "pixelRatio": 1,
+        "sdf": false
+    },
+    "POI_Archeological": {
+        "x": 77,
+        "y": 77,
+        "width": 14,
+        "height": 14,
+        "pixelRatio": 1,
+        "sdf": false
+    },
+    "POI_Theatre": {
+        "x": 101,
+        "y": 77,
+        "width": 14,
+        "height": 14,
+        "pixelRatio": 1,
+        "sdf": false
+    },
+    "POI_Monument": {
+        "x": 125,
+        "y": 77,
+        "width": 14,
+        "height": 14,
+        "pixelRatio": 1,
+        "sdf": false
+    },
+    "POI_Memorial": {
+        "x": 149,
+        "y": 77,
+        "width": 14,
+        "height": 14,
+        "pixelRatio": 1,
+        "sdf": false
+    },
+    "POI_Fuel": {
+        "x": 174,
+        "y": 78,
+        "width": 11,
+        "height": 11,
+        "pixelRatio": 1,
+        "sdf": false
+    },
+    "POI_Pharmacy": {
+        "x": 197,
+        "y": 77,
+        "width": 14,
+        "height": 14,
+        "pixelRatio": 1,
+        "sdf": false
+    },
+    "POI_Bank": {
+        "x": 221,
+        "y": 77,
+        "width": 14,
+        "height": 14,
+        "pixelRatio": 1,
+        "sdf": false
+    },
+    "POI_Shop": {
+        "x": 245,
+        "y": 77,
+        "width": 14,
+        "height": 14,
+        "pixelRatio": 1,
+        "sdf": false
+    },
+    "POI_Industrial": {
+        "x": 269,
+        "y": 77,
+        "width": 14,
+        "height": 14,
+        "pixelRatio": 1,
+        "sdf": false
+    },
+    "POI_IDP": {
+        "x": 5,
+        "y": 101,
+        "width": 14,
+        "height": 14,
+        "pixelRatio": 1,
+        "sdf": false
+    },
+    "POI_Park": {
+        "x": 29,
+        "y": 101,
+        "width": 14,
+        "height": 14,
+        "pixelRatio": 1,
+        "sdf": false
+    },
+    "POI_Stadium": {
+        "x": 53,
+        "y": 101,
+        "width": 14,
+        "height": 14,
+        "pixelRatio": 1,
+        "sdf": false
+    },
+    "POI_Sport": {
+        "x": 77,
+        "y": 101,
+        "width": 14,
+        "height": 14,
+        "pixelRatio": 1,
+        "sdf": false
+    },
+    "POI_Amusement": {
+        "x": 101,
+        "y": 101,
+        "width": 14,
+        "height": 14,
+        "pixelRatio": 1,
+        "sdf": false
+    },
+    "POI_Zoo": {
+        "x": 125,
+        "y": 101,
+        "width": 14,
+        "height": 14,
+        "pixelRatio": 1,
+        "sdf": false
+    },
+    "POI_Cinema": {
+        "x": 149,
+        "y": 101,
+        "width": 14,
+        "height": 14,
+        "pixelRatio": 1,
+        "sdf": false
+    },
+    "POI_Communication": {
+        "x": 173,
+        "y": 101,
+        "width": 14,
+        "height": 14,
+        "pixelRatio": 1,
+        "sdf": false
+    },
+    "POI_Tower": {
+        "x": 197,
+        "y": 101,
+        "width": 14,
+        "height": 14,
+        "pixelRatio": 1,
+        "sdf": false
+    },
+    "POI_Lighthouse": {
+        "x": 221,
+        "y": 101,
+        "width": 14,
+        "height": 14,
+        "pixelRatio": 1,
+        "sdf": false
+    },
+    "POI_Windmill": {
+        "x": 245,
+        "y": 101,
+        "width": 14,
+        "height": 14,
+        "pixelRatio": 1,
+        "sdf": false
+    },
+    "TRA_Motorway/1": {
+        "x": 0,
+        "y": 120,
+        "width": 16,
+        "height": 16,
+        "pixelRatio": 1,
+        "sdf": false
+    },
+    "TRA_Motorway/2": {
+        "x": 16,
+        "y": 120,
+        "width": 32,
+        "height": 16,
+        "pixelRatio": 1,
+        "sdf": false
+    },
+    "TRA_Motorway/3": {
+        "x": 48,
+        "y": 120,
+        "width": 32,
+        "height": 16,
+        "pixelRatio": 1,
+        "sdf": false
+    },
+    "TRA_Motorway/4": {
+        "x": 80,
+        "y": 120,
+        "width": 32,
+        "height": 16,
+        "pixelRatio": 1,
+        "sdf": false
+    },
+    "TRA_Motorway/5": {
+        "x": 112,
+        "y": 120,
+        "width": 32,
+        "height": 16,
+        "pixelRatio": 1,
+        "sdf": false
+    },
+    "TRA_Primary/1": {
+        "x": 144,
+        "y": 120,
+        "width": 16,
+        "height": 16,
+        "pixelRatio": 1,
+        "sdf": false
+    },
+    "TRA_Primary/2": {
+        "x": 160,
+        "y": 120,
+        "width": 32,
+        "height": 16,
+        "pixelRatio": 1,
+        "sdf": false
+    },
+    "TRA_Primary/3": {
+        "x": 192,
+        "y": 120,
+        "width": 32,
+        "height": 16,
+        "pixelRatio": 1,
+        "sdf": false
+    },
+    "TRA_Primary/4": {
+        "x": 224,
+        "y": 120,
+        "width": 32,
+        "height": 16,
+        "pixelRatio": 1,
+        "sdf": false
+    },
+    "TRA_Primary/5": {
+        "x": 256,
+        "y": 120,
+        "width": 32,
+        "height": 16,
+        "pixelRatio": 1,
+        "sdf": false
+    },
+    "TRA_Secondary/1": {
+        "x": 0,
+        "y": 136,
+        "width": 16,
+        "height": 16,
+        "pixelRatio": 1,
+        "sdf": false
+    },
+    "TRA_Secondary/2": {
+        "x": 16,
+        "y": 136,
+        "width": 32,
+        "height": 16,
+        "pixelRatio": 1,
+        "sdf": false
+    },
+    "TRA_Secondary/3": {
+        "x": 48,
+        "y": 136,
+        "width": 32,
+        "height": 16,
+        "pixelRatio": 1,
+        "sdf": false
+    },
+    "TRA_Secondary/4": {
+        "x": 80,
+        "y": 136,
+        "width": 32,
+        "height": 16,
+        "pixelRatio": 1,
+        "sdf": false
+    },
+    "TRA_Secondary/5": {
+        "x": 112,
+        "y": 136,
+        "width": 32,
+        "height": 16,
+        "pixelRatio": 1,
+        "sdf": false
+    },
+    "PPL_National": {
+        "x": 146,
+        "y": 138,
+        "width": 12,
+        "height": 12,
+        "pixelRatio": 1,
+        "sdf": false
+    },
+    "PPL_Alternative": {
+        "x": 162,
+        "y": 138,
+        "width": 12,
+        "height": 12,
+        "pixelRatio": 1,
+        "sdf": false
+    },
+    "PPL_Territorial": {
+        "x": 178,
+        "y": 138,
+        "width": 12,
+        "height": 12,
+        "pixelRatio": 1,
+        "sdf": false
+    },
+    "PPL_City": {
+        "x": 197,
+        "y": 141,
+        "width": 6,
+        "height": 6,
+        "pixelRatio": 1,
+        "sdf": false
+    },
+    "PPL_Town": {
+        "x": 213,
+        "y": 141,
+        "width": 6,
+        "height": 6,
+        "pixelRatio": 1,
+        "sdf": false
+    },
+    "LND_Shrub": {
+        "x": 224,
+        "y": 136,
+        "width": 16,
+        "height": 16,
+        "pixelRatio": 1,
+        "sdf": false
+    },
+    "LND_Heath": {
+        "x": 240,
+        "y": 136,
+        "width": 16,
+        "height": 16,
+        "pixelRatio": 1,
+        "sdf": false
+    },
+    "LND_Farmland": {
+        "x": 256,
+        "y": 136,
+        "width": 8,
+        "height": 8,
+        "pixelRatio": 1,
+        "sdf": false
+    },
+    "LND_Orchard": {
+        "x": 264,
+        "y": 136,
+        "width": 8,
+        "height": 8,
+        "pixelRatio": 1,
+        "sdf": false
+    },
+    "ARE_Military": {
+        "x": 256,
+        "y": 144,
+        "width": 8,
+        "height": 8,
+        "pixelRatio": 1,
+        "sdf": false
+    },
+    "HYD_Wetland": {
+        "x": 264,
+        "y": 144,
+        "width": 8,
+        "height": 8,
+        "pixelRatio": 1,
+        "sdf": false
+    },
+    "ADM_Other_L": {
+        "x": 272,
+        "y": 136,
+        "width": 4,
+        "height": 4,
+        "pixelRatio": 1,
+        "sdf": false
+    },
+    "ADM_Other_M": {
+        "x": 276,
+        "y": 136,
+        "width": 4,
+        "height": 4,
+        "pixelRatio": 1,
+        "sdf": false
+    },
+    "ADM_Other_S": {
+        "x": 280,
+        "y": 136,
+        "width": 4,
+        "height": 4,
+        "pixelRatio": 1,
+        "sdf": false
+    },
+    "TRA_Ferries": {
+        "x": 277,
+        "y": 140,
+        "width": 4,
+        "height": 4,
+        "pixelRatio": 1,
+        "sdf": false
+    },
+    "HYD_Drain": {
+        "x": 276,
+        "y": 140,
+        "width": 4,
+        "height": 4,
+        "pixelRatio": 1,
+        "sdf": false
+    },
+    "TRA_Subway": {
+        "x": 280,
+        "y": 140,
+        "width": 4,
+        "height": 4,
+        "pixelRatio": 1,
+        "sdf": false
+    }
+}
