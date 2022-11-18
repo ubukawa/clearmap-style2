@@ -3,7 +3,7 @@
     0,
     0
   ],
-  "glyphs": "http://localhost:9966/font/{fontstack}/{range}.pbf",
+  "glyphs": "http://ubukawa.github.io/clearmap-stype2/font/{fontstack}/{range}.pbf",
   "layers": [
     {
       "id": "background",
@@ -1318,12 +1318,11 @@
       "maxzoom": 5,
       "minzoom": 0,
       "tiles": [
-        "http://localhost:9966/clearmap/{z}/{x}/{y}.pbf"
+        "https://dev-geoportal.dfs.un.org/unvt/temp/clearmapVT-zxy/{z}/{x}/{y}.pbf"
       ],
       "type": "vector"
     }
   },
-  "sprite": "http://localhost:9966/sprite_un/sprite_S",
-  "version": 8,
-  "zoom": 1
+  "sprite": "https://ubukawa.github.io/clearmap-stype2/sprite_un/sprite_S",
+  "version": 8
 }
