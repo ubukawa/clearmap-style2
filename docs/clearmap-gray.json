@@ -3,7 +3,7 @@
     0,
     0
   ],
-  "glyphs": "http://ubukawa.github.io/clearmap-stype2/font/{fontstack}/{range}.pbf",
+  "glyphs": "http://ubukawa.github.io/clearmap-style2/font/{fontstack}/{range}.pbf",
   "layers": [
     {
       "id": "background",
@@ -1254,6 +1254,6 @@
       "type": "vector"
     }
   },
-  "sprite": "https://ubukawa.github.io/clearmap-stype2/sprite_un/sprite_S",
+  "sprite": "https://ubukawa.github.io/clearmap-style2/sprite_un/sprite_S",
   "version": 8
 }
