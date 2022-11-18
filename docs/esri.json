@@ -1,6 +1,6 @@
 {
 	"version": 8,
-	"sprite": "https://pro-ags2.dfs.un.org/arcgis/rest/services/Hosted/Clearmap_Webplain/VectorTileServer/resourcessprites/sprite",
+	"sprite": "https://pro-ags2.dfs.un.org/arcgis/rest/services/Hosted/Clearmap_Webplain/VectorTileServer/resources/sprites/sprite",
 	"glyphs": "https://pro-ags2.dfs.un.org/arcgis/rest/services/Hosted/Clearmap_Webplain/VectorTileServer/resources/fonts/{fontstack}/{range}.pbf",
 	"sources": {
 		"esri": {
