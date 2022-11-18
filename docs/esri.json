@@ -1,0 +1,5317 @@
+{
+	"version": 8,
+	"sprite": "https://pro-ags2.dfs.un.org/arcgis/rest/services/Hosted/Clearmap_Webplain/VectorTileServer/resourcessprites/sprite",
+	"glyphs": "https://pro-ags2.dfs.un.org/arcgis/rest/services/Hosted/Clearmap_Webplain/VectorTileServer/resources/fonts/{fontstack}/{range}.pbf",
+	"sources": {
+		"esri": {
+			"type": "vector",
+			"attribution": "UN_CLEARMAP_VT",
+			"bounds": [
+				-180,
+				-85.0511,
+				180,
+				85.0511
+			],
+			"minzoom": 0,
+			"maxzoom": 19,
+			"scheme": "xyz",
+			"tiles": [
+                          "https://pro-ags2.dfs.un.org/arcgis/rest/services/Hosted/Clearmap_Webplain/VectorTileServer/tile/{z}/{y}/{x}.pbf"
+                        ]
+		}
+	},
+    "layers": [
+        {
+            "id": "Base Layers/Ocean/Ocean_L0-L03",
+            "type": "fill",
+            "source": "esri",
+            "source-layer": "Ocean_L0-L03",
+            "maxzoom": 3,
+            "layout": {},
+            "paint": {
+                "fill-color": "#D5EBF5"
+            }
+        },
+        {
+            "id": "Base Layers/Ocean/Ocean_L04-L06",
+            "type": "fill",
+            "source": "esri",
+            "source-layer": "Ocean_L04-L06",
+            "minzoom": 3,
+            "maxzoom": 5.89,
+            "layout": {},
+            "paint": {
+                "fill-color": "#D5EBF5"
+            }
+        },
+        {
+            "id": "Base Layers/Country areas/BNDA_L05-L06",
+            "type": "fill",
+            "source": "esri",
+            "source-layer": "BNDA_L05-L06",
+            "minzoom": 4,
+            "maxzoom": 5.89,
+            "layout": {},
+            "paint": {
+                "fill-color": "#F7F7F5"
+            }
+        },
+        {
+            "id": "Base Layers/Country areas/BNDA_L01-L04",
+            "type": "fill",
+            "source": "esri",
+            "source-layer": "BNDA_L01-L04",
+            "maxzoom": 4,
+            "layout": {},
+            "paint": {
+                "fill-color": "#FCFCFA"
+            }
+        },
+        {
+            "id": "Base Layers/Urban areas",
+            "type": "fill",
+            "source": "esri",
+            "source-layer": "Urban areas",
+            "minzoom": 4,
+            "maxzoom": 5.89,
+            "layout": {},
+            "paint": {
+                "fill-color": "#E6E6E1"
+            }
+        },
+        {
+            "id": "Base Layers/Coastline/Coastline_L01-L04",
+            "type": "line",
+            "source": "esri",
+            "source-layer": "Coastline_L01-L04",
+            "maxzoom": 4,
+            "layout": {
+                "line-cap": "round",
+                "line-join": "round"
+            },
+            "paint": {
+                "line-color": "#5B808C",
+                "line-width": 0.25,
+                "line-opacity": 0.4
+            }
+        },
+        {
+            "id": "Base Layers/Coastline/Coastline_L05-L06",
+            "type": "line",
+            "source": "esri",
+            "source-layer": "Coastline_L05-L06",
+            "minzoom": 4,
+            "maxzoom": 5.89,
+            "layout": {
+                "line-cap": "round",
+                "line-join": "round"
+            },
+            "paint": {
+                "line-color": "#69838C",
+                "line-width": {
+                    "stops": [
+                        [
+                            3.89,
+                            0.4
+                        ],
+                        [
+                            18,
+                            0.8
+                        ]
+                    ]
+                },
+                "line-opacity": 0.7
+            }
+        },
+        {
+            "id": "DRAL Features/WBYA_WCOURSE_L06/Watercourse/1",
+            "type": "line",
+            "source": "esri",
+            "source-layer": "WBYA_WCOURSE_L06",
+            "filter": [
+                "==",
+                "_symbol",
+                0
+            ],
+            "minzoom": 5,
+            "maxzoom": 5.89,
+            "layout": {
+                "line-cap": "round",
+                "line-join": "round"
+            },
+            "paint": {
+                "line-color": "rgba(157,189,209,0.7)",
+                "line-width": 0.666667
+            }
+        },
+        {
+            "id": "DRAL Features/WBYA_WCOURSE_L06/Watercourse/0",
+            "type": "fill",
+            "source": "esri",
+            "source-layer": "WBYA_WCOURSE_L06",
+            "filter": [
+                "==",
+                "_symbol",
+                0
+            ],
+            "minzoom": 5,
+            "maxzoom": 5.89,
+            "layout": {},
+            "paint": {
+                "fill-color": "#DFEFF7"
+            }
+        },
+        {
+            "id": "DRAL Features/DRAL10_L06/1",
+            "type": "line",
+            "source": "esri",
+            "source-layer": "DRAL10_L06",
+            "filter": [
+                "==",
+                "_symbol",
+                0
+            ],
+            "minzoom": 5,
+            "maxzoom": 5.89,
+            "layout": {
+                "line-cap": "round",
+                "line-join": "round"
+            },
+            "paint": {
+                "line-color": "rgba(157,189,209,0.7)",
+                "line-width": 0.5
+            }
+        },
+        {
+            "id": "DRAL Features/DRAL10_L06/3",
+            "type": "line",
+            "source": "esri",
+            "source-layer": "DRAL10_L06",
+            "filter": [
+                "==",
+                "_symbol",
+                1
+            ],
+            "minzoom": 5,
+            "maxzoom": 5.89,
+            "layout": {
+                "line-cap": "round",
+                "line-join": "round"
+            },
+            "paint": {
+                "line-color": "rgba(157,189,209,0.7)",
+                "line-width": 0.5
+            }
+        },
+        {
+            "id": "DRAL Features/DRAL10_L05/1",
+            "type": "line",
+            "source": "esri",
+            "source-layer": "DRAL10_L05",
+            "filter": [
+                "==",
+                "_symbol",
+                0
+            ],
+            "minzoom": 4,
+            "maxzoom": 5,
+            "layout": {
+                "line-cap": "round",
+                "line-join": "round"
+            },
+            "paint": {
+                "line-color": "rgba(157,189,209,0.7)",
+                "line-width": 0.5
+            }
+        },
+        {
+            "id": "DRAL Features/DRAL10_L05/3",
+            "type": "line",
+            "source": "esri",
+            "source-layer": "DRAL10_L05",
+            "filter": [
+                "==",
+                "_symbol",
+                1
+            ],
+            "minzoom": 4,
+            "maxzoom": 5,
+            "layout": {
+                "line-cap": "round",
+                "line-join": "round"
+            },
+            "paint": {
+                "line-color": "rgba(157,189,209,0.7)",
+                "line-width": 0.5
+            }
+        },
+        {
+            "id": "DRAL Features/DRAL10_L04/1",
+            "type": "line",
+            "source": "esri",
+            "source-layer": "DRAL10_L04",
+            "filter": [
+                "==",
+                "_symbol",
+                0
+            ],
+            "minzoom": 3,
+            "maxzoom": 4,
+            "layout": {
+                "line-cap": "round",
+                "line-join": "round"
+            },
+            "paint": {
+                "line-color": "rgba(157,189,209,0.7)",
+                "line-width": 0.4
+            }
+        },
+        {
+            "id": "DRAL Features/DRAL10_L04/3",
+            "type": "line",
+            "source": "esri",
+            "source-layer": "DRAL10_L04",
+            "filter": [
+                "==",
+                "_symbol",
+                1
+            ],
+            "minzoom": 3,
+            "maxzoom": 4,
+            "layout": {
+                "line-cap": "round",
+                "line-join": "round"
+            },
+            "paint": {
+                "line-color": "rgba(157,189,209,0.7)",
+                "line-width": 0.4
+            }
+        },
+        {
+            "id": "Global Boundaries/AUTONOMOUS_BNDL_L06/1",
+            "type": "line",
+            "source": "esri",
+            "source-layer": "AUTONOMOUS_BNDL_L06",
+            "minzoom": 5,
+            "maxzoom": 5.89,
+            "layout": {},
+            "paint": {
+                "line-color": "rgba(230,230,223,0.65)",
+                "line-width": 4.09333
+            }
+        },
+        {
+            "id": "Global Boundaries/AUTONOMOUS_BNDL_L06/0",
+            "type": "line",
+            "source": "esri",
+            "source-layer": "AUTONOMOUS_BNDL_L06",
+            "minzoom": 5,
+            "maxzoom": 5.89,
+            "layout": {
+                "line-join": "round"
+            },
+            "paint": {
+                "line-color": "#7D868C",
+                "line-dasharray": [
+                    7.93333,
+                    4.93333
+                ],
+                "line-width": 1
+            }
+        },
+        {
+            "id": "Global Boundaries/Global Boundaries L06/International Boundary/1",
+            "type": "line",
+            "source": "esri",
+            "source-layer": "Global Boundaries L06",
+            "filter": [
+                "==",
+                "_symbol",
+                0
+            ],
+            "minzoom": 5,
+            "maxzoom": 5.89,
+            "layout": {
+                "line-cap": "round",
+                "line-join": "round"
+            },
+            "paint": {
+                "line-color": "rgba(230,230,223,0.65)",
+                "line-width": 4.26667
+            }
+        },
+        {
+            "id": "Global Boundaries/Global Boundaries L06/International Boundary_1/1",
+            "type": "line",
+            "source": "esri",
+            "source-layer": "Global Boundaries L06",
+            "filter": [
+                "==",
+                "_symbol",
+                0
+            ],
+            "minzoom": 5,
+            "maxzoom": 5,
+            "layout": {
+                "line-cap": "round",
+                "line-join": "round"
+            },
+            "paint": {
+                "line-color": "rgba(230,230,223,0.65)",
+                "line-width": 3.66667
+            }
+        },
+        {
+            "id": "Global Boundaries/Global Boundaries L06/Special Boundary line/1",
+            "type": "line",
+            "source": "esri",
+            "source-layer": "Global Boundaries L06",
+            "filter": [
+                "==",
+                "_symbol",
+                1
+            ],
+            "minzoom": 5,
+            "maxzoom": 5.89,
+            "layout": {},
+            "paint": {
+                "line-color": "rgba(227,227,220,0.65)",
+                "line-width": 4.13333
+            }
+        },
+        {
+            "id": "Global Boundaries/Global Boundaries L06/Special Boundary line_1/1",
+            "type": "line",
+            "source": "esri",
+            "source-layer": "Global Boundaries L06",
+            "filter": [
+                "==",
+                "_symbol",
+                1
+            ],
+            "minzoom": 5,
+            "maxzoom": 5,
+            "layout": {},
+            "paint": {
+                "line-color": "rgba(227,227,220,0.65)",
+                "line-width": 3.66667
+            }
+        },
+        {
+            "id": "Global Boundaries/Global Boundaries L06/Armistice or International Administrative line/1",
+            "type": "line",
+            "source": "esri",
+            "source-layer": "Global Boundaries L06",
+            "filter": [
+                "==",
+                "_symbol",
+                2
+            ],
+            "minzoom": 5,
+            "maxzoom": 5.89,
+            "layout": {},
+            "paint": {
+                "line-color": "rgba(230,230,223,0.65)",
+                "line-width": 4.09333
+            }
+        },
+        {
+            "id": "Global Boundaries/Global Boundaries L06/Armistice or International Administrative line_1/1",
+            "type": "line",
+            "source": "esri",
+            "source-layer": "Global Boundaries L06",
+            "filter": [
+                "==",
+                "_symbol",
+                2
+            ],
+            "minzoom": 5,
+            "maxzoom": 5,
+            "layout": {},
+            "paint": {
+                "line-color": "rgba(230,230,223,0.65)",
+                "line-width": 3.66667
+            }
+        },
+        {
+            "id": "Global Boundaries/Global Boundaries L06/Other line of Separation/1",
+            "type": "line",
+            "source": "esri",
+            "source-layer": "Global Boundaries L06",
+            "filter": [
+                "==",
+                "_symbol",
+                3
+            ],
+            "minzoom": 5,
+            "maxzoom": 5.89,
+            "layout": {
+                "line-cap": "round",
+                "line-join": "round"
+            },
+            "paint": {
+                "line-color": "rgba(230,230,223,0.65)",
+                "line-width": 3.66667
+            }
+        },
+        {
+            "id": "Global Boundaries/Global Boundaries L06/Other line of Separation_1/1",
+            "type": "line",
+            "source": "esri",
+            "source-layer": "Global Boundaries L06",
+            "filter": [
+                "==",
+                "_symbol",
+                3
+            ],
+            "minzoom": 5,
+            "maxzoom": 5,
+            "layout": {
+                "line-cap": "round",
+                "line-join": "round"
+            },
+            "paint": {
+                "line-color": "rgba(230,230,223,0.65)",
+                "line-width": 3.66667
+            }
+        },
+        {
+            "id": "Global Boundaries/Global Boundaries L06/Special Boundary line/0",
+            "type": "line",
+            "source": "esri",
+            "source-layer": "Global Boundaries L06",
+            "filter": [
+                "==",
+                "_symbol",
+                1
+            ],
+            "minzoom": 5,
+            "maxzoom": 5.89,
+            "layout": {
+                "line-join": "round"
+            },
+            "paint": {
+                "line-color": "#505659",
+                "line-dasharray": [
+                    6.65,
+                    3
+                ],
+                "line-width": 0.666667
+            }
+        },
+        {
+            "id": "Global Boundaries/Global Boundaries L06/Special Boundary line_1/0",
+            "type": "line",
+            "source": "esri",
+            "source-layer": "Global Boundaries L06",
+            "filter": [
+                "==",
+                "_symbol",
+                1
+            ],
+            "minzoom": 5,
+            "maxzoom": 5,
+            "layout": {
+                "line-join": "round"
+            },
+            "paint": {
+                "line-color": "#505659",
+                "line-dasharray": [
+                    2.27273,
+                    1.70455
+                ],
+                "line-width": 0.733333
+            }
+        },
+        {
+            "id": "Global Boundaries/Global Boundaries L06/Armistice or International Administrative line/0",
+            "type": "line",
+            "source": "esri",
+            "source-layer": "Global Boundaries L06",
+            "filter": [
+                "==",
+                "_symbol",
+                2
+            ],
+            "minzoom": 5,
+            "maxzoom": 5.89,
+            "layout": {
+                "line-join": "round"
+            },
+            "paint": {
+                "line-color": "#505659",
+                "line-dasharray": [
+                    12,
+                    5
+                ],
+                "line-width": 0.666667
+            }
+        },
+        {
+            "id": "Global Boundaries/Global Boundaries L06/Other line of Separation/0",
+            "type": "symbol",
+            "source": "esri",
+            "source-layer": "Global Boundaries L06",
+            "filter": [
+                "==",
+                "_symbol",
+                3
+            ],
+            "minzoom": 5,
+            "maxzoom": 5.89,
+            "layout": {
+                "symbol-placement": "line",
+                "icon-image": "Global Boundaries/Global Boundaries L06/Other line of Separation/0",
+                "symbol-spacing": 5.66667,
+                "icon-rotation-alignment": "map",
+                "icon-allow-overlap": true
+            },
+            "paint": {
+                "icon-color": "#555C5E"
+            }
+        },
+        {
+            "id": "Global Boundaries/Global Boundaries L06/Other line of Separation_1/0",
+            "type": "symbol",
+            "source": "esri",
+            "source-layer": "Global Boundaries L06",
+            "filter": [
+                "==",
+                "_symbol",
+                3
+            ],
+            "minzoom": 5,
+            "maxzoom": 5,
+            "layout": {
+                "symbol-placement": "line",
+                "icon-image": "Global Boundaries/Global Boundaries L06/Other line of Separation_1/0",
+                "symbol-spacing": 4,
+                "icon-rotation-alignment": "map",
+                "icon-allow-overlap": true
+            },
+            "paint": {
+                "icon-color": "#555C5E"
+            }
+        },
+        {
+            "id": "Global Boundaries/Global Boundaries L06/International Boundary/0",
+            "type": "line",
+            "source": "esri",
+            "source-layer": "Global Boundaries L06",
+            "filter": [
+                "==",
+                "_symbol",
+                0
+            ],
+            "minzoom": 5,
+            "maxzoom": 5.89,
+            "layout": {
+                "line-cap": "round",
+                "line-join": "round"
+            },
+            "paint": {
+                "line-color": "#505659",
+                "line-width": 0.666667
+            }
+        },
+        {
+            "id": "Global Boundaries/Global Boundaries L06/International Boundary_1/0",
+            "type": "line",
+            "source": "esri",
+            "source-layer": "Global Boundaries L06",
+            "filter": [
+                "==",
+                "_symbol",
+                0
+            ],
+            "minzoom": 5,
+            "maxzoom": 5,
+            "layout": {
+                "line-cap": "round",
+                "line-join": "round"
+            },
+            "paint": {
+                "line-color": "#505659",
+                "line-width": 0.733333
+            }
+        },
+        {
+            "id": "Global Boundaries/Global Boundaries L05/International Boundary/1",
+            "type": "line",
+            "source": "esri",
+            "source-layer": "Global Boundaries L05",
+            "filter": [
+                "==",
+                "_symbol",
+                0
+            ],
+            "minzoom": 5,
+            "maxzoom": 5,
+            "layout": {
+                "line-cap": "round",
+                "line-join": "round"
+            },
+            "paint": {
+                "line-color": "rgba(230,230,223,0.65)",
+                "line-width": 4.26667
+            }
+        },
+        {
+            "id": "Global Boundaries/Global Boundaries L05/International Boundary_1/1",
+            "type": "line",
+            "source": "esri",
+            "source-layer": "Global Boundaries L05",
+            "filter": [
+                "==",
+                "_symbol",
+                0
+            ],
+            "minzoom": 4,
+            "maxzoom": 5,
+            "layout": {
+                "line-cap": "round",
+                "line-join": "round"
+            },
+            "paint": {
+                "line-color": "rgba(230,230,223,0.65)",
+                "line-width": 3.66667
+            }
+        },
+        {
+            "id": "Global Boundaries/Global Boundaries L05/Special Boundary line/1",
+            "type": "line",
+            "source": "esri",
+            "source-layer": "Global Boundaries L05",
+            "filter": [
+                "==",
+                "_symbol",
+                1
+            ],
+            "minzoom": 5,
+            "maxzoom": 5,
+            "layout": {},
+            "paint": {
+                "line-color": "rgba(227,227,220,0.65)",
+                "line-width": 4.13333
+            }
+        },
+        {
+            "id": "Global Boundaries/Global Boundaries L05/Special Boundary line_1/1",
+            "type": "line",
+            "source": "esri",
+            "source-layer": "Global Boundaries L05",
+            "filter": [
+                "==",
+                "_symbol",
+                1
+            ],
+            "minzoom": 4,
+            "maxzoom": 5,
+            "layout": {},
+            "paint": {
+                "line-color": "rgba(227,227,220,0.65)",
+                "line-width": 3.66667
+            }
+        },
+        {
+            "id": "Global Boundaries/Global Boundaries L05/Armistice or International Administrative line/1",
+            "type": "line",
+            "source": "esri",
+            "source-layer": "Global Boundaries L05",
+            "filter": [
+                "==",
+                "_symbol",
+                2
+            ],
+            "minzoom": 5,
+            "maxzoom": 5,
+            "layout": {},
+            "paint": {
+                "line-color": "rgba(230,230,223,0.65)",
+                "line-width": 4.09333
+            }
+        },
+        {
+            "id": "Global Boundaries/Global Boundaries L05/Armistice or International Administrative line_1/1",
+            "type": "line",
+            "source": "esri",
+            "source-layer": "Global Boundaries L05",
+            "filter": [
+                "==",
+                "_symbol",
+                2
+            ],
+            "minzoom": 4,
+            "maxzoom": 5,
+            "layout": {},
+            "paint": {
+                "line-color": "rgba(230,230,223,0.65)",
+                "line-width": 3.66667
+            }
+        },
+        {
+            "id": "Global Boundaries/Global Boundaries L05/Other line of Separation/1",
+            "type": "line",
+            "source": "esri",
+            "source-layer": "Global Boundaries L05",
+            "filter": [
+                "==",
+                "_symbol",
+                3
+            ],
+            "minzoom": 5,
+            "maxzoom": 5,
+            "layout": {
+                "line-cap": "round",
+                "line-join": "round"
+            },
+            "paint": {
+                "line-color": "rgba(230,230,223,0.65)",
+                "line-width": 3.66667
+            }
+        },
+        {
+            "id": "Global Boundaries/Global Boundaries L05/Other line of Separation_1/1",
+            "type": "line",
+            "source": "esri",
+            "source-layer": "Global Boundaries L05",
+            "filter": [
+                "==",
+                "_symbol",
+                3
+            ],
+            "minzoom": 4,
+            "maxzoom": 5,
+            "layout": {
+                "line-cap": "round",
+                "line-join": "round"
+            },
+            "paint": {
+                "line-color": "rgba(230,230,223,0.65)",
+                "line-width": 3.66667
+            }
+        },
+        {
+            "id": "Global Boundaries/Global Boundaries L05/Special Boundary line/0",
+            "type": "line",
+            "source": "esri",
+            "source-layer": "Global Boundaries L05",
+            "filter": [
+                "==",
+                "_symbol",
+                1
+            ],
+            "minzoom": 5,
+            "maxzoom": 5,
+            "layout": {
+                "line-join": "round"
+            },
+            "paint": {
+                "line-color": "#454A4C",
+                "line-dasharray": [
+                    6.65,
+                    3
+                ],
+                "line-width": 1.33333
+            }
+        },
+        {
+            "id": "Global Boundaries/Global Boundaries L05/Special Boundary line_1/0",
+            "type": "line",
+            "source": "esri",
+            "source-layer": "Global Boundaries L05",
+            "filter": [
+                "==",
+                "_symbol",
+                1
+            ],
+            "minzoom": 4,
+            "maxzoom": 5,
+            "layout": {
+                "line-join": "round"
+            },
+            "paint": {
+                "line-color": "#454A4C",
+                "line-dasharray": [
+                    6,
+                    3
+                ],
+                "line-width": 0.6
+            }
+        },
+        {
+            "id": "Global Boundaries/Global Boundaries L05/Armistice or International Administrative line/0",
+            "type": "line",
+            "source": "esri",
+            "source-layer": "Global Boundaries L05",
+            "filter": [
+                "==",
+                "_symbol",
+                2
+            ],
+            "minzoom": 5,
+            "maxzoom": 5,
+            "layout": {
+                "line-join": "round"
+            },
+            "paint": {
+                "line-color": "#454A4C",
+                "line-dasharray": [
+                    6.60744,
+                    3.60911
+                ],
+                "line-width": 1.20067
+            }
+        },
+        {
+            "id": "Global Boundaries/Global Boundaries L05/Armistice or International Administrative line_1/0",
+            "type": "line",
+            "source": "esri",
+            "source-layer": "Global Boundaries L05",
+            "filter": [
+                "==",
+                "_symbol",
+                2
+            ],
+            "minzoom": 4,
+            "maxzoom": 5,
+            "layout": {
+                "line-join": "round"
+            },
+            "paint": {
+                "line-color": "#454A4C",
+                "line-dasharray": [
+                    12,
+                    5
+                ],
+                "line-width": 0.6
+            }
+        },
+        {
+            "id": "Global Boundaries/Global Boundaries L05/Other line of Separation/0",
+            "type": "symbol",
+            "source": "esri",
+            "source-layer": "Global Boundaries L05",
+            "filter": [
+                "==",
+                "_symbol",
+                3
+            ],
+            "minzoom": 5,
+            "maxzoom": 5,
+            "layout": {
+                "symbol-placement": "line",
+                "icon-image": "Global Boundaries/Global Boundaries L05/Other line of Separation/0",
+                "symbol-spacing": 3,
+                "icon-rotation-alignment": "map",
+                "icon-allow-overlap": true
+            },
+            "paint": {
+                "icon-color": "#505759"
+            }
+        },
+        {
+            "id": "Global Boundaries/Global Boundaries L05/Other line of Separation_1/0",
+            "type": "symbol",
+            "source": "esri",
+            "source-layer": "Global Boundaries L05",
+            "filter": [
+                "==",
+                "_symbol",
+                3
+            ],
+            "minzoom": 4,
+            "maxzoom": 5,
+            "layout": {
+                "symbol-placement": "line",
+                "icon-image": "Global Boundaries/Global Boundaries L05/Other line of Separation_1/0",
+                "symbol-spacing": 3,
+                "icon-rotation-alignment": "map",
+                "icon-allow-overlap": true
+            },
+            "paint": {
+                "icon-color": "#505759"
+            }
+        },
+        {
+            "id": "Global Boundaries/Global Boundaries L05/International Boundary/0",
+            "type": "line",
+            "source": "esri",
+            "source-layer": "Global Boundaries L05",
+            "filter": [
+                "==",
+                "_symbol",
+                0
+            ],
+            "minzoom": 5,
+            "maxzoom": 5,
+            "layout": {
+                "line-cap": "round",
+                "line-join": "round"
+            },
+            "paint": {
+                "line-color": "#454A4C",
+                "line-dasharray": [
+                    7.70833,
+                    4.16667
+                ],
+                "line-width": 3
+            }
+        },
+        {
+            "id": "Global Boundaries/Global Boundaries L05/International Boundary_1/0",
+            "type": "line",
+            "source": "esri",
+            "source-layer": "Global Boundaries L05",
+            "filter": [
+                "==",
+                "_symbol",
+                0
+            ],
+            "minzoom": 4,
+            "maxzoom": 5,
+            "layout": {
+                "line-cap": "round",
+                "line-join": "round"
+            },
+            "paint": {
+                "line-color": "#454A4C",
+                "line-width": 0.5
+            }
+        },
+        {
+            "id": "Global Boundaries/Global Boundaries L04/International Boundary",
+            "type": "line",
+            "source": "esri",
+            "source-layer": "Global Boundaries L04",
+            "filter": [
+                "==",
+                "_symbol",
+                0
+            ],
+            "minzoom": 3,
+            "maxzoom": 4,
+            "layout": {
+                "line-cap": "round",
+                "line-join": "round"
+            },
+            "paint": {
+                "line-color": "#737B80",
+                "line-width": 0.466667,
+                "line-opacity": 0.9
+            }
+        },
+        {
+            "id": "Global Boundaries/Global Boundaries L04/Special Boundary line",
+            "type": "line",
+            "source": "esri",
+            "source-layer": "Global Boundaries L04",
+            "filter": [
+                "==",
+                "_symbol",
+                1
+            ],
+            "minzoom": 3,
+            "maxzoom": 4,
+            "layout": {
+                "line-join": "round"
+            },
+            "paint": {
+                "line-color": "#737C80",
+                "line-dasharray": [
+                    2.22222,
+                    1.88889
+                ],
+                "line-width": 0.6,
+                "line-opacity": 0.9
+            }
+        },
+        {
+            "id": "Global Boundaries/Global Boundaries L04/Armistice or International Administrative line",
+            "type": "line",
+            "source": "esri",
+            "source-layer": "Global Boundaries L04",
+            "filter": [
+                "==",
+                "_symbol",
+                2
+            ],
+            "minzoom": 3,
+            "maxzoom": 4,
+            "layout": {
+                "line-join": "round"
+            },
+            "paint": {
+                "line-color": "#737C80",
+                "line-dasharray": [
+                    8.88889,
+                    5
+                ],
+                "line-width": 0.6,
+                "line-opacity": 0.9
+            }
+        },
+        {
+            "id": "Global Boundaries/Global Boundaries L04/Other line of Separation",
+            "type": "symbol",
+            "source": "esri",
+            "source-layer": "Global Boundaries L04",
+            "filter": [
+                "==",
+                "_symbol",
+                3
+            ],
+            "minzoom": 3,
+            "maxzoom": 4,
+            "layout": {
+                "symbol-placement": "line",
+                "icon-image": "Global Boundaries/Global Boundaries L04/Other line of Separation",
+                "symbol-spacing": 3.33333,
+                "icon-rotation-alignment": "map",
+                "icon-allow-overlap": true
+            },
+            "paint": {
+                "icon-color": "#737B80",
+                "icon-opacity": 0.9
+            }
+        },
+        {
+            "id": "Global Boundaries/Global Boundaries L03/International Boundary",
+            "type": "line",
+            "source": "esri",
+            "source-layer": "Global Boundaries L03",
+            "filter": [
+                "==",
+                "_symbol",
+                0
+            ],
+            "minzoom": 2,
+            "maxzoom": 3,
+            "layout": {
+                "line-cap": "round",
+                "line-join": "round"
+            },
+            "paint": {
+                "line-color": "#737B80",
+                "line-width": 0.4,
+                "line-opacity": 0.9
+            }
+        },
+        {
+            "id": "Global Boundaries/Global Boundaries L03/Special Boundary line",
+            "type": "line",
+            "source": "esri",
+            "source-layer": "Global Boundaries L03",
+            "filter": [
+                "==",
+                "_symbol",
+                1
+            ],
+            "minzoom": 2,
+            "maxzoom": 3,
+            "layout": {
+                "line-join": "round"
+            },
+            "paint": {
+                "line-color": "#737C80",
+                "line-dasharray": [
+                    3.8,
+                    3
+                ],
+                "line-width": 0.333333,
+                "line-opacity": 0.9
+            }
+        },
+        {
+            "id": "Global Boundaries/Global Boundaries L03/Armistice or International Administrative line",
+            "type": "line",
+            "source": "esri",
+            "source-layer": "Global Boundaries L03",
+            "filter": [
+                "==",
+                "_symbol",
+                2
+            ],
+            "minzoom": 2,
+            "maxzoom": 3,
+            "layout": {
+                "line-join": "round"
+            },
+            "paint": {
+                "line-color": "#737C80",
+                "line-dasharray": [
+                    12,
+                    6
+                ],
+                "line-width": 0.5,
+                "line-opacity": 0.9
+            }
+        },
+        {
+            "id": "Global Boundaries/Global Boundaries L03/Other line of Separation",
+            "type": "symbol",
+            "source": "esri",
+            "source-layer": "Global Boundaries L03",
+            "filter": [
+                "==",
+                "_symbol",
+                3
+            ],
+            "minzoom": 2,
+            "maxzoom": 3,
+            "layout": {
+                "symbol-placement": "line",
+                "icon-image": "Global Boundaries/Global Boundaries L03/Other line of Separation",
+                "symbol-spacing": 2,
+                "icon-rotation-alignment": "map",
+                "icon-allow-overlap": true
+            },
+            "paint": {
+                "icon-color": "#737B80",
+                "icon-opacity": 0.9
+            }
+        },
+        {
+            "id": "Global Boundaries/Global Boundaries L02/International Boundary",
+            "type": "line",
+            "source": "esri",
+            "source-layer": "Global Boundaries L02",
+            "filter": [
+                "==",
+                "_symbol",
+                0
+            ],
+            "minzoom": 1,
+            "maxzoom": 2,
+            "layout": {
+                "line-cap": "round",
+                "line-join": "round"
+            },
+            "paint": {
+                "line-color": "#737B80",
+                "line-width": 0.2,
+                "line-opacity": 0.9
+            }
+        },
+        {
+            "id": "Global Boundaries/Global Boundaries L02/Special Boundary line",
+            "type": "line",
+            "source": "esri",
+            "source-layer": "Global Boundaries L02",
+            "filter": [
+                "==",
+                "_symbol",
+                1
+            ],
+            "minzoom": 1,
+            "maxzoom": 2,
+            "layout": {
+                "line-join": "round"
+            },
+            "paint": {
+                "line-color": "#737C80",
+                "line-dasharray": [
+                    4.66667,
+                    4.66667
+                ],
+                "line-width": 0.2,
+                "line-opacity": 0.9
+            }
+        },
+        {
+            "id": "Global Boundaries/Global Boundaries L02/Armistice or International Administrative line",
+            "type": "line",
+            "source": "esri",
+            "source-layer": "Global Boundaries L02",
+            "filter": [
+                "==",
+                "_symbol",
+                2
+            ],
+            "minzoom": 1,
+            "maxzoom": 2,
+            "layout": {
+                "line-join": "round"
+            },
+            "paint": {
+                "line-color": "#737C80",
+                "line-dasharray": [
+                    8,
+                    5
+                ],
+                "line-width": 0.293333,
+                "line-opacity": 0.9
+            }
+        },
+        {
+            "id": "Global Boundaries/Global Boundaries L02/Other line of Separation",
+            "type": "symbol",
+            "source": "esri",
+            "source-layer": "Global Boundaries L02",
+            "filter": [
+                "==",
+                "_symbol",
+                3
+            ],
+            "minzoom": 1,
+            "maxzoom": 2,
+            "layout": {
+                "symbol-placement": "line",
+                "icon-image": "Global Boundaries/Global Boundaries L02/Other line of Separation",
+                "symbol-spacing": 1.77778,
+                "icon-rotation-alignment": "map",
+                "icon-allow-overlap": true
+            },
+            "paint": {
+                "icon-color": "#737B80",
+                "icon-opacity": 0.9
+            }
+        },
+        {
+            "id": "WBYA Features/WBYA_L06//1",
+            "type": "line",
+            "source": "esri",
+            "source-layer": "WBYA_L06",
+            "filter": [
+                "==",
+                "_symbol",
+                1
+            ],
+            "minzoom": 5,
+            "maxzoom": 5.89,
+            "layout": {
+                "line-cap": "round",
+                "line-join": "round"
+            },
+            "paint": {
+                "line-color": "rgba(157,189,209,0.7)",
+                "line-width": 1.5
+            }
+        },
+        {
+            "id": "WBYA Features/WBYA_L06//0",
+            "type": "fill",
+            "source": "esri",
+            "source-layer": "WBYA_L06",
+            "filter": [
+                "==",
+                "_symbol",
+                1
+            ],
+            "minzoom": 5,
+            "maxzoom": 5.89,
+            "layout": {},
+            "paint": {
+                "fill-color": "#DFEFF7"
+            }
+        },
+        {
+            "id": "WBYA Features/WBYA10_L05/1",
+            "type": "line",
+            "source": "esri",
+            "source-layer": "WBYA10_L05",
+            "minzoom": 4,
+            "maxzoom": 5,
+            "layout": {
+                "line-cap": "round",
+                "line-join": "round"
+            },
+            "paint": {
+                "line-color": "rgba(157,189,209,0.75)",
+                "line-width": 1.5
+            }
+        },
+        {
+            "id": "WBYA Features/WBYA10_L05/0",
+            "type": "fill",
+            "source": "esri",
+            "source-layer": "WBYA10_L05",
+            "minzoom": 4,
+            "maxzoom": 5,
+            "layout": {},
+            "paint": {
+                "fill-color": "#DFEFF7"
+            }
+        },
+        {
+            "id": "WBYA Features/WBYA10_L04/1",
+            "type": "line",
+            "source": "esri",
+            "source-layer": "WBYA10_L04",
+            "minzoom": 3,
+            "maxzoom": 4,
+            "layout": {
+                "line-cap": "round",
+                "line-join": "round"
+            },
+            "paint": {
+                "line-color": "rgba(157,189,209,0.75)",
+                "line-width": 1
+            }
+        },
+        {
+            "id": "WBYA Features/WBYA10_L04/0",
+            "type": "fill",
+            "source": "esri",
+            "source-layer": "WBYA10_L04",
+            "minzoom": 3,
+            "maxzoom": 4,
+            "layout": {},
+            "paint": {
+                "fill-color": "#DFEFF7"
+            }
+        },
+        {
+            "id": "WBYA Features/WBYA10_L02-L03/1",
+            "type": "line",
+            "source": "esri",
+            "source-layer": "WBYA10_L02-L03",
+            "minzoom": 1,
+            "maxzoom": 3,
+            "layout": {
+                "line-cap": "round",
+                "line-join": "round"
+            },
+            "paint": {
+                "line-color": "rgba(107,152,179,0.9)",
+                "line-width": {
+                    "stops": [
+                        [
+                            0.56,
+                            0.266667
+                        ],
+                        [
+                            2.56,
+                            0.4
+                        ]
+                    ]
+                }
+            }
+        },
+        {
+            "id": "WBYA Features/WBYA10_L02-L03/0",
+            "type": "fill",
+            "source": "esri",
+            "source-layer": "WBYA10_L02-L03",
+            "minzoom": 1,
+            "maxzoom": 3,
+            "layout": {},
+            "paint": {
+                "fill-color": "#DFEFF7"
+            }
+        },
+        {
+            "id": "WBYA Features/WBYA10_L01/1",
+            "type": "line",
+            "source": "esri",
+            "source-layer": "WBYA10_L01",
+            "minzoom": 0,
+            "maxzoom": 1,
+            "layout": {
+                "line-cap": "round",
+                "line-join": "round"
+            },
+            "paint": {
+                "line-color": "#DFEFF7",
+                "line-width": 0.0666667
+            }
+        },
+        {
+            "id": "WBYA Features/WBYA10_L01/0",
+            "type": "fill",
+            "source": "esri",
+            "source-layer": "WBYA10_L01",
+            "minzoom": 0,
+            "maxzoom": 1,
+            "layout": {},
+            "paint": {
+                "fill-color": "#DFEFF7"
+            }
+        },
+        {
+            "id": "POPULATED PLACES/Populated Places_SYMBOLS/National Capital",
+            "type": "symbol",
+            "source": "esri",
+            "source-layer": "Populated Places_SYMBOLS",
+            "filter": [
+                "==",
+                "_symbol",
+                0
+            ],
+            "minzoom": 4,
+            "maxzoom": 5.89,
+            "layout": {
+                "icon-image": "POPULATED PLACES/Populated Places_SYMBOLS/National Capital",
+                "icon-size": {
+                    "stops": [
+                        [
+                            3.89,
+                            1
+                        ],
+                        [
+                            5.89,
+                            1.06667
+                        ]
+                    ]
+                },
+                "icon-allow-overlap": true
+            },
+            "paint": {}
+        },
+        {
+            "id": "POPULATED PLACES/Populated Places_SYMBOLS/Alternative capital",
+            "type": "symbol",
+            "source": "esri",
+            "source-layer": "Populated Places_SYMBOLS",
+            "filter": [
+                "==",
+                "_symbol",
+                1
+            ],
+            "minzoom": 4,
+            "maxzoom": 5.89,
+            "layout": {
+                "icon-image": "POPULATED PLACES/Populated Places_SYMBOLS/Alternative capital",
+                "icon-size": {
+                    "stops": [
+                        [
+                            3.89,
+                            1
+                        ],
+                        [
+                            5.89,
+                            1.08434
+                        ]
+                    ]
+                },
+                "icon-allow-overlap": true
+            },
+            "paint": {}
+        },
+        {
+            "id": "POPULATED PLACES/Populated Places_SYMBOLS/Territorial capital",
+            "type": "symbol",
+            "source": "esri",
+            "source-layer": "Populated Places_SYMBOLS",
+            "filter": [
+                "==",
+                "_symbol",
+                2
+            ],
+            "minzoom": 4,
+            "maxzoom": 5.89,
+            "layout": {
+                "icon-image": "POPULATED PLACES/Populated Places_SYMBOLS/Territorial capital",
+                "icon-size": {
+                    "stops": [
+                        [
+                            3.89,
+                            1
+                        ],
+                        [
+                            5.89,
+                            1.08434
+                        ]
+                    ]
+                },
+                "icon-allow-overlap": true
+            },
+            "paint": {}
+        },
+        {
+            "id": "POPULATED PLACES/POPP_CTY_ANNO_L06_POINT/label/L06 - ABU DHABI",
+            "type": "symbol",
+            "source": "esri",
+            "source-layer": "POPP_CTY_ANNO_L06_POINT",
+            "minzoom": 5,
+            "maxzoom": 5.89,
+            "layout": {
+                "text-font": [
+                    "Arial Regular"
+                ],
+                "text-size": 10,
+                "text-max-width":30,
+                "text-anchor": "center",
+                "text-letter-spacing": 0.05,
+                "text-field": "{_name1}",
+                "text-allow-overlap": true,
+                "text-optional": true
+            },
+            "paint": {
+                "text-color": "#3E3F40",
+                "text-halo-color": "rgba(255,255,255,0.8)",
+                "text-halo-width": 1.13333
+            }
+        },
+        {
+            "id": "POPULATED PLACES/POPP_CTY_ANNO_L06_POINT/label/POPP_LV06",
+            "type": "symbol",
+            "source": "esri",
+            "source-layer": "POPP_CTY_ANNO_L06_POINT",
+            "minzoom": 5,
+            "maxzoom": 5.89,
+            "layout": {
+                "text-font": [
+                    "Arial Unicode MS Regular"
+                ],
+                "text-size": 10,
+                "text-anchor": "center",
+                "text-letter-spacing": 0.1,
+                "text-max-width": 50,
+                "text-field": "{_name}",
+                "text-allow-overlap": true,
+                "text-optional": true
+            },
+            "paint": {
+                "text-color": "#3E3F40",
+                "text-halo-color": "rgba(255,255,255,0.8)",
+                "text-halo-width": 1.13333
+            }
+        },
+        {
+            "id": "POPULATED PLACES/POPP_CTY_ANNO_L05_POINT/label/L05 - ABU DHABI",
+            "type": "symbol",
+            "source": "esri",
+            "source-layer": "POPP_CTY_ANNO_L05_POINT",
+            "minzoom": 4,
+            "maxzoom": 5,
+            "layout": {
+                "text-font": [
+                    "Arial Regular"
+                ],
+                "text-size": 9,
+                "text-anchor": "center",
+                "text-max-width":30,
+                "text-letter-spacing": 0.05,
+                "text-field": "{_name1}",
+                "text-allow-overlap": true,
+                "text-optional": true
+            },
+            "paint": {
+                "text-color": "#3E3F40",
+                "text-halo-color": "rgba(247,249,250,0.85)",
+                "text-halo-width": 1
+            }
+        },
+        {
+            "id": "POPULATED PLACES/POPP_CTY_ANNO_L05_POINT/label/POPP_LV05",
+            "type": "symbol",
+            "source": "esri",
+            "source-layer": "POPP_CTY_ANNO_L05_POINT",
+            "minzoom": 4,
+            "maxzoom": 5,
+            "layout": {
+                "text-font": [
+                    "Arial Unicode MS Regular"
+                ],
+                "text-size": 9,
+                "text-anchor": "center",
+                "text-letter-spacing": 0.1,
+                "text-max-width": 50,
+                "text-field": "{_name}",
+                "text-allow-overlap": true,
+                "text-optional": true
+            },
+            "paint": {
+                "text-color": "#3E3F40",
+                "text-halo-color": "rgba(247,249,250,0.85)",
+                "text-halo-width": 1
+            }
+        },
+        {
+            "id": "Annotations/L06/BNDA_CTY_ANNO_L06_PROE_02_POINT/label/MALAYSIA_LV06(Memeber State_AVG SURF_LV06)",
+            "type": "symbol",
+            "source": "esri",
+            "source-layer": "BNDA_CTY_ANNO_L06_PROE_02_POINT",
+            "minzoom": 5,
+            "maxzoom": 5.89,
+            "layout": {
+                "text-font": [
+                    "Open Sans Bold"
+                ],
+                "text-size": 14.6667,
+                "text-anchor": "center",
+                "text-letter-spacing": 7,
+                "text-field": "{_name27}",
+                "text-allow-overlap": true,
+                "text-optional": true
+            },
+            "paint": {
+                "text-color": "#575859",
+                "text-halo-color": "rgba(255,255,255,0.5)",
+                "text-halo-width": 1
+            }
+        },
+        {
+            "id": "Annotations/L06/BNDA_CTY_ANNO_L06_PROE_02_POINT/label/TAIWAN_LV05(Special Region_LV06)",
+            "type": "symbol",
+            "source": "esri",
+            "source-layer": "BNDA_CTY_ANNO_L06_PROE_02_POINT",
+            "minzoom": 5,
+            "maxzoom": 5.89,
+            "layout": {
+                "text-font": [
+                    "Arial Italic"
+                ],
+                "text-size": 16,
+                "text-anchor": "center",
+                "text-field": "{_name26}",
+                "text-allow-overlap": true,
+                "text-optional": true
+            },
+            "paint": {
+                "text-color": "#575859",
+                "text-halo-color": "rgba(255,255,255,0.5)",
+                "text-halo-width": 0.733333
+            }
+        },
+        {
+            "id": "Annotations/L06/BNDA_CTY_ANNO_L06_PROE_02_POINT/label/EQUATORIAL GUINEA_LV06(Memeber State_AVG SURF_LV06)",
+            "type": "symbol",
+            "source": "esri",
+            "source-layer": "BNDA_CTY_ANNO_L06_PROE_02_POINT",
+            "minzoom": 5,
+            "maxzoom": 5.89,
+            "layout": {
+                "text-font": [
+                    "Open Sans Bold"
+                ],
+                "text-size": 14.6667,
+                "text-anchor": "right",
+                "text-offset": [
+                    -0.0909091,
+                    0
+                ],
+                "text-letter-spacing": 0.15,
+                "text-field": "{_name23}",
+                "text-allow-overlap": true,
+                "text-optional": true
+            },
+            "paint": {
+                "text-color": "#575859",
+                "text-halo-color": "rgba(255,255,255,0.5)",
+                "text-halo-width": 1
+            }
+        },
+        {
+            "id": "Annotations/L06/BNDA_CTY_ANNO_L06_PROE_02_POINT/label/Memeber State_AVG SURF_2LINE_LV06",
+            "type": "symbol",
+            "source": "esri",
+            "source-layer": "BNDA_CTY_ANNO_L06_PROE_02_POINT",
+            "minzoom": 5,
+            "maxzoom": 5.89,
+            "layout": {
+                "text-font": [
+                    "Open Sans Bold"
+                ],
+                "text-size": 14.6667,
+                "text-anchor": "center",
+                "text-letter-spacing": 1,
+                "text-field": "{_name22}",
+                "text-allow-overlap": true,
+                "text-optional": true
+            },
+            "paint": {
+                "text-color": "#575859",
+                "text-halo-color": "rgba(255,255,255,0.5)",
+                "text-halo-width": 1
+            }
+        },
+        {
+            "id": "Annotations/L06/BNDA_CTY_ANNO_L06_PROE_02_POINT/label/Non Self. Gov. + Sovreignity Unsettled_1LINE_LV06",
+            "type": "symbol",
+            "source": "esri",
+            "source-layer": "BNDA_CTY_ANNO_L06_PROE_02_POINT",
+            "minzoom": 5,
+            "maxzoom": 5.89,
+            "layout": {
+                "text-font": [
+                    "Open Sans Bold"
+                ],
+                "text-size": 14,
+                "text-anchor": "center",
+                "text-letter-spacing": 0.15,
+                "text-field": "{_name21}",
+                "text-allow-overlap": true,
+                "text-optional": true
+            },
+            "paint": {
+                "text-color": "#575859",
+                "text-halo-color": "rgba(255,255,255,0.5)",
+                "text-halo-width": 1
+            }
+        },
+        {
+            "id": "Annotations/L06/BNDA_CTY_ANNO_L06_PROE_02_POINT/label/Memeber State_AVG SURF_NCS_2LINE_LV06",
+            "type": "symbol",
+            "source": "esri",
+            "source-layer": "BNDA_CTY_ANNO_L06_PROE_02_POINT",
+            "minzoom": 5,
+            "maxzoom": 5.89,
+            "layout": {
+                "text-font": [
+                    "Open Sans Bold"
+                ],
+                "text-size": 14,
+                "text-anchor": "center",
+                "text-letter-spacing": 0.05,
+                "text-field": "{_name20}",
+                "text-allow-overlap": true,
+                "text-optional": true
+            },
+            "paint": {
+                "text-color": "#575859",
+                "text-halo-color": "rgba(255,255,255,0.5)",
+                "text-halo-width": 1
+            }
+        },
+        {
+            "id": "Annotations/L06/BNDA_CTY_ANNO_L06_PROE_02_POINT/label/SAINT VINCENT AND THE GRENADINES_LV06(Member State_SMALL SURF_LV06)",
+            "type": "symbol",
+            "source": "esri",
+            "source-layer": "BNDA_CTY_ANNO_L06_PROE_02_POINT",
+            "minzoom": 5,
+            "maxzoom": 5.89,
+            "layout": {
+                "text-font": [
+                    "Open Sans Bold"
+                ],
+                "text-size": 14,
+                "text-justify": "right",
+                "text-anchor": "right",
+                "text-letter-spacing": 0.05,
+                "text-max-width": 30,
+                "text-field": "{_name18}",
+                "text-allow-overlap": true,
+                "text-optional": true
+            },
+            "paint": {
+                "text-color": "#575859",
+                "text-halo-color": "rgba(255,255,255,0.5)",
+                "text-halo-width": 1
+            }
+        },
+        {
+            "id": "Annotations/L06/BNDA_CTY_ANNO_L06_PROE_02_POINT/label/Self. Gov. + Territories_1LINE_LV06",
+            "type": "symbol",
+            "source": "esri",
+            "source-layer": "BNDA_CTY_ANNO_L06_PROE_02_POINT",
+            "minzoom": 5,
+            "maxzoom": 5.89,
+            "layout": {
+                "text-font": [
+                    "Open Sans Regular"
+                ],
+                "text-size": 12.6667,
+                "text-anchor": "center",
+                "text-letter-spacing": 0.05,
+                "text-max-width":60,
+                "text-field": "{_name17}",
+                "text-allow-overlap": true,
+                "text-optional": true
+            },
+            "paint": {
+                "text-color": "#575859",
+                "text-halo-color": "rgba(255,255,255,0.5)",
+                "text-halo-width": 0.733333
+            }
+        },
+        {
+            "id": "Annotations/L06/BNDA_CTY_ANNO_L06_PROE_02_POINT/label/MONTSERRAT_LV06(Non Self. Gov. + Sovreignity Unsettled_LV06)",
+            "type": "symbol",
+            "source": "esri",
+            "source-layer": "BNDA_CTY_ANNO_L06_PROE_02_POINT",
+            "minzoom": 5,
+            "maxzoom": 5.89,
+            "layout": {
+                "text-font": [
+                    "Open Sans Bold"
+                ],
+                "text-size": 14,
+                "text-anchor": "right",
+                "text-offset": [
+                    -0.0952381,
+                    0
+                ],
+                "text-letter-spacing": 0.15,
+                "text-field": "{_name16}",
+                "text-allow-overlap": true,
+                "text-optional": true
+            },
+            "paint": {
+                "text-color": "#575859",
+                "text-halo-color": "rgba(255,255,255,0.5)",
+                "text-halo-width": 1
+            }
+        },
+        {
+            "id": "Annotations/L06/BNDA_CTY_ANNO_L06_PROE_02_POINT/label/Member State_SMALL SURF_1LINE_LV06",
+            "type": "symbol",
+            "source": "esri",
+            "source-layer": "BNDA_CTY_ANNO_L06_PROE_02_POINT",
+            "minzoom": 5,
+            "maxzoom": 5.89,
+            "layout": {
+                "text-font": [
+                    "Open Sans Bold"
+                ],
+                "text-size": 14,
+                "text-anchor": "center",
+                "text-letter-spacing": 0.05,
+                "text-max-width": 60,
+                "text-field": "{_name15}",
+                "text-allow-overlap": true,
+                "text-optional": true
+            },
+            "paint": {
+                "text-color": "#575859",
+                "text-halo-color": "rgba(255,255,255,0.5)",
+                "text-halo-width": 1
+            }
+        },
+        {
+            "id": "Annotations/L06/BNDA_CTY_ANNO_L06_PROE_02_POINT/label/Non Self. Gov. + Sovreignity Unsettled_2LINE_LV06",
+            "type": "symbol",
+            "source": "esri",
+            "source-layer": "BNDA_CTY_ANNO_L06_PROE_02_POINT",
+            "minzoom": 5,
+            "maxzoom": 5.89,
+            "layout": {
+                "text-font": [
+                    "Open Sans Bold"
+                ],
+                "text-size": 14,
+                "text-anchor": "center",
+                "text-max-width": 50,
+                "text-letter-spacing": 0.10,
+                "text-field": "{_name14}",
+                "text-allow-overlap": true,
+                "text-optional": true
+            },
+            "paint": {
+                "text-color": "#575859",
+                "text-halo-color": "rgba(255,255,255,0.5)",
+                "text-halo-width": 1
+            }
+        },
+        {
+            "id": "Annotations/L06/BNDA_CTY_ANNO_L06_PROE_02_POINT/label/Memeber State_AVG SURF_ADDITIONAL_1LINE_LV06",
+            "type": "symbol",
+            "source": "esri",
+            "source-layer": "BNDA_CTY_ANNO_L06_PROE_02_POINT",
+            "minzoom": 5,
+            "maxzoom": 5.89,
+            "layout": {
+                "text-font": [
+                    "Open Sans Bold"
+                ],
+                "text-size": 14.6667,
+                "text-anchor": "center",
+                "text-letter-spacing": 0.15,
+                "text-field": "{_name13}",
+                "text-allow-overlap": true,
+                "text-optional": true
+            },
+            "paint": {
+                "text-color": "#575859",
+                "text-halo-color": "rgba(255,255,255,0.5)",
+                "text-halo-width": 1
+            }
+        },
+        {
+            "id": "Annotations/L06/BNDA_CTY_ANNO_L06_PROE_02_POINT/label/Memeber State_AVG SURF_ADDITIONAL_LV06",
+            "type": "symbol",
+            "source": "esri",
+            "source-layer": "BNDA_CTY_ANNO_L06_PROE_02_POINT",
+            "minzoom": 5,
+            "maxzoom": 5.89,
+            "layout": {
+                "text-font": [
+                    "Open Sans Bold"
+                ],
+                "text-size": 14.6667,
+                "text-max-width":20,
+                "text-anchor": "center",
+                "text-letter-spacing": 0.15,
+                "text-field": "{_name12}",
+                "text-allow-overlap": true,
+                "text-optional": true
+            },
+            "paint": {
+                "text-color": "#575859",
+                "text-halo-color": "rgba(255,255,255,0.5)",
+                "text-halo-width": 1
+            }
+        },
+        {
+            "id": "Annotations/L06/BNDA_CTY_ANNO_L06_PROE_02_POINT/label/Member State_LARGE SURF_2LINE_LV06",
+            "type": "symbol",
+            "source": "esri",
+            "source-layer": "BNDA_CTY_ANNO_L06_PROE_02_POINT",
+            "minzoom": 5,
+            "maxzoom": 5.89,
+            "layout": {
+                "text-font": [
+                    "Open Sans Bold"
+                ],
+                "text-size": 15.3333,
+                "text-anchor": "center",
+                "text-letter-spacing": 3,
+                "text-max-width": 80,
+                "text-line-height": 2,
+                "text-field": "{_name11}",
+                "text-allow-overlap": true,
+                "text-optional": true
+            },
+            "paint": {
+                "text-color": "#575859",
+                "text-halo-color": "rgba(255,255,255,0.5)",
+                "text-halo-width": 1
+            }
+        },
+        {
+            "id": "Annotations/L06/BNDA_CTY_ANNO_L06_PROE_02_POINT/label/Self. Gov. + Territories_2LINE_LV06",
+            "type": "symbol",
+            "source": "esri",
+            "source-layer": "BNDA_CTY_ANNO_L06_PROE_02_POINT",
+            "minzoom": 5,
+            "maxzoom": 5.89,
+            "layout": {
+                "text-font": [
+                    "Open Sans Regular"
+                ],
+                "text-size": 12.6667,
+                "text-anchor": "center",
+                "text-max-width": 15,
+                "text-letter-spacing": 0.05,
+                "text-field": "{_name10}",
+                "text-allow-overlap": true,
+                "text-optional": true
+            },
+            "paint": {
+                "text-color": "#575859",
+                "text-halo-color": "rgba(255,255,255,0.5)",
+                "text-halo-width": 0.733333
+            }
+        },
+        {
+            "id": "Annotations/L06/BNDA_CTY_ANNO_L06_PROE_02_POINT/label/GREENLAND_LV06(Self. Gov. + Territories_LV06)",
+            "type": "symbol",
+            "source": "esri",
+            "source-layer": "BNDA_CTY_ANNO_L06_PROE_02_POINT",
+            "minzoom": 5,
+            "maxzoom": 5.89,
+            "layout": {
+                "text-font": [
+                    "Open Sans Regular"
+                ],
+                "text-size": 14.6667,
+                "text-anchor": "center",
+                "text-max-width": 30,
+                "text-letter-spacing": 1,
+                "text-field": "{_name9}",
+                "text-allow-overlap": true,
+                "text-optional": true
+            },
+            "paint": {
+                "text-color": "#575859",
+                "text-halo-color": "rgba(255,255,255,0.5)",
+                "text-halo-width": 0.733333
+            }
+        },
+        {
+            "id": "Annotations/L06/BNDA_CTY_ANNO_L06_PROE_02_POINT/label/Autonomous Region_LV06",
+            "type": "symbol",
+            "source": "esri",
+            "source-layer": "BNDA_CTY_ANNO_L06_PROE_02_POINT",
+            "minzoom": 5,
+            "maxzoom": 5.89,
+            "layout": {
+                "text-font": [
+                    "Open Sans Regular"
+                ],
+                "text-size": 12,
+                "text-anchor": "center",
+                "text-field": "{_name8}",
+                "text-allow-overlap": true,
+                "text-optional": true
+            },
+            "paint": {
+                "text-color": "#575859"
+            }
+        },
+        {
+            "id": "Annotations/L06/BNDA_CTY_ANNO_L06_PROE_02_POINT/label/Special Region_LV06",
+            "type": "symbol",
+            "source": "esri",
+            "source-layer": "BNDA_CTY_ANNO_L06_PROE_02_POINT",
+            "minzoom": 5,
+            "maxzoom": 5.89,
+            "layout": {
+                "text-font": [
+                    "Open Sans Bold"
+                ],
+                "text-size": 13.3333,
+                "text-anchor": "center",
+                "text-letter-spacing": 0.02,
+                "text-field": "{_name7}",
+                "text-allow-overlap": true,
+                "text-optional": true
+            },
+            "paint": {
+                "text-color": "#575859",
+                "text-halo-color": "rgba(255,255,255,0.5)",
+                "text-halo-width": 0.733333
+            }
+        },
+        {
+            "id": "Annotations/L06/BNDA_CTY_ANNO_L06_PROE_02_POINT/label/Occupied Palestinian_LV06",
+            "type": "symbol",
+            "source": "esri",
+            "source-layer": "BNDA_CTY_ANNO_L06_PROE_02_POINT",
+            "minzoom": 5,
+            "maxzoom": 5.89,
+            "layout": {
+                "text-font": [
+                    "Open Sans Semibold Regular"
+                ],
+                "text-size": 10.6667,
+                "text-anchor": "center",
+                "text-letter-spacing": 0.05,
+                "text-field": "{_name6}",
+                "text-allow-overlap": true,
+                "text-optional": true
+            },
+            "paint": {
+                "text-color": "#575859",
+                "text-halo-color": "rgba(255,255,255,0.5)",
+                "text-halo-width": 0.733333
+            }
+        },
+        {
+            "id": "Annotations/L06/BNDA_CTY_ANNO_L06_PROE_02_POINT/label/Non Self. Gov. + Sovreignity Unsettled_LV06",
+            "type": "symbol",
+            "source": "esri",
+            "source-layer": "BNDA_CTY_ANNO_L06_PROE_02_POINT",
+            "minzoom": 5,
+            "maxzoom": 5.89,
+            "layout": {
+                "text-font": [
+                    "Open Sans Bold"
+                ],
+                "text-size": 14,
+                "text-anchor": "center",
+                "text-letter-spacing": 0.15,
+                "text-field": "{_name5}",
+                "text-allow-overlap": true,
+                "text-optional": true
+            },
+            "paint": {
+                "text-color": "#575859",
+                "text-halo-color": "rgba(255,255,255,0.5)",
+                "text-halo-width": 1
+            }
+        },
+        {
+            "id": "Annotations/L06/BNDA_CTY_ANNO_L06_PROE_02_POINT/label/ANTARCTICA_LV06",
+            "type": "symbol",
+            "source": "esri",
+            "source-layer": "BNDA_CTY_ANNO_L06_PROE_02_POINT",
+            "minzoom": 5,
+            "maxzoom": 5.89,
+            "layout": {
+                "text-font": [
+                    "Arial Narrow Italic"
+                ],
+                "text-size": 17.3333,
+                "text-anchor": "center",
+                "text-letter-spacing": 6.35,
+                "text-field": "{_name4}",
+                "text-allow-overlap": true,
+                "text-optional": true
+            },
+            "paint": {
+                "text-color": "#575859",
+                "text-halo-color": "rgba(255,255,255,0.5)",
+                "text-halo-width": 1
+            }
+        },
+        {
+            "id": "Annotations/L06/BNDA_CTY_ANNO_L06_PROE_02_POINT/label/Member State_SMALL SURF_LV06",
+            "type": "symbol",
+            "source": "esri",
+            "source-layer": "BNDA_CTY_ANNO_L06_PROE_02_POINT",
+            "minzoom": 5,
+            "maxzoom": 5.89,
+            "layout": {
+                "text-font": [
+                    "Open Sans Bold"
+                ],
+                "text-size": 14,
+                "text-anchor": "center",
+                "text-letter-spacing": 0.05,
+                "text-field": "{_name3}",
+                "text-allow-overlap": true,
+                "text-optional": true
+            },
+            "paint": {
+                "text-color": "#575859",
+                "text-halo-color": "rgba(255,255,255,0.5)",
+                "text-halo-width": 1
+            }
+        },
+        {
+            "id": "Annotations/L06/BNDA_CTY_ANNO_L06_PROE_02_POINT/label/Self. Gov. + Territories_LV06",
+            "type": "symbol",
+            "source": "esri",
+            "source-layer": "BNDA_CTY_ANNO_L06_PROE_02_POINT",
+            "minzoom": 5,
+            "maxzoom": 5.89,
+            "layout": {
+                "text-font": [
+                    "Open Sans Regular"
+                ],
+                "text-size": 12.6667,
+                "text-anchor": "center",
+                "text-letter-spacing": 0.05,
+                "text-field": "{_name2}",
+                "text-allow-overlap": true,
+                "text-optional": true
+            },
+            "paint": {
+                "text-color": "#575859",
+                "text-halo-color": "rgba(255,255,255,0.5)",
+                "text-halo-width": 0.733333
+            }
+        },
+        {
+            "id": "Annotations/L06/BNDA_CTY_ANNO_L06_PROE_02_POINT/label/Member State_LARGE SURF_LV06",
+            "type": "symbol",
+            "source": "esri",
+            "source-layer": "BNDA_CTY_ANNO_L06_PROE_02_POINT",
+            "minzoom": 5,
+            "maxzoom": 5.89,
+            "layout": {
+                "text-font": [
+                    "Open Sans Bold"
+                ],
+                "text-size": 15.3333,
+                "text-anchor": "center",
+                "text-max-width": 150,
+                "text-letter-spacing": 3,
+                "text-field": "{_name1}",
+                "text-allow-overlap": true,
+                "text-optional": true
+            },
+            "paint": {
+                "text-color": "#575859",
+                "text-halo-color": "rgba(255,255,255,0.5)",
+                "text-halo-width": 1
+            }
+        },
+        {
+            "id": "Annotations/L06/BNDA_CTY_ANNO_L06_PROE_02_POINT/label/Memeber State_AVG SURF_LV06",
+            "type": "symbol",
+            "source": "esri",
+            "source-layer": "BNDA_CTY_ANNO_L06_PROE_02_POINT",
+            "minzoom": 5,
+            "maxzoom": 5.89,
+            "layout": {
+                "text-font": [
+                    "Open Sans Bold"
+                ],
+                "text-size": 14.6667,
+                "text-anchor": "center",
+                "text-letter-spacing": 0.6,
+                "text-field": "{_name}",
+                "text-allow-overlap": true,
+                "text-optional": true
+            },
+            "paint": {
+                "text-color": "#575859",
+                "text-halo-color": "rgba(255,255,255,0.5)",
+                "text-halo-width": 1
+            }
+        },
+        {
+            "id": "Annotations/L06/WBYA_ANNO_L06_PROE_02_POINT/label/Waterbodies_2LINE_LV06",
+            "type": "symbol",
+            "source": "esri",
+            "source-layer": "WBYA_ANNO_L06_PROE_02_POINT",
+            "minzoom": 5,
+            "maxzoom": 5.89,
+            "layout": {
+                "text-font": [
+                    "Open Sans Bold Italic"
+                ],
+                "text-size": 12,
+                "text-anchor": "center",
+                "text-letter-spacing": 0.3,
+                "text-field": "{_name1}",
+                "text-allow-overlap": true,
+                "text-optional": true
+            },
+            "paint": {
+                "text-color": "#66A2CC",
+                "text-halo-color": "rgba(255,255,255,0.75)",
+                "text-halo-width": 0.933333
+            }
+        },
+        {
+            "id": "Annotations/L06/WBYA_ANNO_L06_PROE_02_POINT/label/Waterbodies_LV06",
+            "type": "symbol",
+            "source": "esri",
+            "source-layer": "WBYA_ANNO_L06_PROE_02_POINT",
+            "minzoom": 5,
+            "maxzoom": 5.89,
+            "layout": {
+                "text-font": [
+                    "Open Sans Bold Italic"
+                ],
+                "text-size": 12,
+                "text-anchor": "center",
+                "text-letter-spacing": 0.3,
+                "text-field": "{_name}",
+                "text-allow-overlap": true,
+                "text-optional": true
+            },
+            "paint": {
+                "text-color": "#66A2CC",
+                "text-halo-color": "rgba(255,255,255,0.75)",
+                "text-halo-width": 0.933333
+            }
+        },
+        {
+            "id": "Annotations/L06/PHYP_ANNO_L06_PROE_02_POINT/label/Ocean_1LINE_LV06",
+            "type": "symbol",
+            "source": "esri",
+            "source-layer": "PHYP_ANNO_L06_PROE_02_POINT",
+            "minzoom": 5,
+            "maxzoom": 5.89,
+            "layout": {
+                "text-font": [
+                    "Open Sans Semibold Italic"
+                ],
+                "text-size": 24,
+                "text-anchor": "center",
+                "text-letter-spacing": 1,
+                "text-field": "{_name9}",
+                "text-max-width": 90,
+                "text-allow-overlap": true,
+                "text-optional": true
+            },
+            "paint": {
+                "text-color": "#6094BF",
+                "text-halo-color": "rgba(206,228,242,0.5)",
+                "text-halo-width": 1
+            }
+        },
+        {
+            "id": "Annotations/L06/PHYP_ANNO_L06_PROE_02_POINT/label/Island_2LINE_LV06",
+            "type": "symbol",
+            "source": "esri",
+            "source-layer": "PHYP_ANNO_L06_PROE_02_POINT",
+            "minzoom": 5,
+            "maxzoom": 5.89,
+            "layout": {
+                "text-font": [
+                    "Open Sans Semibold Italic"
+                ],
+                "text-size": 9.33333,
+                "text-anchor": "center",
+                "text-max-width": 20,
+                "text-letter-spacing": 0.3,
+                "text-field": "{_name8}",
+                "text-allow-overlap": true,
+                "text-optional": true
+            },
+            "paint": {
+                "text-color": "#717E85",
+                "text-halo-color": "rgba(237,247,252,0.6)",
+                "text-halo-width": 0.733333
+            }
+        },
+        {
+            "id": "Annotations/L06/PHYP_ANNO_L06_PROE_02_POINT/label/Sea_2LINE_LV06",
+            "type": "symbol",
+            "source": "esri",
+            "source-layer": "PHYP_ANNO_L06_PROE_02_POINT",
+            "minzoom": 5,
+            "maxzoom": 5.89,
+            "layout": {
+                "text-font": [
+                    "Open Sans Semibold Italic"
+                ],
+                "text-size": 12,
+                "text-anchor": "center",
+                "text-letter-spacing": 0.3,
+                "text-field": "{_name7}",
+                "text-allow-overlap": true,
+                "text-optional": true
+            },
+            "paint": {
+                "text-color": "#6094BF",
+                "text-halo-color": "rgba(206,228,242,0.5)",
+                "text-halo-width": 0.866667
+            }
+        },
+        {
+            "id": "Annotations/L06/PHYP_ANNO_L06_PROE_02_POINT/label/Islands_1LINE_LV06",
+            "type": "symbol",
+            "source": "esri",
+            "source-layer": "PHYP_ANNO_L06_PROE_02_POINT",
+            "minzoom": 5,
+            "maxzoom": 5.89,
+            "layout": {
+                "text-font": [
+                    "Open Sans Semibold Italic"
+                ],
+                "text-size": 9.33333,
+                "text-anchor": "center",
+                "text-max-width": 30,
+                "text-letter-spacing": 0.3,
+                "text-field": "{_name6}",
+                "text-allow-overlap": true,
+                "text-optional": true
+            },
+            "paint": {
+                "text-color": "#717E85",
+                "text-halo-color": "rgba(237,247,252,0.6)",
+                "text-halo-width": 0.733333
+            }
+        },
+        {
+            "id": "Annotations/L06/PHYP_ANNO_L06_PROE_02_POINT/label/Islands_LV06",
+            "type": "symbol",
+            "source": "esri",
+            "source-layer": "PHYP_ANNO_L06_PROE_02_POINT",
+            "minzoom": 5,
+            "maxzoom": 5.89,
+            "layout": {
+                "text-font": [
+                    "Open Sans Semibold Italic"
+                ],
+                "text-size": 9.33333,
+                "text-anchor": "center",
+                "text-letter-spacing": 0.3,
+                "text-field": "{_name5}",
+                "text-allow-overlap": true,
+                "text-optional": true
+            },
+            "paint": {
+                "text-color": "#717E85",
+                "text-halo-color": "rgba(237,247,252,0.6)",
+                "text-halo-width": 0.733333
+            }
+        },
+        {
+            "id": "Annotations/L06/PHYP_ANNO_L06_PROE_02_POINT/label/Mediterranean_LV06",
+            "type": "symbol",
+            "source": "esri",
+            "source-layer": "PHYP_ANNO_L06_PROE_02_POINT",
+            "minzoom": 5,
+            "maxzoom": 5.89,
+            "layout": {
+                "text-font": [
+                    "Open Sans Semibold Italic"
+                ],
+                "text-size": 16,
+                "text-anchor": "center",
+                "text-max-width":30,
+                "text-letter-spacing": 0.7,
+                "text-field": "{_name4}",
+                "text-allow-overlap": true,
+                "text-optional": true
+            },
+            "paint": {
+                "text-color": "#6094BF",
+                "text-halo-color": "rgba(206,228,242,0.7)",
+                "text-halo-width": 0.733333
+            }
+        },
+        {
+            "id": "Annotations/L06/PHYP_ANNO_L06_PROE_02_POINT/label/Minor Sea_LV06",
+            "type": "symbol",
+            "source": "esri",
+            "source-layer": "PHYP_ANNO_L06_PROE_02_POINT",
+            "minzoom": 5,
+            "maxzoom": 5.89,
+            "layout": {
+                "text-font": [
+                    "Open Sans Semibold Italic"
+                ],
+                "text-size": 12,
+                "text-anchor": "center",
+                "text-letter-spacing": 0.3,
+                "text-field": "{_name3}",
+                "text-allow-overlap": true,
+                "text-optional": true
+            },
+            "paint": {
+                "text-color": "#6094BF",
+                "text-halo-color": "rgba(206,228,242,0.5)",
+                "text-halo-width": 0.866667
+            }
+        },
+        {
+            "id": "Annotations/L06/PHYP_ANNO_L06_PROE_02_POINT/label/Gulfs and Bays_LV06",
+            "type": "symbol",
+            "source": "esri",
+            "source-layer": "PHYP_ANNO_L06_PROE_02_POINT",
+            "minzoom": 5,
+            "maxzoom": 5.89,
+            "layout": {
+                "text-font": [
+                    "Open Sans Semibold Italic"
+                ],
+                "text-size": 13.3333,
+                "text-anchor": "center",
+                "text-letter-spacing": 0.3,
+                "text-field": "{_name2}",
+                "text-allow-overlap": true,
+                "text-optional": true
+            },
+            "paint": {
+                "text-color": "#6094BF",
+                "text-halo-color": "rgba(206,228,242,0.5)",
+                "text-halo-width": 0.866667
+            }
+        },
+        {
+            "id": "Annotations/L06/PHYP_ANNO_L06_PROE_02_POINT/label/Sea_LV06",
+            "type": "symbol",
+            "source": "esri",
+            "source-layer": "PHYP_ANNO_L06_PROE_02_POINT",
+            "minzoom": 5,
+            "maxzoom": 5.89,
+            "layout": {
+                "text-font": [
+                    "Open Sans Semibold Italic"
+                ],
+                "text-size": 12,
+                "text-anchor": "center",
+                "text-letter-spacing": 0.3,
+                "text-field": "{_name1}",
+                "text-allow-overlap": true,
+                "text-optional": true
+            },
+            "paint": {
+                "text-color": "#6094BF",
+                "text-halo-color": "rgba(206,228,242,0.5)",
+                "text-halo-width": 0.866667
+            }
+        },
+        {
+            "id": "Annotations/L06/PHYP_ANNO_L06_PROE_02_POINT/label/Ocean_LV06",
+            "type": "symbol",
+            "source": "esri",
+            "source-layer": "PHYP_ANNO_L06_PROE_02_POINT",
+            "minzoom": 5,
+            "maxzoom": 5.89,
+            "layout": {
+                "text-font": [
+                    "Open Sans Semibold Italic"
+                ],
+                "text-size": 24,
+                "text-anchor": "center",
+                "text-letter-spacing": 1,
+                "text-max-width": 30,
+                "text-line-height": 1.5,
+                "text-field": "{_name}",
+                "text-allow-overlap": true,
+                "text-optional": true
+            },
+            "paint": {
+                "text-color": "#6094BF",
+                "text-halo-color": "rgba(206,228,242,0.5)",
+                "text-halo-width": 1
+            }
+        },
+        {
+            "id": "Annotations/L06/BNDA_CTY_ANNO_L06_PROE_02_POINT_BIS/label/MICRONESIA",
+            "type": "symbol",
+            "source": "esri",
+            "source-layer": "BNDA_CTY_ANNO_L06_PROE_02_POINT_BIS",
+            "minzoom": 5,
+            "maxzoom": 5.89,
+            "layout": {
+                "text-font": [
+                    "Open Sans Bold"
+                ],
+                "text-size": 14,
+                "text-anchor": "center",
+                "text-max-width": 50,
+                "text-letter-spacing": 0.05,
+                "text-field": "{_name12}",
+                "text-allow-overlap": true,
+                "text-optional": true
+            },
+            "paint": {
+                "text-color": "#575859",
+                "text-halo-color": "rgba(255,255,255,0.5)",
+                "text-halo-width": 1
+            }
+        },
+        {
+            "id": "Annotations/L06/BNDA_CTY_ANNO_L06_PROE_02_POINT_BIS/label/PAPUA",
+            "type": "symbol",
+            "source": "esri",
+            "source-layer": "BNDA_CTY_ANNO_L06_PROE_02_POINT_BIS",
+            "minzoom": 5,
+            "maxzoom": 5.89,
+            "layout": {
+                "text-font": [
+                    "Open Sans Bold"
+                ],
+                "text-size": 14.6667,
+                "text-anchor": "center",
+                "text-letter-spacing": 0.6,
+                "text-max-width": 50,
+                "text-field": "{_name11}",
+                "text-allow-overlap": true,
+                "text-optional": true
+            },
+            "paint": {
+                "text-color": "#575859",
+                "text-halo-color": "rgba(255,255,255,0.5)",
+                "text-halo-width": 1
+            }
+        },
+        {
+            "id": "Annotations/L06/BNDA_CTY_ANNO_L06_PROE_02_POINT_BIS/label/MALAYSIA",
+            "type": "symbol",
+            "source": "esri",
+            "source-layer": "BNDA_CTY_ANNO_L06_PROE_02_POINT_BIS",
+            "minzoom": 5,
+            "maxzoom": 5.89,
+            "layout": {
+                "text-font": [
+                    "Open Sans Bold"
+                ],
+                "text-size": 14.6667,
+                "text-anchor": "center",
+                "text-letter-spacing": 4,
+                "text-field": "{_name10}",
+                "text-allow-overlap": true,
+                "text-optional": true
+            },
+            "paint": {
+                "text-color": "#575859",
+                "text-halo-color": "rgba(255,255,255,0.5)",
+                "text-halo-width": 1
+            }
+        },
+        {
+            "id": "Annotations/L06/BNDA_CTY_ANNO_L06_PROE_02_POINT_BIS/label/CHILE",
+            "type": "symbol",
+            "source": "esri",
+            "source-layer": "BNDA_CTY_ANNO_L06_PROE_02_POINT_BIS",
+            "minzoom": 5,
+            "maxzoom": 5.89,
+            "layout": {
+                "text-font": [
+                    "Open Sans Bold"
+                ],
+                "text-size": 14.6667,
+                "text-anchor": "center",
+                "text-letter-spacing": 0.15,
+                "text-field": "{_name9}",
+                "text-allow-overlap": true,
+                "text-optional": true
+            },
+            "paint": {
+                "text-color": "#575859",
+                "text-halo-color": "rgba(255,255,255,0.5)",
+                "text-halo-width": 1
+            }
+        },
+        {
+            "id": "Annotations/L06/BNDA_CTY_ANNO_L06_PROE_02_POINT_BIS/label/BOLIVIA",
+            "type": "symbol",
+            "source": "esri",
+            "source-layer": "BNDA_CTY_ANNO_L06_PROE_02_POINT_BIS",
+            "minzoom": 5,
+            "maxzoom": 5.89,
+            "layout": {
+                "text-font": [
+                    "Open Sans Bold"
+                ],
+                "text-size": 14.6667,
+                "text-anchor": "center",
+                "text-letter-spacing": 0.15,
+                "text-max-width":60,
+                "text-field": "{_name8}",
+                "text-allow-overlap": true,
+                "text-optional": true
+            },
+            "paint": {
+                "text-color": "#575859",
+                "text-halo-color": "rgba(255,255,255,0.5)",
+                "text-halo-width": 1
+            }
+        },
+        {
+            "id": "Annotations/L06/BNDA_CTY_ANNO_L06_PROE_02_POINT_BIS/label/TAIWAN",
+            "type": "symbol",
+            "source": "esri",
+            "source-layer": "BNDA_CTY_ANNO_L06_PROE_02_POINT_BIS",
+            "minzoom": 5,
+            "maxzoom": 5.89,
+            "layout": {
+                "text-font": [
+                    "Arial Italic"
+                ],
+                "text-size": 13.3333,
+                "text-anchor": "center",
+                "text-field": "{_name7}",
+                "text-allow-overlap": true,
+                "text-optional": true
+            },
+            "paint": {
+                "text-color": "#575859",
+                "text-halo-color": "rgba(255,255,255,0.5)",
+                "text-halo-width": 0.733333
+            }
+        },
+        {
+            "id": "Annotations/L06/BNDA_CTY_ANNO_L06_PROE_02_POINT_BIS/label/Non Self. Gov. + Sovreignity Unsettled_1line",
+            "type": "symbol",
+            "source": "esri",
+            "source-layer": "BNDA_CTY_ANNO_L06_PROE_02_POINT_BIS",
+            "minzoom": 5,
+            "maxzoom": 5.89,
+            "layout": {
+                "text-font": [
+                    "Open Sans Bold"
+                ],
+                "text-size": 14,
+                "text-anchor": "center",
+                "text-letter-spacing": 0.15,
+                "text-max-width": 60,
+                "text-field": "{_name6}",
+                "text-allow-overlap": true,
+                "text-optional": true
+            },
+            "paint": {
+                "text-color": "#575859",
+                "text-halo-color": "rgba(255,255,255,0.5)",
+                "text-halo-width": 1
+            }
+        },
+        {
+            "id": "Annotations/L06/BNDA_CTY_ANNO_L06_PROE_02_POINT_BIS/label/Member States AVG Surface 1 line",
+            "type": "symbol",
+            "source": "esri",
+            "source-layer": "BNDA_CTY_ANNO_L06_PROE_02_POINT_BIS",
+            "minzoom": 5,
+            "maxzoom": 5.89,
+            "layout": {
+                "text-font": [
+                    "Open Sans Bold"
+                ],
+                "text-size": 14.6667,
+                "text-anchor": "center",
+                "text-letter-spacing": 0.6,
+                "text-max-width": 60,
+                "text-field": "{_name5}",
+                "text-allow-overlap": true,
+                "text-optional": true
+            },
+            "paint": {
+                "text-color": "#575859",
+                "text-halo-color": "rgba(255,255,255,0.5)",
+                "text-halo-width": 1
+            }
+        },
+        {
+            "id": "Annotations/L06/BNDA_CTY_ANNO_L06_PROE_02_POINT_BIS/label/TANZANIA",
+            "type": "symbol",
+            "source": "esri",
+            "source-layer": "BNDA_CTY_ANNO_L06_PROE_02_POINT_BIS",
+            "minzoom": 5,
+            "maxzoom": 5.89,
+            "layout": {
+                "text-font": [
+                    "Open Sans Bold"
+                ],
+                "text-size": 14.6667,
+                "text-anchor": "center",
+                "text-letter-spacing": 0.6,
+                "text-max-width": 40,
+                "text-field": "{_name4}",
+                "text-allow-overlap": true,
+                "text-optional": true
+            },
+            "paint": {
+                "text-color": "#575859",
+                "text-halo-color": "rgba(255,255,255,0.5)",
+                "text-halo-width": 1
+            }
+        },
+        {
+            "id": "Annotations/L06/BNDA_CTY_ANNO_L06_PROE_02_POINT_BIS/label/Member States Small Surface 1 Line",
+            "type": "symbol",
+            "source": "esri",
+            "source-layer": "BNDA_CTY_ANNO_L06_PROE_02_POINT_BIS",
+            "minzoom": 5,
+            "maxzoom": 5.89,
+            "layout": {
+                "text-font": [
+                    "Open Sans Bold"
+                ],
+                "text-size": 14,
+                "text-anchor": "center",
+                "text-letter-spacing": 0.05,
+                "text-max-width": 60,
+                "text-field": "{_name3}",
+                "text-allow-overlap": true,
+                "text-optional": true
+            },
+            "paint": {
+                "text-color": "#575859",
+                "text-halo-color": "rgba(255,255,255,0.5)",
+                "text-halo-width": 1
+            }
+        },
+        {
+            "id": "Annotations/L06/BNDA_CTY_ANNO_L06_PROE_02_POINT_BIS/label/EQUATORIAL GUINEA",
+            "type": "symbol",
+            "source": "esri",
+            "source-layer": "BNDA_CTY_ANNO_L06_PROE_02_POINT_BIS",
+            "minzoom": 5,
+            "maxzoom": 5.89,
+            "layout": {
+                "text-font": [
+                    "Open Sans Bold"
+                ],
+                "text-size": 14.6667,
+                "text-anchor": "right",
+                "text-offset": [
+                    -0.0909091,
+                    0
+                ],
+                "text-letter-spacing": 0.15,
+                "text-field": "{_name2}",
+                "text-allow-overlap": true,
+                "text-optional": true
+            },
+            "paint": {
+                "text-color": "#575859",
+                "text-halo-color": "rgba(255,255,255,0.5)",
+                "text-halo-width": 1
+            }
+        },
+        {
+            "id": "Annotations/L06/BNDA_CTY_ANNO_L06_PROE_02_POINT_BIS/label/DEMOCRATIC REPUBLIC OF CONGO",
+            "type": "symbol",
+            "source": "esri",
+            "source-layer": "BNDA_CTY_ANNO_L06_PROE_02_POINT_BIS",
+            "minzoom": 5,
+            "maxzoom": 5.89,
+            "layout": {
+                "text-font": [
+                    "Open Sans Bold"
+                ],
+                "text-size": 14.6667,
+                "text-anchor": "center",
+                "text-letter-spacing": 0.6,
+                "text-max-width": 30,
+                "text-field": "{_name1}",
+                "text-allow-overlap": true,
+                "text-optional": true
+            },
+            "paint": {
+                "text-color": "#575859",
+                "text-halo-color": "rgba(255,255,255,0.5)",
+                "text-halo-width": 1
+            }
+        },
+        {
+            "id": "Annotations/L06/BNDA_CTY_ANNO_L06_PROE_02_POINT_BIS/label/CENTRAL AFRICA REPUBLIC",
+            "type": "symbol",
+            "source": "esri",
+            "source-layer": "BNDA_CTY_ANNO_L06_PROE_02_POINT_BIS",
+            "minzoom": 5,
+            "maxzoom": 5.89,
+            "layout": {
+                "text-font": [
+                    "Open Sans Bold"
+                ],
+                "text-size": 14.6667,
+                "text-anchor": "center",
+                "text-letter-spacing": 0.6,
+                "text-field": "{_name}",
+                "text-max-width": 50,
+                "text-allow-overlap": true,
+                "text-optional": true
+            },
+            "paint": {
+                "text-color": "#575859",
+                "text-halo-color": "rgba(255,255,255,0.5)",
+                "text-halo-width": 1
+            }
+        },
+        {
+            "id": "Annotations/L05/BNDA_CTY_ANNO_L05_POINT/label/DEMOCRATIC PEOPLE'S_LV05(Memeber State_AVG SURF_LV05)",
+            "type": "symbol",
+            "source": "esri",
+            "source-layer": "BNDA_CTY_ANNO_L05_POINT",
+            "minzoom": 4,
+            "maxzoom": 5,
+            "layout": {
+                "text-font": [
+                    "Open Sans Bold"
+                ],
+                "text-size": 12,
+                "text-max-width":"30",
+                "text-anchor": "left",
+                "text-justify": "left",
+                "text-letter-spacing": 0.2,
+                "text-field": "{_name29}",
+                "text-allow-overlap": true,
+                "text-optional": true
+            },
+            "paint": {
+                "text-color": "#636566",
+                "text-halo-color": "rgba(255,255,255,0.5)",
+                "text-halo-width": 1
+            }
+        },
+        {
+            "id": "Annotations/L05/BNDA_CTY_ANNO_L05_POINT/label/Memeber State_AVG SURF_1LINE_LV05",
+            "type": "symbol",
+            "source": "esri",
+            "source-layer": "BNDA_CTY_ANNO_L05_POINT",
+            "minzoom": 4,
+            "maxzoom": 5,
+            "layout": {
+                "text-font": [
+                    "Open Sans Bold"
+                ],
+                "text-size": 12,
+                "text-anchor": "center",
+                "text-letter-spacing": 0.2,
+                "text-max-width": 30,
+                "text-field": "{_name28}",
+                "text-allow-overlap": true,
+                "text-optional": true
+            },
+            "paint": {
+                "text-color": "#636566",
+                "text-halo-color": "rgba(255,255,255,0.5)",
+                "text-halo-width": 1
+            }
+        },
+        {
+            "id": "Annotations/L05/BNDA_CTY_ANNO_L05_POINT/label/UNITED KINGDOM_LV05(Memeber State_AVG SURF_LV05)",
+            "type": "symbol",
+            "source": "esri",
+            "source-layer": "BNDA_CTY_ANNO_L05_POINT",
+            "minzoom": 4,
+            "maxzoom": 5,
+            "layout": {
+                "text-font": [
+                    "Open Sans Bold"
+                ],
+                "text-size": 12,
+                "text-anchor": "center",
+                "text-max-width": 40,
+                "text-letter-spacing": 0.2,
+                "text-field": "{_name27}",
+                "text-allow-overlap": true,
+                "text-optional": true
+            },
+            "paint": {
+                "text-color": "#636566",
+                "text-halo-color": "rgba(255,255,255,0.5)",
+                "text-halo-width": 1
+            }
+        },
+        {
+            "id": "Annotations/L05/BNDA_CTY_ANNO_L05_POINT/label/TURKS AND CAICOS ISLANDS_LV05(Non Self. Gov. + Sovreignity Unsettled_LV05)",
+            "type": "symbol",
+            "source": "esri",
+            "source-layer": "BNDA_CTY_ANNO_L05_POINT",
+            "minzoom": 4,
+            "maxzoom": 5,
+            "layout": {
+                "text-font": [
+                    "Open Sans Bold"
+                ],
+                "text-size": 11.3333,
+                "text-anchor": "center",
+                "text-max-width":20,
+                "text-letter-spacing": 0.15,
+                "text-field": "{_name26}",
+                "text-allow-overlap": true,
+                "text-optional": true
+            },
+            "paint": {
+                "text-color": "#636566",
+                "text-halo-color": "rgba(255,255,255,0.5)",
+                "text-halo-width": 1
+            }
+        },
+        {
+            "id": "Annotations/L05/BNDA_CTY_ANNO_L05_POINT/label/BRUNEI_LV05(Member State_SMALL SURF_LV05)",
+            "type": "symbol",
+            "source": "esri",
+            "source-layer": "BNDA_CTY_ANNO_L05_POINT",
+            "minzoom": 4,
+            "maxzoom": 5,
+            "layout": {
+                "text-font": [
+                    "Open Sans Bold"
+                ],
+                "text-size": 12,
+                "text-anchor": "right",
+                "text-offset": [
+                    -0.111111,
+                    0.25
+                ],
+                "text-letter-spacing": 0.02,
+                "text-justify": "right",
+                "text-field": "{_name25}",
+                "text-allow-overlap": true,
+                "text-optional": true
+            },
+            "paint": {
+                "text-color": "#636566",
+                "text-halo-color": "rgba(255,255,255,0.5)",
+                "text-halo-width": 1
+            }
+        },
+        {
+            "id": "Annotations/L05/BNDA_CTY_ANNO_L05_POINT/label/HOLY SEE_LV05(Member State_SMALL SURF_LV05)",
+            "type": "symbol",
+            "source": "esri",
+            "source-layer": "BNDA_CTY_ANNO_L05_POINT",
+            "minzoom": 4,
+            "maxzoom": 5,
+            "layout": {
+                "text-font": [
+                    "Open Sans Bold"
+                ],
+                "text-size": 12,
+                "text-anchor": "center",
+                "text-field": "{_name24}",
+                "text-allow-overlap": true,
+                "text-optional": true
+            },
+            "paint": {
+                "text-color": "#636566",
+                "text-halo-color": "rgba(255,255,255,0.5)",
+                "text-halo-width": 1
+            }
+        },
+        {
+            "id": "Annotations/L05/BNDA_CTY_ANNO_L05_POINT/label/BOSNIA_LV05(Memeber State_AVG SURF_LV05)",
+            "type": "symbol",
+            "source": "esri",
+            "source-layer": "BNDA_CTY_ANNO_L05_POINT",
+            "minzoom": 4,
+            "maxzoom": 5,
+            "layout": {
+                "text-font": [
+                    "Open Sans Bold"
+                ],
+                "text-size": 12,
+                "text-anchor": "center",
+                "text-letter-spacing": 0.02,
+                "text-field": "{_name23}",
+                "text-allow-overlap": true,
+                "text-optional": true
+            },
+            "paint": {
+                "text-color": "#636566",
+                "text-halo-color": "rgba(255,255,255,0.5)",
+                "text-halo-width": 1
+            }
+        },
+        {
+            "id": "Annotations/L05/BNDA_CTY_ANNO_L05_POINT/label/TAIWAN_LV05(Special Region_LV05)",
+            "type": "symbol",
+            "source": "esri",
+            "source-layer": "BNDA_CTY_ANNO_L05_POINT",
+            "minzoom": 4,
+            "maxzoom": 5,
+            "layout": {
+                "text-font": [
+                    "Open Sans Italic"
+                ],
+                "text-size": 12,
+                "text-anchor": "center",
+                "text-field": "{_name22}",
+                "text-allow-overlap": true,
+                "text-optional": true
+            },
+            "paint": {
+                "text-color": "#4A4C4D",
+                "text-halo-color": "rgba(255,255,255,0.5)",
+                "text-halo-width": 0.733333
+            }
+        },
+        {
+            "id": "Annotations/L05/BNDA_CTY_ANNO_L05_POINT/label/PAPUA NEW GUINEA_LV05(Memeber State_AVG SURF_LV05)",
+            "type": "symbol",
+            "source": "esri",
+            "source-layer": "BNDA_CTY_ANNO_L05_POINT",
+            "minzoom": 4,
+            "maxzoom": 5,
+            "layout": {
+                "text-font": [
+                    "Open Sans Bold"
+                ],
+                "text-size": 12,
+                "text-anchor": "left",
+                "text-justify": "left",
+                "text-offset": [
+                    0.111111,
+                    0
+                ],
+                "text-letter-spacing": 0.2,
+                "text-max-width": 30,
+                "text-field": "{_name21}",
+                "text-allow-overlap": true,
+                "text-optional": true
+            },
+            "paint": {
+                "text-color": "#636566",
+                "text-halo-color": "rgba(255,255,255,0.5)",
+                "text-halo-width": 1
+            }
+        },
+        {
+            "id": "Annotations/L05/BNDA_CTY_ANNO_L05_POINT/label/Special Region_1LINE_LV05",
+            "type": "symbol",
+            "source": "esri",
+            "source-layer": "BNDA_CTY_ANNO_L05_POINT",
+            "minzoom": 4,
+            "maxzoom": 5,
+            "layout": {
+                "text-font": [
+                    "Open Sans Bold"
+                ],
+                "text-size": 12,
+                "text-anchor": "center",
+                "text-field": "{_name20}",
+                "text-allow-overlap": true,
+                "text-optional": true
+            },
+            "paint": {
+                "text-color": "#636566",
+                "text-halo-color": "rgba(255,255,255,0.5)",
+                "text-halo-width": 0.733333
+            }
+        },
+        {
+            "id": "Annotations/L05/BNDA_CTY_ANNO_L05_POINT/label/MICRONESIA_LV05_(Member State_SMALL SURF_LV05)",
+            "type": "symbol",
+            "source": "esri",
+            "source-layer": "BNDA_CTY_ANNO_L05_POINT",
+            "minzoom": 4,
+            "maxzoom": 5,
+            "layout": {
+                "text-font": [
+                    "Open Sans Bold"
+                ],
+                "text-size": 12,
+                "text-anchor": "center",
+                "text-max-width": 30,
+                "text-letter-spacing": 0.3,
+                "text-field": "{_name19}",
+                "text-allow-overlap": true,
+                "text-optional": true
+            },
+            "paint": {
+                "text-color": "#636566",
+                "text-halo-color": "rgba(255,255,255,0.5)",
+                "text-halo-width": 1
+            }
+        },
+        {
+            "id": "Annotations/L05/BNDA_CTY_ANNO_L05_POINT/label/Self. Gov. + Territories_2LINE_LV05",
+            "type": "symbol",
+            "source": "esri",
+            "source-layer": "BNDA_CTY_ANNO_L05_POINT",
+            "minzoom": 4,
+            "maxzoom": 5,
+            "layout": {
+                "text-font": [
+                    "Open Sans Regular"
+                ],
+                "text-size": 11,
+                "text-anchor": "center",
+                "text-max-width": 35,
+                "text-letter-spacing": 0.05,
+                "text-field": "{_name18}",
+                "text-allow-overlap": true,
+                "text-optional": true
+            },
+            "paint": {
+                "text-color": "#636566",
+                "text-halo-color": "rgba(255,255,255,0.5)",
+                "text-halo-width": 0.733333
+            }
+        },
+        {
+            "id": "Annotations/L05/BNDA_CTY_ANNO_L05_POINT/label/EQUATORIAL GUINEA_LV05)(Memeber State_AVG SURF_LV05)",
+            "type": "symbol",
+            "source": "esri",
+            "source-layer": "BNDA_CTY_ANNO_L05_POINT",
+            "minzoom": 4,
+            "maxzoom": 5,
+            "layout": {
+                "text-font": [
+                    "Open Sans Bold"
+                ],
+                "text-size": 12,
+                "text-anchor": "right",
+                "text-offset": [
+                    -0.111111,
+                    0
+                ],
+                "text-letter-spacing": 0.2,
+                "text-field": "{_name17}",
+                "text-allow-overlap": true,
+                "text-optional": true
+            },
+            "paint": {
+                "text-color": "#636566",
+                "text-halo-color": "rgba(255,255,255,0.5)",
+                "text-halo-width": 1
+            }
+        },
+        {
+            "id": "Annotations/L05/BNDA_CTY_ANNO_L05_POINT/label/ARUBA_CURACAO_BONAIRE_LV05(Self. Gov. + Territories_LV05)",
+            "type": "symbol",
+            "source": "esri",
+            "source-layer": "BNDA_CTY_ANNO_L05_POINT",
+            "minzoom": 4,
+            "maxzoom": 5,
+            "layout": {
+                "text-font": [
+                    "Open Sans Regular"
+                ],
+                "text-size": 9.66667,
+                "text-anchor": "center",
+                "text-letter-spacing": 0.05,
+                "text-field": "{_name16}",
+                "text-allow-overlap": true,
+                "text-optional": true
+            },
+            "paint": {
+                "text-color": "#636566",
+                "text-halo-color": "rgba(255,255,255,0.5)",
+                "text-halo-width": 0.733333
+            }
+        },
+        {
+            "id": "Annotations/L05/BNDA_CTY_ANNO_L05_POINT/label/Member State_SMALL SURF_1LINE_LV5",
+            "type": "symbol",
+            "source": "esri",
+            "source-layer": "BNDA_CTY_ANNO_L05_POINT",
+            "minzoom": 4,
+            "maxzoom": 5,
+            "layout": {
+                "text-font": [
+                    "Open Sans Bold"
+                ],
+                "text-size": 12,
+                "text-anchor": "center",
+                "text-max-width":40,
+                "text-letter-spacing": 0.2,
+                "text-field": "{_name15}",
+                "text-allow-overlap": true,
+                "text-optional": true
+            },
+            "paint": {
+                "text-color": "#636566",
+                "text-halo-color": "rgba(255,255,255,0.5)",
+                "text-halo-width": 1
+            }
+        },
+        {
+            "id": "Annotations/L05/BNDA_CTY_ANNO_L05_POINT/label/DOMINICA REP._LV05(Member State_AVG SURF)",
+            "type": "symbol",
+            "source": "esri",
+            "source-layer": "BNDA_CTY_ANNO_L05_POINT",
+            "minzoom": 4,
+            "maxzoom": 5,
+            "layout": {
+                "text-font": [
+                    "Open Sans Bold"
+                ],
+                "text-size": 12,
+                "text-anchor": "left",
+                "text-offset": [
+                    0.111111,
+                    -0.5
+                ],
+                "text-letter-spacing": 0.2,
+                "text-justify": "left",
+                "text-field": "{_name14}",
+                "text-allow-overlap": true,
+                "text-optional": true
+            },
+            "paint": {
+                "text-color": "#636566",
+                "text-halo-color": "rgba(255,255,255,0.5)",
+                "text-halo-width": 1
+            }
+        },
+        {
+            "id": "Annotations/L05/BNDA_CTY_ANNO_L05_POINT/label/Non Self. Gov. + Sovreignity Unsettled_2LINE_LV05",
+            "type": "symbol",
+            "source": "esri",
+            "source-layer": "BNDA_CTY_ANNO_L05_POINT",
+            "minzoom": 4,
+            "maxzoom": 5,
+            "layout": {
+                "text-font": [
+                    "Open Sans Bold"
+                ],
+                "text-size": 11.3333,
+                "text-anchor": "center",
+                "text-letter-spacing": 0.15,
+                "text-field": "{_name13}",
+                "text-allow-overlap": true,
+                "text-optional": true
+            },
+            "paint": {
+                "text-color": "#636566",
+                "text-halo-color": "rgba(255,255,255,0.5)",
+                "text-halo-width": 1
+            }
+        },
+        {
+            "id": "Annotations/L05/BNDA_CTY_ANNO_L05_POINT/label/Member State_LARGE SURF_1LINE_LV5",
+            "type": "symbol",
+            "source": "esri",
+            "source-layer": "BNDA_CTY_ANNO_L05_POINT",
+            "minzoom": 4,
+            "maxzoom": 5,
+            "layout": {
+                "text-font": [
+                    "Open Sans Bold"
+                ],
+                "text-size": 12,
+                "text-anchor": "center",
+                "text-letter-spacing": 2,
+                "text-max-width":100,
+                "text-field": "{_name12}",
+                "text-allow-overlap": true,
+                "text-optional": true
+            },
+            "paint": {
+                "text-color": "#636566",
+                "text-halo-color": "rgba(255,255,255,0.5)",
+                "text-halo-width": 1
+            }
+        },
+        {
+            "id": "Annotations/L05/BNDA_CTY_ANNO_L05_POINT/label/Non Self. Gov. + Sovreignity Unsettled_1LINE_LV05",
+            "type": "symbol",
+            "source": "esri",
+            "source-layer": "BNDA_CTY_ANNO_L05_POINT",
+            "minzoom": 4,
+            "maxzoom": 5,
+            "layout": {
+                "text-font": [
+                    "Open Sans Bold"
+                ],
+                "text-size": 11.3333,
+                "text-anchor": "center",
+                "text-letter-spacing": 0.15,
+                "text-max-width": 30,
+                "text-field": "{_name11}",
+                "text-allow-overlap": true,
+                "text-optional": true
+            },
+            "paint": {
+                "text-color": "#636566",
+                "text-halo-color": "rgba(255,255,255,0.5)",
+                "text-halo-width": 1
+            }
+        },
+        {
+            "id": "Annotations/L05/BNDA_CTY_ANNO_L05_POINT/label/FAROE ISLANDS_LV05(Self. Gov. + Territories_LV05)",
+            "type": "symbol",
+            "source": "esri",
+            "source-layer": "BNDA_CTY_ANNO_L05_POINT",
+            "minzoom": 4,
+            "maxzoom": 5,
+            "layout": {
+                "text-font": [
+                    "Open Sans Regular"
+                ],
+                "text-size": 11.3333,
+                "text-anchor": "center",
+                "text-letter-spacing": 0.05,
+                "text-field": "{_name10}",
+                "text-allow-overlap": true,
+                "text-optional": true
+            },
+            "paint": {
+                "text-color": "#636566",
+                "text-halo-color": "rgba(255,255,255,0.5)",
+                "text-halo-width": 0.733333
+            }
+        },
+        {
+            "id": "Annotations/L05/BNDA_CTY_ANNO_L05_POINT/label/SVAKBARD & JAN MAYEN IS_LV05(Self. Gov. + Territories_1LINE_LV05)",
+            "type": "symbol",
+            "source": "esri",
+            "source-layer": "BNDA_CTY_ANNO_L05_POINT",
+            "minzoom": 4,
+            "maxzoom": 5,
+            "layout": {
+                "text-font": [
+                    "Open Sans Regular"
+                ],
+                "text-size": 11.3333,
+                "text-anchor": "center",
+                "text-letter-spacing": 0.05,
+                "text-field": "{_name9}",
+                "text-allow-overlap": true,
+                "text-optional": true
+            },
+            "paint": {
+                "text-color": "#636566",
+                "text-halo-color": "rgba(255,255,255,0.5)",
+                "text-halo-width": 0.733333
+            }
+        },
+        {
+            "id": "Annotations/L05/BNDA_CTY_ANNO_L05_POINT/label/Self. Gov. + Territories_1LINE_LV05",
+            "type": "symbol",
+            "source": "esri",
+            "source-layer": "BNDA_CTY_ANNO_L05_POINT",
+            "minzoom": 4,
+            "maxzoom": 5,
+            "layout": {
+                "text-font": [
+                    "Open Sans Regular"
+                ],
+                "text-size": 11.3333,
+                "text-anchor": "center",
+                "text-letter-spacing": 0.05,
+                "text-max-width": 40,
+                "text-field": "{_name8}",
+                "text-allow-overlap": true,
+                "text-optional": true
+            },
+            "paint": {
+                "text-color": "#636566",
+                "text-halo-color": "rgba(255,255,255,0.5)",
+                "text-halo-width": 0.733333
+            }
+        },
+        {
+            "id": "Annotations/L05/BNDA_CTY_ANNO_L05_POINT/label/Special Region_LV05",
+            "type": "symbol",
+            "source": "esri",
+            "source-layer": "BNDA_CTY_ANNO_L05_POINT",
+            "minzoom": 4,
+            "maxzoom": 5,
+            "layout": {
+                "text-font": [
+                    "Open Sans Bold"
+                ],
+                "text-size": 12,
+                "text-anchor": "center",
+                "text-field": "{_name7}",
+                "text-allow-overlap": true,
+                "text-optional": true
+            },
+            "paint": {
+                "text-color": "#636566",
+                "text-halo-color": "rgba(255,255,255,0.5)",
+                "text-halo-width": 0.733333
+            }
+        },
+        {
+            "id": "Annotations/L05/BNDA_CTY_ANNO_L05_POINT/label/Occupied Palestinian_LV05",
+            "type": "symbol",
+            "source": "esri",
+            "source-layer": "BNDA_CTY_ANNO_L05_POINT",
+            "minzoom": 4,
+            "maxzoom": 5,
+            "layout": {
+                "text-font": [
+                    "Open Sans Semibold Regular"
+                ],
+                "text-size": 8,
+                "text-anchor": "center",
+                "text-field": "{_name6}",
+                "text-allow-overlap": true,
+                "text-optional": true
+            },
+            "paint": {
+                "text-color": "#636566",
+                "text-halo-color": "rgba(255,255,255,0.5)",
+                "text-halo-width": 0.733333
+            }
+        },
+        {
+            "id": "Annotations/L05/BNDA_CTY_ANNO_L05_POINT/label/Non Self. Gov. + Sovreignity Unsettled_LV05",
+            "type": "symbol",
+            "source": "esri",
+            "source-layer": "BNDA_CTY_ANNO_L05_POINT",
+            "minzoom": 4,
+            "maxzoom": 5,
+            "layout": {
+                "text-font": [
+                    "Open Sans Bold"
+                ],
+                "text-size": 11.3333,
+                "text-anchor": "center",
+                "text-letter-spacing": 0.15,
+                "text-field": "{_name5}",
+                "text-allow-overlap": true,
+                "text-optional": true
+            },
+            "paint": {
+                "text-color": "#636566",
+                "text-halo-color": "rgba(255,255,255,0.5)",
+                "text-halo-width": 1
+            }
+        },
+        {
+            "id": "Annotations/L05/BNDA_CTY_ANNO_L05_POINT/label/ANTARCTICA_LV05",
+            "type": "symbol",
+            "source": "esri",
+            "source-layer": "BNDA_CTY_ANNO_L05_POINT",
+            "minzoom": 4,
+            "maxzoom": 5,
+            "layout": {
+                "text-font": [
+                    "Arial Narrow Italic"
+                ],
+                "text-size": 15.3333,
+                "text-anchor": "center",
+                "text-letter-spacing": 5,
+                "text-field": "{_name4}",
+                "text-allow-overlap": true,
+                "text-optional": true
+            },
+            "paint": {
+                "text-color": "#636566",
+                "text-halo-color": "rgba(255,255,255,0.5)",
+                "text-halo-width": 1
+            }
+        },
+        {
+            "id": "Annotations/L05/BNDA_CTY_ANNO_L05_POINT/label/Member State_SMALL SURF_LV05",
+            "type": "symbol",
+            "source": "esri",
+            "source-layer": "BNDA_CTY_ANNO_L05_POINT",
+            "minzoom": 4,
+            "maxzoom": 5,
+            "layout": {
+                "text-font": [
+                    "Open Sans Bold"
+                ],
+                "text-size": 12,
+                "text-anchor": "center",
+                "text-letter-spacing": 0.1,
+                "text-field": "{_name3}",
+                "text-allow-overlap": true,
+                "text-optional": true
+            },
+            "paint": {
+                "text-color": "#636566",
+                "text-halo-color": "rgba(255,255,255,0.5)",
+                "text-halo-width": 1
+            }
+        },
+        {
+            "id": "Annotations/L05/BNDA_CTY_ANNO_L05_POINT/label/Self. Gov. + Territories_LV05",
+            "type": "symbol",
+            "source": "esri",
+            "source-layer": "BNDA_CTY_ANNO_L05_POINT",
+            "minzoom": 4,
+            "maxzoom": 5,
+            "layout": {
+                "text-font": [
+                    "Open Sans Regular"
+                ],
+                "text-size": 11,
+                "text-anchor": "center",
+                "text-letter-spacing": 0.05,
+                "text-field": "{_name2}",
+                "text-allow-overlap": true,
+                "text-optional": true
+            },
+            "paint": {
+                "text-color": "#636566",
+                "text-halo-color": "rgba(255,255,255,0.5)",
+                "text-halo-width": 0.733333
+            }
+        },
+        {
+            "id": "Annotations/L05/BNDA_CTY_ANNO_L05_POINT/label/Member State_LARGE SURF_LV05",
+            "type": "symbol",
+            "source": "esri",
+            "source-layer": "BNDA_CTY_ANNO_L05_POINT",
+            "minzoom": 4,
+            "maxzoom": 5,
+            "layout": {
+                "text-font": [
+                    "Open Sans Bold"
+                ],
+                "text-size": 12,
+                "text-anchor": "center",
+                "text-letter-spacing": 2,
+                "text-field": "{_name1}",
+                "text-allow-overlap": true,
+                "text-optional": true
+            },
+            "paint": {
+                "text-color": "#636566",
+                "text-halo-color": "rgba(255,255,255,0.5)",
+                "text-halo-width": 1
+            }
+        },
+        {
+            "id": "Annotations/L05/BNDA_CTY_ANNO_L05_POINT/label/Memeber State_AVG SURF_LV05",
+            "type": "symbol",
+            "source": "esri",
+            "source-layer": "BNDA_CTY_ANNO_L05_POINT",
+            "minzoom": 4,
+            "maxzoom": 5,
+            "layout": {
+                "text-font": [
+                    "Open Sans Bold"
+                ],
+                "text-size": 12,
+                "text-anchor": "center",
+                "text-letter-spacing": 0.2,
+                "text-field": "{_name}",
+                "text-allow-overlap": true,
+                "text-optional": true
+            },
+            "paint": {
+                "text-color": "#636566",
+                "text-halo-color": "rgba(255,255,255,0.5)",
+                "text-halo-width": 1
+            }
+        },
+        {
+            "id": "Annotations/L05/WBYA_ANNO_L05_PROE_02_POINT/label/Water Bodies_LV05",
+            "type": "symbol",
+            "source": "esri",
+            "source-layer": "WBYA_ANNO_L05_PROE_02_POINT",
+            "minzoom": 4,
+            "maxzoom": 5,
+            "layout": {
+                "text-font": [
+                    "Open Sans Bold Italic"
+                ],
+                "text-size": 8,
+                "text-anchor": "center",
+                "text-letter-spacing": 0.3,
+                "text-field": "{_name}",
+                "text-allow-overlap": true,
+                "text-optional": true
+            },
+            "paint": {
+                "text-color": "#66A2CC",
+                "text-halo-color": "rgba(252,252,250,0.75)",
+                "text-halo-width": 1
+            }
+        },
+        {
+            "id": "Annotations/L05/PHYP_ANNO_L05_PROE_02_POINT_/label/Sea_1LINE_LV05",
+            "type": "symbol",
+            "source": "esri",
+            "source-layer": "PHYP_ANNO_L05_PROE_02_POINT_",
+            "minzoom": 4,
+            "maxzoom": 5,
+            "layout": {
+                "text-font": [
+                    "Open Sans Semibold Italic"
+                ],
+                "text-size": 12,
+                "text-anchor": "center",
+                "text-max-width":40,
+                "text-letter-spacing": 0.3,
+                "text-field": "{_name8}",
+                "text-allow-overlap": true,
+                "text-optional": true
+            },
+            "paint": {
+                "text-color": "#6094BF",
+                "text-halo-color": "rgba(206,228,242,0.7)",
+                "text-halo-width": 0.8
+            }
+        },
+        {
+            "id": "Annotations/L05/PHYP_ANNO_L05_PROE_02_POINT_/label/Ocean_1LINE_LV05",
+            "type": "symbol",
+            "source": "esri",
+            "source-layer": "PHYP_ANNO_L05_PROE_02_POINT_",
+            "minzoom": 4,
+            "maxzoom": 5,
+            "layout": {
+                "text-font": [
+                    "Open Sans Semibold Italic"
+                ],
+                "text-size": 18.6667,
+                "text-anchor": "center",
+                "text-max-width": 60,
+                "text-letter-spacing": 1,
+                "text-field": "{_name7}",
+                "text-allow-overlap": true,
+                "text-optional": true
+            },
+            "paint": {
+                "text-color": "#6094BF",
+                "text-halo-color": "rgba(206,228,242,0.5)",
+                "text-halo-width": 1
+            }
+        },
+        {
+            "id": "Annotations/L05/PHYP_ANNO_L05_PROE_02_POINT_/label/Islands_2LINE_LV04",
+            "type": "symbol",
+            "source": "esri",
+            "source-layer": "PHYP_ANNO_L05_PROE_02_POINT_",
+            "minzoom": 4,
+            "maxzoom": 5,
+            "layout": {
+                "text-font": [
+                    "Open Sans Semibold Italic"
+                ],
+                "text-size": 8,
+                "text-anchor": "center",
+                "text-letter-spacing": 0.3,
+                "text-max-width": 20,
+                "text-field": "{_name6}",
+                "text-allow-overlap": true,
+                "text-optional": true
+            },
+            "paint": {
+                "text-color": "#717E85",
+                "text-halo-color": "rgba(206,228,242,0.7)",
+                "text-halo-width": 0.733333
+            }
+        },
+        {
+            "id": "Annotations/L05/PHYP_ANNO_L05_PROE_02_POINT_/label/Islands_1LINE_LV04",
+            "type": "symbol",
+            "source": "esri",
+            "source-layer": "PHYP_ANNO_L05_PROE_02_POINT_",
+            "minzoom": 4,
+            "maxzoom": 5,
+            "layout": {
+                "text-font": [
+                    "Open Sans Semibold Italic"
+                ],
+                "text-size": 8,
+                "text-anchor": "center",
+                "text-letter-spacing": 0.3,
+                "text-max-width": 30,
+                "text-field": "{_name5}",
+                "text-allow-overlap": true,
+                "text-optional": true
+            },
+            "paint": {
+                "text-color": "#717E85",
+                "text-halo-color": "rgba(206,228,242,0.7)",
+                "text-halo-width": 0.733333
+            }
+        },
+        {
+            "id": "Annotations/L05/PHYP_ANNO_L05_PROE_02_POINT_/label/Islands_LV04",
+            "type": "symbol",
+            "source": "esri",
+            "source-layer": "PHYP_ANNO_L05_PROE_02_POINT_",
+            "minzoom": 4,
+            "maxzoom": 5,
+            "layout": {
+                "text-font": [
+                    "Open Sans Semibold Italic"
+                ],
+                "text-size": 8,
+                "text-anchor": "center",
+                "text-letter-spacing": 0.3,
+                "text-field": "{_name4}",
+                "text-allow-overlap": true,
+                "text-optional": true
+            },
+            "paint": {
+                "text-color": "#717E85",
+                "text-halo-color": "rgba(206,228,242,0.7)",
+                "text-halo-width": 0.733333
+            }
+        },
+        {
+            "id": "Annotations/L05/PHYP_ANNO_L05_PROE_02_POINT_/label/Gulfs and Bays_LV05",
+            "type": "symbol",
+            "source": "esri",
+            "source-layer": "PHYP_ANNO_L05_PROE_02_POINT_",
+            "minzoom": 4,
+            "maxzoom": 5,
+            "layout": {
+                "text-font": [
+                    "Open Sans Semibold Italic"
+                ],
+                "text-size": 14.6667,
+                "text-anchor": "center",
+                "text-letter-spacing": 0.3,
+                "text-field": "{_name3}",
+                "text-allow-overlap": true,
+                "text-optional": true
+            },
+            "paint": {
+                "text-color": "#6094BF",
+                "text-halo-color": "rgba(206,228,242,0.7)",
+                "text-halo-width": 0.733333
+            }
+        },
+        {
+            "id": "Annotations/L05/PHYP_ANNO_L05_PROE_02_POINT_/label/Mediterranean_LV05",
+            "type": "symbol",
+            "source": "esri",
+            "source-layer": "PHYP_ANNO_L05_PROE_02_POINT_",
+            "minzoom": 4,
+            "maxzoom": 5,
+            "layout": {
+                "text-font": [
+                    "Open Sans Semibold Italic"
+                ],
+                "text-size": 14,
+                "text-anchor": "center",
+                "text-max-width": 30,
+                "text-letter-spacing": 0.3,
+                "text-field": "{_name2}",
+                "text-allow-overlap": true,
+                "text-optional": true
+            },
+            "paint": {
+                "text-color": "#6094BF",
+                "text-halo-color": "rgba(206,228,242,0.7)",
+                "text-halo-width": 0.733333
+            }
+        },
+        {
+            "id": "Annotations/L05/PHYP_ANNO_L05_PROE_02_POINT_/label/Sea_LV05",
+            "type": "symbol",
+            "source": "esri",
+            "source-layer": "PHYP_ANNO_L05_PROE_02_POINT_",
+            "minzoom": 4,
+            "maxzoom": 5,
+            "layout": {
+                "text-font": [
+                    "Open Sans Semibold Italic"
+                ],
+                "text-size": 12,
+                "text-anchor": "center",
+                "text-letter-spacing": 0.1,
+                "text-field": "{_name1}",
+                "text-allow-overlap": true,
+                "text-optional": true
+            },
+            "paint": {
+                "text-color": "#6094BF",
+                "text-halo-color": "rgba(206,228,242,0.7)",
+                "text-halo-width": 0.8
+            }
+        },
+        {
+            "id": "Annotations/L05/PHYP_ANNO_L05_PROE_02_POINT_/label/Ocean_LV05",
+            "type": "symbol",
+            "source": "esri",
+            "source-layer": "PHYP_ANNO_L05_PROE_02_POINT_",
+            "minzoom": 4,
+            "maxzoom": 5,
+            "layout": {
+                "text-font": [
+                    "Open Sans Semibold Italic"
+                ],
+                "text-size": 18.6667,
+                "text-anchor": "center",
+                "text-letter-spacing": 1,
+                "text-field": "{_name}",
+                "text-max-width": 60,
+                "text-allow-overlap": true,
+                "text-optional": true
+            },
+            "paint": {
+                "text-color": "#6094BF",
+                "text-halo-color": "rgba(206,228,242,0.5)",
+                "text-halo-width": 1
+            }
+        },
+        {
+            "id": "Annotations/L04/BNDA_CTY_ANNO_L04_POINT/label/SOUTH GEORGIA_LV04(Self. Gov. + Territories_LV04)",
+            "type": "symbol",
+            "source": "esri",
+            "source-layer": "BNDA_CTY_ANNO_L04_POINT",
+            "minzoom": 3,
+            "maxzoom": 4,
+            "layout": {
+                "text-font": [
+                    "Open Sans Regular"
+                ],
+                "text-size": 9,
+                "text-anchor": "center",
+                "text-letter-spacing": 0.05,
+                "text-max-width": 20,
+                "text-field": "{_name24}",
+                "text-allow-overlap": true,
+                "text-optional": true
+            },
+            "paint": {
+                "text-color": "#6E7780",
+                "text-halo-color": "rgba(250,251,252,0.5)",
+                "text-halo-width": 0.733333
+            }
+        },
+        {
+            "id": "Annotations/L04/BNDA_CTY_ANNO_L04_POINT/label/MARSHAL ISLANDS_LV04(Member State_SMALL SURF_LV04)",
+            "type": "symbol",
+            "source": "esri",
+            "source-layer": "BNDA_CTY_ANNO_L04_POINT",
+            "minzoom": 3,
+            "maxzoom": 4,
+            "layout": {
+                "text-font": [
+                    "Open Sans Bold"
+                ],
+                "text-size": 9.66667,
+                "text-anchor": "center",
+                "text-letter-spacing": 0.1,
+                "text-max-width":30,
+                "text-field": "{_name23}",
+                "text-allow-overlap": true,
+                "text-optional": true
+            },
+            "paint": {
+                "text-color": "#6E7780",
+                "text-halo-color": "rgba(250,251,252,0.5)",
+                "text-halo-width": 0.733333
+            }
+        },
+        {
+            "id": "Annotations/L04/BNDA_CTY_ANNO_L04_POINT/label/SAINT HELENA_LV04(Non Self. Gov. + Sovreignity Unsettled_LV04)",
+            "type": "symbol",
+            "source": "esri",
+            "source-layer": "BNDA_CTY_ANNO_L04_POINT",
+            "minzoom": 3,
+            "maxzoom": 4,
+            "layout": {
+                "text-font": [
+                    "Open Sans Bold"
+                ],
+                "text-size": 9.33333,
+                "text-anchor": "center",
+                "text-letter-spacing": 0.15,
+                "text-field": "{_name22}",
+                "text-allow-overlap": true,
+                "text-optional": true
+            },
+            "paint": {
+                "text-color": "#6E7780",
+                "text-halo-color": "rgba(250,251,252,0.5)",
+                "text-halo-width": 0.733333
+            }
+        },
+        {
+            "id": "Annotations/L04/BNDA_CTY_ANNO_L04_POINT/label/HEARD ISL & MC DONALD IS_LV04(Self. Gov. + Territories_LV04)",
+            "type": "symbol",
+            "source": "esri",
+            "source-layer": "BNDA_CTY_ANNO_L04_POINT",
+            "minzoom": 3,
+            "maxzoom": 4,
+            "layout": {
+                "text-font": [
+                    "Open Sans Regular"
+                ],
+                "text-size": 9,
+                "text-anchor": "center",
+                "text-letter-spacing": 0.05,
+                "text-field": "{_name21}",
+                "text-allow-overlap": true,
+                "text-optional": true
+            },
+            "paint": {
+                "text-color": "#6E7780",
+                "text-halo-color": "rgba(250,251,252,0.5)",
+                "text-halo-width": 0.733333
+            }
+        },
+        {
+            "id": "Annotations/L04/BNDA_CTY_ANNO_L04_POINT/label/NORTHERN MARIANA IS._LV04(Self. Gov. + Territories_LV04)",
+            "type": "symbol",
+            "source": "esri",
+            "source-layer": "BNDA_CTY_ANNO_L04_POINT",
+            "minzoom": 3,
+            "maxzoom": 4,
+            "layout": {
+                "text-font": [
+                    "Open Sans Regular"
+                ],
+                "text-size": 9,
+                "text-anchor": "center",
+                "text-max-width": 15,
+                "text-letter-spacing": 0.05,
+                "text-field": "{_name20}",
+                "text-allow-overlap": true,
+                "text-optional": true
+            },
+            "paint": {
+                "text-color": "#6E7780",
+                "text-halo-color": "rgba(250,251,252,0.5)",
+                "text-halo-width": 0.733333
+            }
+        },
+        {
+            "id": "Annotations/L04/BNDA_CTY_ANNO_L04_POINT/label/BRUNEI DARUSSALAM_LV04(Memeber State_SMALL SURF_LV04)",
+            "type": "symbol",
+            "source": "esri",
+            "source-layer": "BNDA_CTY_ANNO_L04_POINT",
+            "minzoom": 3,
+            "maxzoom": 4,
+            "layout": {
+                "text-font": [
+                    "Open Sans Bold"
+                ],
+                "text-size": 9.66667,
+                "text-anchor": "center",
+                "text-letter-spacing": 0.1,
+                "text-field": "{_name19}",
+                "text-allow-overlap": true,
+                "text-optional": true
+            },
+            "paint": {
+                "text-color": "#6E7780",
+                "text-halo-color": "rgba(250,251,252,0.5)",
+                "text-halo-width": 0.733333
+            }
+        },
+        {
+            "id": "Annotations/L04/BNDA_CTY_ANNO_L04_POINT/label/PAPUA NEW GUINEA_LV04(Memeber State_AVG SURF_LV04)",
+            "type": "symbol",
+            "source": "esri",
+            "source-layer": "BNDA_CTY_ANNO_L04_POINT",
+            "minzoom": 3,
+            "maxzoom": 4,
+            "layout": {
+                "text-font": [
+                    "Open Sans Bold"
+                ],
+                "text-size": 9.66667,
+                "text-anchor": "left",
+                "text-justify": "left",
+                "text-offset": [
+                    0.137931,
+                    0
+                ],
+                "text-letter-spacing": 0.1,
+                "text-field": "{_name18}",
+                "text-allow-overlap": true,
+                "text-optional": true
+            },
+            "paint": {
+                "text-color": "#6E7780",
+                "text-halo-color": "rgba(250,251,252,0.5)",
+                "text-halo-width": 0.733333
+            }
+        },
+        {
+            "id": "Annotations/L04/BNDA_CTY_ANNO_L04_POINT/label/MALAYSIA_LV04(Memeber State_AVG SURF_LV04)",
+            "type": "symbol",
+            "source": "esri",
+            "source-layer": "BNDA_CTY_ANNO_L04_POINT",
+            "minzoom": 3,
+            "maxzoom": 4,
+            "layout": {
+                "text-font": [
+                    "Open Sans Bold"
+                ],
+                "text-size": 9.66667,
+                "text-anchor": "center",
+                "text-letter-spacing": 0.02,
+                "text-max-width": 50,
+                "text-field": "{_name17}",
+                "text-allow-overlap": true,
+                "text-optional": true
+            },
+            "paint": {
+                "text-color": "#6E7780",
+                "text-halo-color": "rgba(250,251,252,0.5)",
+                "text-halo-width": 0.733333
+            }
+        },
+        {
+            "id": "Annotations/L04/BNDA_CTY_ANNO_L04_POINT/label/DEM PEOPLE'S REP. OF KOREA_LV04(Memeber State_AVG SURF_LV04)",
+            "type": "symbol",
+            "source": "esri",
+            "source-layer": "BNDA_CTY_ANNO_L04_POINT",
+            "minzoom": 3,
+            "maxzoom": 4,
+            "layout": {
+                "text-font": [
+                    "Open Sans Bold"
+                ],
+                "text-size": 9.66667,
+                "text-anchor": "left",
+                "text-justify": "left",
+                "text-offset": [
+                    0.137931,
+                    0
+                ],
+                "text-letter-spacing": 0.1,
+                "text-field": "{_name16}",
+                "text-allow-overlap": true,
+                "text-optional": true
+            },
+            "paint": {
+                "text-color": "#6E7780",
+                "text-halo-color": "rgba(250,251,252,0.5)",
+                "text-halo-width": 0.733333
+            }
+        },
+        {
+            "id": "Annotations/L04/BNDA_CTY_ANNO_L04_POINT/label/IRAN_LV04(Memeber State_AVG SURF_LV04)",
+            "type": "symbol",
+            "source": "esri",
+            "source-layer": "BNDA_CTY_ANNO_L04_POINT",
+            "minzoom": 3,
+            "maxzoom": 4,
+            "layout": {
+                "text-font": [
+                    "Open Sans Bold"
+                ],
+                "text-size": 9.66667,
+                "text-anchor": "center",
+                "text-letter-spacing": 0.1,
+                "text-field": "{_name15}",
+                "text-allow-overlap": true,
+                "text-optional": true
+            },
+            "paint": {
+                "text-color": "#6E7780",
+                "text-halo-color": "rgba(250,251,252,0.5)",
+                "text-halo-width": 0.733333
+            }
+        },
+        {
+            "id": "Annotations/L04/BNDA_CTY_ANNO_L04_POINT/label/EQUATORIAL GUINEA_LV04(Memeber State_AVG SURF_LV04)",
+            "type": "symbol",
+            "source": "esri",
+            "source-layer": "BNDA_CTY_ANNO_L04_POINT",
+            "minzoom": 3,
+            "maxzoom": 4,
+            "layout": {
+                "text-font": [
+                    "Open Sans Bold"
+                ],
+                "text-size": 9.66667,
+                "text-anchor": "right",
+                "text-offset": [
+                    -0.137931,
+                    0
+                ],
+                "text-letter-spacing": 0.1,
+                "text-field": "{_name14}",
+                "text-allow-overlap": true,
+                "text-optional": true
+            },
+            "paint": {
+                "text-color": "#6E7780",
+                "text-halo-color": "rgba(250,251,252,0.5)",
+                "text-halo-width": 0.733333
+            }
+        },
+        {
+            "id": "Annotations/L04/BNDA_CTY_ANNO_L04_POINT/label/Memeber State_AVG SURF_1 LINE_LV04",
+            "type": "symbol",
+            "source": "esri",
+            "source-layer": "BNDA_CTY_ANNO_L04_POINT",
+            "minzoom": 3,
+            "maxzoom": 4,
+            "layout": {
+                "text-font": [
+                    "Open Sans Bold"
+                ],
+                "text-size": 9.66667,
+                "text-anchor": "center",
+                "text-letter-spacing": 0.1,
+                "text-field": "{_name13}",
+                "text-allow-overlap": true,
+                "text-optional": true
+            },
+            "paint": {
+                "text-color": "#6E7780",
+                "text-halo-color": "rgba(250,251,252,0.5)",
+                "text-halo-width": 0.733333
+            }
+        },
+        {
+            "id": "Annotations/L04/BNDA_CTY_ANNO_L04_POINT/label/SYRIAN ARAB REP._LV04(Memeber State_AVG SURF_LV04)",
+            "type": "symbol",
+            "source": "esri",
+            "source-layer": "BNDA_CTY_ANNO_L04_POINT",
+            "minzoom": 3,
+            "maxzoom": 4,
+            "layout": {
+                "text-font": [
+                    "Open Sans Bold"
+                ],
+                "text-size": 9.66667,
+                "text-anchor": "left",
+                "text-offset": [
+                    0.137931,
+                    0
+                ],
+                "text-letter-spacing": 0.1,
+                "text-field": "{_name12}",
+                "text-allow-overlap": true,
+                "text-optional": true
+            },
+            "paint": {
+                "text-color": "#6E7780",
+                "text-halo-color": "rgba(250,251,252,0.5)",
+                "text-halo-width": 0.733333
+            }
+        },
+        {
+            "id": "Annotations/L04/BNDA_CTY_ANNO_L04_POINT/label/BOSNIA AND HERZEGOVINA_LV04(Memeber State_AVG SURF)",
+            "type": "symbol",
+            "source": "esri",
+            "source-layer": "BNDA_CTY_ANNO_L04_POINT",
+            "minzoom": 3,
+            "maxzoom": 4,
+            "layout": {
+                "text-font": [
+                    "Open Sans Bold"
+                ],
+                "text-size": 9.66667,
+                "text-anchor": "right",
+                "text-offset": [
+                    -0.137931,
+                    0
+                ],
+                "text-letter-spacing": 0.1,
+                "text-field": "{_name11}",
+                "text-allow-overlap": true,
+                "text-optional": true
+            },
+            "paint": {
+                "text-color": "#6E7780",
+                "text-halo-color": "rgba(250,251,252,0.5)",
+                "text-halo-width": 0.733333
+            }
+        },
+        {
+            "id": "Annotations/L04/BNDA_CTY_ANNO_L04_POINT/label/Non Self. Gov. + Sovreignity Unsettled_1LINE_LV04",
+            "type": "symbol",
+            "source": "esri",
+            "source-layer": "BNDA_CTY_ANNO_L04_POINT",
+            "minzoom": 3,
+            "maxzoom": 4,
+            "layout": {
+                "text-font": [
+                    "Open Sans Bold"
+                ],
+                "text-size": 9.33333,
+                "text-anchor": "center",
+                "text-max-width": 50,
+                "text-letter-spacing": 0.15,
+                "text-field": "{_name10}",
+                "text-allow-overlap": true,
+                "text-optional": true
+            },
+            "paint": {
+                "text-color": "#6E7780",
+                "text-halo-color": "rgba(250,251,252,0.5)",
+                "text-halo-width": 0.733333
+            }
+        },
+        {
+            "id": "Annotations/L04/BNDA_CTY_ANNO_L04_POINT/label/Self. Gov. + Territories_1 LINE_LV04",
+            "type": "symbol",
+            "source": "esri",
+            "source-layer": "BNDA_CTY_ANNO_L04_POINT",
+            "minzoom": 3,
+            "maxzoom": 4,
+            "layout": {
+                "text-font": [
+                    "Open Sans Regular"
+                ],
+                "text-size": 9,
+                "text-anchor": "center",
+                "text-letter-spacing": 0.05,
+                "text-field": "{_name9}",
+                "text-allow-overlap": true,
+                "text-optional": true
+            },
+            "paint": {
+                "text-color": "#6E7780",
+                "text-halo-color": "rgba(250,251,252,0.5)",
+                "text-halo-width": 0.733333
+            }
+        },
+        {
+            "id": "Annotations/L04/BNDA_CTY_ANNO_L04_POINT/label/Member State_SMALL SURF_1 LINE_LV04",
+            "type": "symbol",
+            "source": "esri",
+            "source-layer": "BNDA_CTY_ANNO_L04_POINT",
+            "minzoom": 3,
+            "maxzoom": 4,
+            "layout": {
+                "text-font": [
+                    "Open Sans Bold"
+                ],
+                "text-size": 9.66667,
+                "text-anchor": "center",
+                "text-max-width": 60,
+                "text-letter-spacing": 0.1,
+                "text-field": "{_name8}",
+                "text-allow-overlap": true,
+                "text-optional": true
+            },
+            "paint": {
+                "text-color": "#6E7780",
+                "text-halo-color": "rgba(250,251,252,0.5)",
+                "text-halo-width": 0.733333
+            }
+        },
+        {
+            "id": "Annotations/L04/BNDA_CTY_ANNO_L04_POINT/label/DOMINICA REP._LV04(Member State_AVG SURF)",
+            "type": "symbol",
+            "source": "esri",
+            "source-layer": "BNDA_CTY_ANNO_L04_POINT",
+            "minzoom": 3,
+            "maxzoom": 4,
+            "layout": {
+                "text-font": [
+                    "Open Sans Bold"
+                ],
+                "text-size": 9.66667,
+                "text-anchor": "left",
+                "text-offset": [
+                    -0.5,
+                    -0.5
+                ],
+                "text-letter-spacing": 0.1,
+                "text-justify": "left",
+                "text-field": "{_name7}",
+                "text-allow-overlap": true,
+                "text-optional": true
+            },
+            "paint": {
+                "text-color": "#6E7780",
+                "text-halo-color": "rgba(250,251,252,0.5)",
+                "text-halo-width": 0.733333
+            }
+        },
+        {
+            "id": "Annotations/L04/BNDA_CTY_ANNO_L04_POINT/label/Self. Gov. + Territories_2 LINE_LV04",
+            "type": "symbol",
+            "source": "esri",
+            "source-layer": "BNDA_CTY_ANNO_L04_POINT",
+            "minzoom": 3,
+            "maxzoom": 4,
+            "layout": {
+                "text-font": [
+                    "Open Sans Regular"
+                ],
+                "text-size": 9,
+                "text-anchor": "center",
+                "text-max-width": 15,
+                "text-letter-spacing": 0.05,
+                "text-field": "{_name6}",
+                "text-allow-overlap": true,
+                "text-optional": true
+            },
+            "paint": {
+                "text-color": "#6E7780",
+                "text-halo-color": "rgba(250,251,252,0.5)",
+                "text-halo-width": 0.733333
+            }
+        },
+        {
+            "id": "Annotations/L04/BNDA_CTY_ANNO_L04_POINT/label/Non Self. Gov. + Sovreignity Unsettled_LV04",
+            "type": "symbol",
+            "source": "esri",
+            "source-layer": "BNDA_CTY_ANNO_L04_POINT",
+            "minzoom": 3,
+            "maxzoom": 4,
+            "layout": {
+                "text-font": [
+                    "Open Sans Bold"
+                ],
+                "text-size": 9.33333,
+                "text-anchor": "center",
+                "text-letter-spacing": 0.15,
+                "text-field": "{_name5}",
+                "text-allow-overlap": true,
+                "text-optional": true
+            },
+            "paint": {
+                "text-color": "#6E7780",
+                "text-halo-color": "rgba(250,251,252,0.5)",
+                "text-halo-width": 0.733333
+            }
+        },
+        {
+            "id": "Annotations/L04/BNDA_CTY_ANNO_L04_POINT/label/ANTARCTICA_LV04",
+            "type": "symbol",
+            "source": "esri",
+            "source-layer": "BNDA_CTY_ANNO_L04_POINT",
+            "minzoom": 3,
+            "maxzoom": 4,
+            "layout": {
+                "text-font": [
+                    "Arial Narrow Italic"
+                ],
+                "text-size": 12,
+                "text-anchor": "center",
+                "text-letter-spacing": 6,
+                "text-field": "{_name4}",
+                "text-allow-overlap": true,
+                "text-optional": true
+            },
+            "paint": {
+                "text-color": "#6E7780",
+                "text-halo-color": "rgba(250,251,252,0.5)",
+                "text-halo-width": 0.733333
+            }
+        },
+        {
+            "id": "Annotations/L04/BNDA_CTY_ANNO_L04_POINT/label/Member State_SMALL SURF_LV04",
+            "type": "symbol",
+            "source": "esri",
+            "source-layer": "BNDA_CTY_ANNO_L04_POINT",
+            "minzoom": 3,
+            "maxzoom": 4,
+            "layout": {
+                "text-font": [
+                    "Open Sans Bold"
+                ],
+                "text-size": 9.66667,
+                "text-anchor": "center",
+                "text-letter-spacing": 0.1,
+                "text-field": "{_name3}",
+                "text-allow-overlap": true,
+                "text-optional": true
+            },
+            "paint": {
+                "text-color": "#6E7780",
+                "text-halo-color": "rgba(250,251,252,0.5)",
+                "text-halo-width": 0.733333
+            }
+        },
+        {
+            "id": "Annotations/L04/BNDA_CTY_ANNO_L04_POINT/label/Self. Gov. + Territories_LV04",
+            "type": "symbol",
+            "source": "esri",
+            "source-layer": "BNDA_CTY_ANNO_L04_POINT",
+            "minzoom": 3,
+            "maxzoom": 4,
+            "layout": {
+                "text-font": [
+                    "Open Sans Regular"
+                ],
+                "text-size": 9,
+                "text-anchor": "center",
+                "text-letter-spacing": 0.05,
+                "text-field": "{_name2}",
+                "text-allow-overlap": true,
+                "text-optional": true
+            },
+            "paint": {
+                "text-color": "#6E7780",
+                "text-halo-color": "rgba(250,251,252,0.5)",
+                "text-halo-width": 0.733333
+            }
+        },
+        {
+            "id": "Annotations/L04/BNDA_CTY_ANNO_L04_POINT/label/Member State_LARGE SURF_LV04",
+            "type": "symbol",
+            "source": "esri",
+            "source-layer": "BNDA_CTY_ANNO_L04_POINT",
+            "minzoom": 3,
+            "maxzoom": 4,
+            "layout": {
+                "text-font": [
+                    "Open Sans Bold"
+                ],
+                "text-size": 9.66667,
+                "text-anchor": "center",
+                "text-max-width": 60,
+                "text-letter-spacing": 1.5,
+                "text-field": "{_name1}",
+                "text-allow-overlap": true,
+                "text-optional": true
+            },
+            "paint": {
+                "text-color": "#6E7780",
+                "text-halo-color": "rgba(250,251,252,0.5)",
+                "text-halo-width": 0.733333
+            }
+        },
+        {
+            "id": "Annotations/L04/BNDA_CTY_ANNO_L04_POINT/label/Memeber State_AVG SURF_LV04",
+            "type": "symbol",
+            "source": "esri",
+            "source-layer": "BNDA_CTY_ANNO_L04_POINT",
+            "minzoom": 3,
+            "maxzoom": 4,
+            "layout": {
+                "text-font": [
+                    "Open Sans Bold"
+                ],
+                "text-size": 9.66667,
+                "text-anchor": "center",
+                "text-letter-spacing": 0.1,
+                "text-field": "{_name}",
+                "text-allow-overlap": true,
+                "text-optional": true
+            },
+            "paint": {
+                "text-color": "#6E7780",
+                "text-halo-color": "rgba(250,251,252,0.5)",
+                "text-halo-width": 0.733333
+            }
+        },
+        {
+            "id": "Annotations/L04/PHYP_ANNO_L04_POINT/label/DUMONT SEA_LV02(Sea_LV04)",
+            "type": "symbol",
+            "source": "esri",
+            "source-layer": "PHYP_ANNO_L04_POINT",
+            "minzoom": 3,
+            "maxzoom": 4,
+            "layout": {
+                "text-font": [
+                    "Open Sans Semibold Italic"
+                ],
+                "text-size": 10,
+                "text-anchor": "center",
+                "text-max-width": 20,
+                "text-letter-spacing": 0.3,
+                "text-field": "{_name5}",
+                "text-allow-overlap": true,
+                "text-optional": true
+            },
+            "paint": {
+                "text-color": "#6097BF",
+                "text-halo-color": "rgba(206,225,242,0.7)",
+                "text-halo-width": 0.733333
+            }
+        },
+        {
+            "id": "Annotations/L04/PHYP_ANNO_L04_POINT/label/Ocean_1LINE_LV04",
+            "type": "symbol",
+            "source": "esri",
+            "source-layer": "PHYP_ANNO_L04_POINT",
+            "minzoom": 3,
+            "maxzoom": 4,
+            "layout": {
+                "text-font": [
+                    "Open Sans Semibold Italic"
+                ],
+                "text-size": 16,
+                "text-anchor": "center",
+                "text-letter-spacing": 1,
+                "text-max-width": 40,
+                "text-field": "{_name4}",
+                "text-allow-overlap": true,
+                "text-optional": true
+            },
+            "paint": {
+                "text-color": "#6094BF",
+                "text-halo-color": "rgba(194,224,242,0.8)",
+                "text-halo-width": 1
+            }
+        },
+        {
+            "id": "Annotations/L04/PHYP_ANNO_L04_POINT/label/Sea_1 LINE_LV04",
+            "type": "symbol",
+            "source": "esri",
+            "source-layer": "PHYP_ANNO_L04_POINT",
+            "minzoom": 3,
+            "maxzoom": 4,
+            "layout": {
+                "text-font": [
+                    "Open Sans Semibold Italic"
+                ],
+                "text-size": 10,
+                "text-anchor": "center",
+                "text-letter-spacing": 0.3,
+                "text-max-width": 50,
+                "text-field": "{_name3}",
+                "text-allow-overlap": true,
+                "text-optional": true
+            },
+            "paint": {
+                "text-color": "#6097BF",
+                "text-halo-color": "rgba(206,225,242,0.7)",
+                "text-halo-width": 0.733333
+            }
+        },
+        {
+            "id": "Annotations/L04/PHYP_ANNO_L04_POINT/label/Gulfs and Bays LV04",
+            "type": "symbol",
+            "source": "esri",
+            "source-layer": "PHYP_ANNO_L04_POINT",
+            "minzoom": 3,
+            "maxzoom": 4,
+            "layout": {
+                "text-font": [
+                    "Open Sans Semibold Italic"
+                ],
+                "text-size": 10.6667,
+                "text-anchor": "center",
+                "text-letter-spacing": 0.3,
+                "text-field": "{_name2}",
+                "text-allow-overlap": true,
+                "text-optional": true
+            },
+            "paint": {
+                "text-color": "#6094BF",
+                "text-halo-color": "rgba(206,228,242,0.5)",
+                "text-halo-width": 0.733333
+            }
+        },
+        {
+            "id": "Annotations/L04/PHYP_ANNO_L04_POINT/label/Sea LV04",
+            "type": "symbol",
+            "source": "esri",
+            "source-layer": "PHYP_ANNO_L04_POINT",
+            "minzoom": 3,
+            "maxzoom": 4,
+            "layout": {
+                "text-font": [
+                    "Open Sans Semibold Italic"
+                ],
+                "text-size": 10,
+                "text-anchor": "center",
+                "text-letter-spacing": 0.3,
+                "text-field": "{_name1}",
+                "text-allow-overlap": true,
+                "text-optional": true
+            },
+            "paint": {
+                "text-color": "#6097BF",
+                "text-halo-color": "rgba(206,225,242,0.7)",
+                "text-halo-width": 0.733333
+            }
+        },
+        {
+            "id": "Annotations/L04/PHYP_ANNO_L04_POINT/label/Ocean LV04",
+            "type": "symbol",
+            "source": "esri",
+            "source-layer": "PHYP_ANNO_L04_POINT",
+            "minzoom": 3,
+            "maxzoom": 4,
+            "layout": {
+                "text-font": [
+                    "Open Sans Semibold Italic"
+                ],
+                "text-size": 16,
+                "text-anchor": "center",
+                "text-letter-spacing": 0.8,
+                "text-max-width": 20,
+                "text-field": "{_name}",
+                "text-allow-overlap": true,
+                "text-optional": true
+            },
+            "paint": {
+                "text-color": "#6094BF",
+                "text-halo-color": "rgba(194,224,242,0.8)",
+                "text-halo-width": 1
+            }
+        },
+        {
+            "id": "Annotations/L03/BNDA_CTY_ANNO_L03_POINT/label/MOLDOVA_LV03(Member state small surface LV03)",
+            "type": "symbol",
+            "source": "esri",
+            "source-layer": "BNDA_CTY_ANNO_L03_POINT",
+            "minzoom": 2,
+            "maxzoom": 3,
+            "layout": {
+                "text-font": [
+                    "Open Sans Semibold Regular"
+                ],
+                "text-size": 8.33333,
+                "text-max-width": 7,
+                "text-anchor": "center",
+                "text-field": "{_name19}",
+                "text-justify":"left",
+                "text-allow-overlap": true,
+                "text-optional": true
+            },
+            "paint": {
+                "text-color": "#6E7780",
+                "text-halo-color": "rgba(250,251,252,0.25)",
+                "text-halo-width": 0.733333
+            }
+        },
+        {
+            "id": "Annotations/L03/BNDA_CTY_ANNO_L03_POINT/label/NEW CALEDONIA_LV03(Non Self. Gov. + Sovreignity Unsettled_LV03)",
+            "type": "symbol",
+            "source": "esri",
+            "source-layer": "BNDA_CTY_ANNO_L03_POINT",
+            "minzoom": 2,
+            "maxzoom": 3,
+            "layout": {
+                "text-font": [
+                    "Open Sans Semibold Regular"
+                ],
+                "text-size": 8.33333,
+                "text-anchor": "center",
+                "text-letter-spacing": 0.1,
+                "text-line-height": 0.6,
+                "text-field": "{_name18}",
+                "text-allow-overlap": true,
+                "text-optional": true
+            },
+            "paint": {
+                "text-color": "#6E7780",
+                "text-halo-color": "rgba(250,251,252,0.25)",
+                "text-halo-width": 0.733333
+            }
+        },
+        {
+            "id": "Annotations/L03/BNDA_CTY_ANNO_L03_POINT/label/MICRONESIA_LV03(Member State_SMALL SURF_LV03)",
+            "type": "symbol",
+            "source": "esri",
+            "source-layer": "BNDA_CTY_ANNO_L03_POINT",
+            "minzoom": 2,
+            "maxzoom": 3,
+            "layout": {
+                "text-font": [
+                    "Open Sans Semibold Regular"
+                ],
+                "text-size": 8.33333,
+                "text-anchor": "center",
+                "text-field": "{_name17}",
+                "text-max-width": 20,
+                "text-allow-overlap": true,
+                "text-optional": true
+            },
+            "paint": {
+                "text-color": "#6E7780",
+                "text-halo-color": "rgba(250,251,252,0.25)",
+                "text-halo-width": 0.733333
+            }
+        },
+        {
+            "id": "Annotations/L03/BNDA_CTY_ANNO_L03_POINT/label/SOUTH GEORGIA_LV03(Self Gov + Territories_LV03)",
+            "type": "symbol",
+            "source": "esri",
+            "source-layer": "BNDA_CTY_ANNO_L03_POINT",
+            "minzoom": 2,
+            "maxzoom": 3,
+            "layout": {
+                "text-font": [
+                    "Open Sans Semibold Regular"
+                ],
+                "text-size": 7.73333,
+                "text-anchor": "center",
+                "text-max-width": 12,
+                "text-letter-spacing": 0.1,
+                "text-field": "{_name16}",
+                "text-allow-overlap": true,
+                "text-optional": true
+            },
+            "paint": {
+                "text-color": "#6E7780",
+                "text-halo-color": "rgba(250,251,252,0.25)",
+                "text-halo-width": 0.733333
+            }
+        },
+        {
+            "id": "Annotations/L03/BNDA_CTY_ANNO_L03_POINT/label/Svalbard & Jan Mayen Is. (Norw.)_LV03(Self Gov + Territories_LV03)",
+            "type": "symbol",
+            "source": "esri",
+            "source-layer": "BNDA_CTY_ANNO_L03_POINT",
+            "minzoom": 2,
+            "maxzoom": 3,
+            "layout": {
+                "text-font": [
+                    "Open Sans Semibold Regular"
+                ],
+                "text-size": 7.73333,
+                "text-anchor": "center",
+                "text-max-width": 13,
+                "text-letter-spacing": 0.1,
+                "text-field": "{_name15}",
+                "text-allow-overlap": true,
+                "text-optional": true
+            },
+            "paint": {
+                "text-color": "#6E7780",
+                "text-halo-color": "rgba(250,251,252,0.25)",
+                "text-halo-width": 0.733333
+            }
+        },
+        {
+            "id": "Annotations/L03/BNDA_CTY_ANNO_L03_POINT/label/FRENCH GUIANA_LV03(Self Gov + Territories_LV03)",
+            "type": "symbol",
+            "source": "esri",
+            "source-layer": "BNDA_CTY_ANNO_L03_POINT",
+            "minzoom": 2,
+            "maxzoom": 3,
+            "layout": {
+                "text-font": [
+                    "Open Sans Semibold Regular"
+                ],
+                "text-size": 7.73333,
+                "text-anchor": "center",
+                "text-max-width": 60,
+                "text-letter-spacing": 0.1,
+                "text-field": "{_name14}",
+                "text-allow-overlap": true,
+                "text-optional": true
+            },
+            "paint": {
+                "text-color": "#6E7780",
+                "text-halo-color": "rgba(250,251,252,0.25)",
+                "text-halo-width": 0.733333
+            }
+        },
+        {
+            "id": "Annotations/L03/BNDA_CTY_ANNO_L03_POINT/label/GREENLAND_LV03(Self Gov + Territories_LV03)",
+            "type": "symbol",
+            "source": "esri",
+            "source-layer": "BNDA_CTY_ANNO_L03_POINT",
+            "minzoom": 2,
+            "maxzoom": 3,
+            "layout": {
+                "text-font": [
+                    "Open Sans Semibold Regular"
+                ],
+                "text-size": 7.73333,
+                "text-anchor": "center",
+                "text-max-width": 20,
+                "text-letter-spacing": 0.1,
+                "text-field": "{_name13}",
+                "text-allow-overlap": true,
+                "text-optional": true
+            },
+            "paint": {
+                "text-color": "#6E7780",
+                "text-halo-color": "rgba(250,251,252,0.25)",
+                "text-halo-width": 0.733333
+            }
+        },
+        {
+            "id": "Annotations/L03/BNDA_CTY_ANNO_L03_POINT/label/Self Gov + Territories_LV03",
+            "type": "symbol",
+            "source": "esri",
+            "source-layer": "BNDA_CTY_ANNO_L03_POINT",
+            "minzoom": 2,
+            "maxzoom": 3,
+            "layout": {
+                "text-font": [
+                    "Open Sans Semibold Regular"
+                ],
+                "text-size": 7.73333,
+                "text-anchor": "center",
+                "text-letter-spacing": 0.1,
+                "text-field": "{_name12}",
+                "text-allow-overlap": true,
+                "text-optional": true
+            },
+            "paint": {
+                "text-color": "#6E7780",
+                "text-halo-color": "rgba(250,251,252,0.25)",
+                "text-halo-width": 0.733333
+            }
+        },
+        {
+            "id": "Annotations/L03/BNDA_CTY_ANNO_L03_POINT/label/Antarctica_LV03",
+            "type": "symbol",
+            "source": "esri",
+            "source-layer": "BNDA_CTY_ANNO_L03_POINT",
+            "minzoom": 2,
+            "maxzoom": 3,
+            "layout": {
+                "text-font": [
+                    "Open Sans Semibold Italic"
+                ],
+                "text-size": 9.33333,
+                "text-anchor": "center",
+                "text-letter-spacing": 4,
+                "text-field": "{_name11}",
+                "text-allow-overlap": true,
+                "text-optional": true
+            },
+            "paint": {
+                "text-color": "#6E7780",
+                "text-halo-color": "rgba(250,251,252,0.25)",
+                "text-halo-width": 1
+            }
+        },
+        {
+            "id": "Annotations/L03/BNDA_CTY_ANNO_L03_POINT/label/DOMINICA REP._LV03(Member State_SMALL SURF)",
+            "type": "symbol",
+            "source": "esri",
+            "source-layer": "BNDA_CTY_ANNO_L03_POINT",
+            "minzoom": 2,
+            "maxzoom": 3,
+            "layout": {
+                "text-font": [
+                    "Open Sans Semibold Regular"
+                ],
+                "text-size": 8.33333,
+                "text-anchor": "center",
+                "text-justify": "left",
+                "text-field": "{_name10}",
+                "text-allow-overlap": true,
+                "text-optional": true
+            },
+            "paint": {
+                "text-color": "#6E7780",
+                "text-halo-color": "rgba(250,251,252,0.25)",
+                "text-halo-width": 0.733333
+            }
+        },
+        {
+            "id": "Annotations/L03/BNDA_CTY_ANNO_L03_POINT/label/Member State_SMALL SURF_1 LINE_LV03",
+            "type": "symbol",
+            "source": "esri",
+            "source-layer": "BNDA_CTY_ANNO_L03_POINT",
+            "minzoom": 2,
+            "maxzoom": 3,
+            "layout": {
+                "text-font": [
+                    "Open Sans Semibold Regular"
+                ],
+                "text-size": 8.33333,
+                "text-max-width": 60,
+                "text-anchor": "center",
+                "text-field": "{_name9}",
+                "text-allow-overlap": true,
+                "text-optional": true
+            },
+            "paint": {
+                "text-color": "#6E7780",
+                "text-halo-color": "rgba(250,251,252,0.25)",
+                "text-halo-width": 0.733333
+            }
+        },
+        {
+            "id": "Annotations/L03/BNDA_CTY_ANNO_L03_POINT/label/Member State_SMALL SURF_LV03",
+            "type": "symbol",
+            "source": "esri",
+            "source-layer": "BNDA_CTY_ANNO_L03_POINT",
+            "minzoom": 2,
+            "maxzoom": 3,
+            "layout": {
+                "text-font": [
+                    "Open Sans Semibold Regular"
+                ],
+                "text-size": 8.33333,
+                "text-anchor": "center",
+                "text-field": "{_name8}",
+                "text-allow-overlap": true,
+                "text-optional": true
+            },
+            "paint": {
+                "text-color": "#6E7780",
+                "text-halo-color": "rgba(250,251,252,0.25)",
+                "text-halo-width": 0.733333
+            }
+        },
+        {
+            "id": "Annotations/L03/BNDA_CTY_ANNO_L03_POINT/label/Non Self. Gov. + Sovreignity Unsettled_1LINE_LV03",
+            "type": "symbol",
+            "source": "esri",
+            "source-layer": "BNDA_CTY_ANNO_L03_POINT",
+            "minzoom": 2,
+            "maxzoom": 3,
+            "layout": {
+                "text-font": [
+                    "Open Sans Semibold Regular"
+                ],
+                "text-size": 8.33333,
+                "text-anchor": "center",
+                "text-max-width": 80,
+                "text-letter-spacing": 0.1,
+                "text-field": "{_name7}",
+                "text-allow-overlap": true,
+                "text-optional": true
+            },
+            "paint": {
+                "text-color": "#6E7780",
+                "text-halo-color": "rgba(250,251,252,0.25)",
+                "text-halo-width": 0.733333
+            }
+        },
+        {
+            "id": "Annotations/L03/BNDA_CTY_ANNO_L03_POINT/label/Non Self. Gov. + Sovreignity Unsettled_LV03",
+            "type": "symbol",
+            "source": "esri",
+            "source-layer": "BNDA_CTY_ANNO_L03_POINT",
+            "minzoom": 2,
+            "maxzoom": 3,
+            "layout": {
+                "text-font": [
+                    "Open Sans Semibold Regular"
+                ],
+                "text-size": 8.33333,
+                "text-anchor": "center",
+                "text-letter-spacing": 0.1,
+                "text-field": "{_name6}",
+                "text-allow-overlap": true,
+                "text-optional": true
+            },
+            "paint": {
+                "text-color": "#6E7780",
+                "text-halo-color": "rgba(250,251,252,0.25)",
+                "text-halo-width": 0.733333
+            }
+        },
+        {
+            "id": "Annotations/L03/BNDA_CTY_ANNO_L03_POINT/label/UNITED STATES OF AMERICA_LV03(Member State_LARGE SURF)",
+            "type": "symbol",
+            "source": "esri",
+            "source-layer": "BNDA_CTY_ANNO_L03_POINT",
+            "minzoom": 2,
+            "maxzoom": 3,
+            "layout": {
+                "text-font": [
+                    "Open Sans Semibold Regular"
+                ],
+                "text-size": 8.33333,
+                "text-anchor": "center",
+                "text-max-width": 60,
+                "text-letter-spacing": 0.7,
+                "text-field": "{_name5}",
+                "text-allow-overlap": true,
+                "text-optional": true
+            },
+            "paint": {
+                "text-color": "#6E7780",
+                "text-halo-color": "rgba(250,251,252,0.25)",
+                "text-halo-width": 0.733333
+            }
+        },
+        {
+            "id": "Annotations/L03/BNDA_CTY_ANNO_L03_POINT/label/INDONESIA_LV03(Memeber State_AVG SURF)",
+            "type": "symbol",
+            "source": "esri",
+            "source-layer": "BNDA_CTY_ANNO_L03_POINT",
+            "minzoom": 2,
+            "maxzoom": 3,
+            "layout": {
+                "text-font": [
+                    "Open Sans Semibold Regular"
+                ],
+                "text-size": 8.33333,
+                "text-anchor": "center",
+                "text-letter-spacing": 2,
+                "text-field": "{_name4}",
+                "text-allow-overlap": true,
+                "text-optional": true
+            },
+            "paint": {
+                "text-color": "#6E7780",
+                "text-halo-color": "rgba(250,251,252,0.25)",
+                "text-halo-width": 0.733333
+            }
+        },
+        {
+            "id": "Annotations/L03/BNDA_CTY_ANNO_L03_POINT/label/Member State_LARGE SURF_LV03",
+            "type": "symbol",
+            "source": "esri",
+            "source-layer": "BNDA_CTY_ANNO_L03_POINT",
+            "minzoom": 2,
+            "maxzoom": 3,
+            "layout": {
+                "text-font": [
+                    "Open Sans Semibold Regular"
+                ],
+                "text-size": 8.33333,
+                "text-anchor": "center",
+                "text-max-width": 60,
+                "text-letter-spacing": 0.8,
+                "text-field": "{_name3}",
+                "text-allow-overlap": true,
+                "text-optional": true
+            },
+            "paint": {
+                "text-color": "#6E7780",
+                "text-halo-color": "rgba(250,251,252,0.25)",
+                "text-halo-width": 0.733333
+            }
+        },
+        {
+            "id": "Annotations/L03/BNDA_CTY_ANNO_L03_POINT/label/Member State_AVG SURF_1 LINE_LV03",
+            "type": "symbol",
+            "source": "esri",
+            "source-layer": "BNDA_CTY_ANNO_L03_POINT",
+            "minzoom": 2,
+            "maxzoom": 3,
+            "layout": {
+                "text-font": [
+                    "Open Sans Semibold Regular"
+                ],
+                "text-size": 8.33333,
+                "text-anchor": "center",
+                "text-max-width": 60,
+                "text-letter-spacing": 0.15,
+                "text-field": "{_name2}",
+                "text-allow-overlap": true,
+                "text-optional": true
+            },
+            "paint": {
+                "text-color": "#6E7780",
+                "text-halo-color": "rgba(250,251,252,0.25)",
+                "text-halo-width": 0.733333
+            }
+        },
+        {
+            "id": "Annotations/L03/BNDA_CTY_ANNO_L03_POINT/label/Member State_AVG SURF_2 LINE_LV03",
+            "type": "symbol",
+            "source": "esri",
+            "source-layer": "BNDA_CTY_ANNO_L03_POINT",
+            "minzoom": 2,
+            "maxzoom": 3,
+            "layout": {
+                "text-font": [
+                    "Open Sans Semibold Regular"
+                ],
+                "text-size": 8.33333,
+                "text-anchor": "center",
+                "text-letter-spacing": 0.15,
+                "text-field": "{_name1}",
+                "text-allow-overlap": true,
+                "text-optional": true
+            },
+            "paint": {
+                "text-color": "#6E7780",
+                "text-halo-color": "rgba(250,251,252,0.25)",
+                "text-halo-width": 0.733333
+            }
+        },
+        {
+            "id": "Annotations/L03/BNDA_CTY_ANNO_L03_POINT/label/Memeber State_AVG SURF_LV03",
+            "type": "symbol",
+            "source": "esri",
+            "source-layer": "BNDA_CTY_ANNO_L03_POINT",
+            "minzoom": 2,
+            "maxzoom": 3,
+            "layout": {
+                "text-font": [
+                    "Open Sans Semibold Regular"
+                ],
+                "text-size": 8.33333,
+                "text-anchor": "center",
+                "text-letter-spacing": 0.15,
+                "text-field": "{_name}",
+                "text-allow-overlap": true,
+                "text-optional": true
+            },
+            "paint": {
+                "text-color": "#6E7780",
+                "text-halo-color": "rgba(250,251,252,0.25)",
+                "text-halo-width": 0.733333
+            }
+        },
+        {
+            "id": "Annotations/L03/PHYP_ANNO_L03_POINT/label/SOUTHERN OCEAN_LV03(Ocean_LV03)",
+            "type": "symbol",
+            "source": "esri",
+            "source-layer": "PHYP_ANNO_L03_POINT",
+            "minzoom": 2,
+            "maxzoom": 3,
+            "layout": {
+                "text-font": [
+                    "Open Sans Semibold Italic"
+                ],
+                "text-size": 8.66667,
+                "text-anchor": "center",
+                "text-max-width": 30,
+                "text-letter-spacing": 0.8,
+                "text-field": "{_name5}",
+                "text-allow-overlap": true,
+                "text-optional": true
+            },
+            "paint": {
+                "text-color": "#629BC4",
+                "text-halo-color": "rgba(225,234,240,0.2)",
+                "text-halo-width": 1
+            }
+        },
+        {
+            "id": "Annotations/L03/PHYP_ANNO_L03_POINT/label/NORTH ATLANTIC OCEAN_LV03(Ocean_LV03)",
+            "type": "symbol",
+            "source": "esri",
+            "source-layer": "PHYP_ANNO_L03_POINT",
+            "minzoom": 2,
+            "maxzoom": 3,
+            "layout": {
+                "text-font": [
+                    "Open Sans Semibold Italic"
+                ],
+                "text-size": 8.66667,
+                "text-anchor": "center",
+                "text-max-width": 25,
+                "text-letter-spacing": 0.8,
+                "text-field": "{_name4}",
+                "text-allow-overlap": true,
+                "text-optional": true
+            },
+            "paint": {
+                "text-color": "#629BC4",
+                "text-halo-color": "rgba(225,234,240,0.2)",
+                "text-halo-width": 1
+            }
+        },
+        {
+            "id": "Annotations/L03/PHYP_ANNO_L03_POINT/label/Black Sea_LV03 (Sea)",
+            "type": "symbol",
+            "source": "esri",
+            "source-layer": "PHYP_ANNO_L03_POINT",
+            "minzoom": 2,
+            "maxzoom": 3,
+            "layout": {
+                "text-font": [
+                    "Open Sans Semibold Italic"
+                ],
+                "text-size": 8.66667,
+                "text-anchor": "center",
+                "text-letter-spacing": 0.3,
+                "text-field": "{_name3}",
+                "text-allow-overlap": true,
+                "text-optional": true
+            },
+            "paint": {
+                "text-color": "#639CC7",
+                "text-halo-color": "rgba(235,241,245,0.6)",
+                "text-halo-width": 0.466667
+            }
+        },
+        {
+            "id": "Annotations/L03/PHYP_ANNO_L03_POINT/label/Sea LV03",
+            "type": "symbol",
+            "source": "esri",
+            "source-layer": "PHYP_ANNO_L03_POINT",
+            "minzoom": 2,
+            "maxzoom": 3,
+            "layout": {
+                "text-font": [
+                    "Open Sans Semibold Italic"
+                ],
+                "text-size": 8.66667,
+                "text-anchor": "center",
+                "text-letter-spacing": 0.3,
+                "text-field": "{_name2}",
+                "text-allow-overlap": true,
+                "text-optional": true
+            },
+            "paint": {
+                "text-color": "#639CC7",
+                "text-halo-color": "rgba(235,241,245,0.6)",
+                "text-halo-width": 0.466667
+            }
+        },
+        {
+            "id": "Annotations/L03/PHYP_ANNO_L03_POINT/label/Gulfs and Bays LV03",
+            "type": "symbol",
+            "source": "esri",
+            "source-layer": "PHYP_ANNO_L03_POINT",
+            "minzoom": 2,
+            "maxzoom": 3,
+            "layout": {
+                "text-font": [
+                    "Open Sans Semibold Italic"
+                ],
+                "text-size": 9.33333,
+                "text-anchor": "center",
+                "text-letter-spacing": 0.3,
+                "text-field": "{_name1}",
+                "text-allow-overlap": true,
+                "text-optional": true
+            },
+            "paint": {
+                "text-color": "#629BC4",
+                "text-halo-color": "rgba(235,241,245,0.6)",
+                "text-halo-width": 0.733333
+            }
+        },
+        {
+            "id": "Annotations/L03/PHYP_ANNO_L03_POINT/label/Ocean LV03",
+            "type": "symbol",
+            "source": "esri",
+            "source-layer": "PHYP_ANNO_L03_POINT",
+            "minzoom": 2,
+            "maxzoom": 3,
+            "layout": {
+                "text-font": [
+                    "Open Sans Semibold Italic"
+                ],
+                "text-size": 8.66667,
+                "text-anchor": "center",
+                "text-max-width": 20,
+                "text-letter-spacing": 0.8,
+                "text-field": "{_name}",
+                "text-allow-overlap": true,
+                "text-optional": true
+            },
+            "paint": {
+                "text-color": "#629BC4",
+                "text-halo-color": "rgba(225,234,240,0.2)",
+                "text-halo-width": 1
+            }
+        },
+        {
+            "id": "Annotations/L02/PHYP_ANNO_L02_POINT/label/SOUTERN OCEAN_LV02(OCEAN_LV02)",
+            "type": "symbol",
+            "source": "esri",
+            "source-layer": "PHYP_ANNO_L02_POINT",
+            "minzoom": 1,
+            "maxzoom": 2,
+            "layout": {
+                "text-font": [
+                    "Open Sans Semibold Italic"
+                ],
+                "text-size": 10,
+                "text-anchor": "center",
+                "text-max-width": 10,
+                "text-letter-spacing": 0.3,
+                "text-field": "{_name1}",
+                "text-allow-overlap": true,
+                "text-optional": true
+            },
+            "paint": {
+                "text-color": "#5F93B8",
+                "text-halo-color": "rgba(225,235,240,0.5)",
+                "text-halo-width": 0.466667
+            }
+        },
+        {
+            "id": "Annotations/L02/PHYP_ANNO_L02_POINT/label/OCEAN_LV02",
+            "type": "symbol",
+            "source": "esri",
+            "source-layer": "PHYP_ANNO_L02_POINT",
+            "minzoom": 1,
+            "maxzoom": 2,
+            "layout": {
+                "text-font": [
+                    "Open Sans Semibold Italic"
+                ],
+                "text-size": 10,
+                "text-max-width": 15,
+                "text-anchor": "center",
+                "text-letter-spacing": 0.3,
+                "text-field": "{_name}",
+                "text-allow-overlap": true,
+                "text-optional": true
+            },
+            "paint": {
+                "text-color": "#5F93B8",
+                "text-halo-color": "rgba(225,235,240,0.5)",
+                "text-halo-width": 0.466667
+            }
+        }
+    ],
+    "_ssl": true
+}
