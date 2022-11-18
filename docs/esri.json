@@ -14,7 +14,6 @@
 			],
 			"minzoom": 0,
 			"maxzoom": 19,
-			"scheme": "xyz",
 			"tiles": [
                           "https://pro-ags2.dfs.un.org/arcgis/rest/services/Hosted/Clearmap_Webplain/VectorTileServer/tile/{z}/{y}/{x}.pbf"
                         ]
