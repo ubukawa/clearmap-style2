@@ -3,7 +3,7 @@
     0,
     0
   ],
-  "glyphs": "http://ubukawa.github.io/clearmap-style2/font/{fontstack}/{range}.pbf",
+  "glyphs": "https://ubukawa.github.io/clearmap-style2/font/{fontstack}/{range}.pbf",
   "layers": [
     {
       "id": "background",
