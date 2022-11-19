@@ -1,15 +1,15 @@
 center:
   - 0
   - 0
-glyphs: https://ubukawa.github.io/clearmap-style2/font/{fontstack}/{range}.pbf
+glyphs: https://dev-geoportal.dfs.un.org/unvt/font/{fontstack}/{range}.pbf
 layers:
   - !!inc/file layers/background.yml
-  - !!inc/file layers/pg-ocean.yml
   - !!inc/file layers/pg-landmass.yml
+#  - !!inc/file layers/pg-ocean.yml
   - !!inc/file layers/ls-coastline.yml
-  - !!inc/file layers/pg-wbya10.yml
-  - !!inc/file layers/pg-urban.yml
-  - !!inc/file layers/ls-dral10.yml
+#  - !!inc/file layers/pg-urban.yml
+#  - !!inc/file layers/ls-dral10.yml # river
+  - !!inc/file layers/ls-river.yml
   - !!inc/file layers/ls-adm-autonomous-halo.yml
   - !!inc/file layers/ls-adm-ISAO-halo.yml
   - !!inc/file layers/ls-adm-autonomous.yml
@@ -17,6 +17,7 @@ layers:
   - !!inc/file layers/ls-adm-armistice.yml
   - !!inc/file layers/ls-adm-special.yml
   - !!inc/file layers/ls-adm-international.yml
+  - !!inc/file layers/pg-wbya10.yml
   - !!inc/file layers/pt-place-capitals3.yml
   - !!inc/file layers/pt-place-capitals2.yml
   - !!inc/file layers/pt-place-capitals1.yml
@@ -47,6 +48,7 @@ metadata:
     should therefore seek clearance from the UN Geospatial Information Section
     (formerly Cartographic Section) prior to the issuance of their thematic maps
     using Clear Map as background reference.
+site_root: https://www.unvt-test.com
 sources:
   v:
     attribution: >-
@@ -59,8 +61,8 @@ sources:
     maxzoom: 5
     minzoom: 0
     tiles:
-      - >-
-        https://dev-geoportal.dfs.un.org/unvt/temp/clearmapVT-zxy/{z}/{x}/{y}.pbf
+      - https://dev-geoportal.dfs.un.org/unvt/temp/clearmap/{z}/{x}/{y}.pbf
     type: vector
-sprite: https://ubukawa.github.io/clearmap-style2/sprite_un/sprite_S
+sprite: https://dev-geoportal.dfs.un.org/unvt/sprite_un/sprite_S
 version: 8
+zoom: 1

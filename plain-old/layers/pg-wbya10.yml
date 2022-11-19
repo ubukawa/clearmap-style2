@@ -1,0 +1,12 @@
+filter:
+  - all
+  - - '=='
+    - perenniality
+    - 1
+id: pg-wbya10
+maxzoom: 6
+paint:
+  fill-color: '#DFEFF7'
+source: v
+source-layer: wbya10
+type: fill

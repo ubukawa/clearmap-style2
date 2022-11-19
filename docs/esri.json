@@ -5,18 +5,12 @@
 	"sources": {
 		"esri": {
 			"type": "vector",
+     			"tiles": [
+     			   "https://pro-ags2.dfs.un.org/arcgis/rest/services/Hosted/Clearmap_Webplain/VectorTileServer/tile/{z}/{y}/{x}.pbf"
+  			],
 			"attribution": "UN_CLEARMAP_VT",
-			"bounds": [
-				-180,
-				-85.0511,
-				180,
-				85.0511
-			],
 			"minzoom": 0,
-			"maxzoom": 19,
-			"tiles": [
-                          "https://pro-ags2.dfs.un.org/arcgis/rest/services/Hosted/Clearmap_Webplain/VectorTileServer/tile/{z}/{y}/{x}.pbf"
-                        ]
+			"maxzoom": 19
 		}
 	},
     "layers": [
@@ -5311,5 +5305,6 @@
                 "text-halo-width": 0.466667
             }
         }
-    ]
+    ],
+    "_ssl": true
 }

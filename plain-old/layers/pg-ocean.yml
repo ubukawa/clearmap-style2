@@ -1,0 +1,8 @@
+id: pg-ocean
+maxzoom: 6
+minzoom: 0
+paint:
+  fill-color: '#D5EBF5'
+source: v
+source-layer: ocean
+type: fill
