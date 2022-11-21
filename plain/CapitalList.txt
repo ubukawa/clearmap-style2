@@ -1,0 +1,224 @@
+ poptyp | iso3cd |          cartolb
+--------+--------+---------------------------
+      1 | ARM    | Yerevan
+      2 | BDI    | Bujumbura
+      1 | LTU    | Vilnius
+      1 | MOZ    | Maputo
+      3 | NCL    | Nouméa
+      3 | TCA    | Cockburn Town
+      1 | HND    | Tegucigalpa
+      1 | SGP    | Singapore
+      1 | MDA    | Chişinău
+      1 | LVA    | Rīga
+      3 | MSR    | Plymouth
+      1 | GNB    | Bissau
+      1 | BGD    | Dhaka
+      1 | CHL    | Santiago
+      1 | THA    | Krung Thep (Bangkok)
+      1 | RUS    | Moskva (Moscow)
+      1 | GHA    | Accra
+      1 | PER    | Lima
+      1 | PAN    | Panamá
+      1 | SWZ    | Mbabane
+      3 | PCN    | Adamstown
+      1 | CMR    | Yaoundé
+      1 | SUR    | Paramaribo
+      1 | PRT    | Lisboa (Lisbon)
+      1 | SWE    | Stockholm
+      1 | ARG    | Buenos Aires
+      1 | TTO    | Port of Spain
+      1 | LAO    | Viangchan (Vientiane)
+      1 | GMB    | Banjul
+      1 | TGO    | Lomé
+      1 | LSO    | Maseru
+      1 | KIR    | Tarawa
+      1 | IRN    | Tehrān
+      1 | SVK    | Bratislava
+      1 | AND    | Andorra la Vella
+      1 | PLW    | Melekeok
+      2 | SWZ    | Lobamba
+      1 | BHR    | Al Manāmah
+      1 | GRC    | Athína (Athens)
+      1 | COG    | Brazzaville
+      1 | GAB    | Libreville
+      1 | NAM    | Windhoek
+      1 | MHL    | Mājro (Majuro)
+      1 | CHE    | Bern
+      1 | MMR    | Nay Pyi Taw
+      1 | YEM    | Şan'ā' (Sana'a)
+      1 | VNM    | Hà Nội (Hanoi)
+      1 | TUR    | Ankara
+      1 | BEL    | Brussels
+      2 | VNM    | Hồ Chí Minh (Saigon)
+      1 | ETH    | Ādīs Ᾱbeba
+      1 | USA    | Washington, D.C.
+      1 | JOR    | ʻAmmān
+      1 | GIN    | Conakry
+      1 | BRN    | Bandar Seri Begawan
+      1 | QAT    | Ad Dawḩah (Doha)
+      1 | ZMB    | Lusaka
+      1 | STP    | São Tomé
+      1 | UZB    | Toshkent (Tashkent)
+      1 | BGR    | Sofiya
+      2 | NLD    | The Hague
+      1 | DOM    | Santo Domingo
+      1 | MAR    | Rabat
+      3 | BMU    | Hamilton
+      1 | NZL    | Wellington
+      1 | COL    | Bogotá
+      1 | EST    | Tallinn
+      1 | GBR    | London
+      1 | BIH    | Sarajevo
+      1 | SLE    | Freetown
+      1 | SMR    | San Marino
+      1 | SRB    | Beograd (Belgrade)
+      1 | ECU    | Quito
+      2 | CIV    | Abidjan
+      1 | HTI    | Port-au-Prince
+      1 | OMN    | Masqąt (Muscat)
+      1 | BFA    | Ouagadougou
+      1 | GTM    | Guatemala
+      1 | ISL    | Reykjavík
+      1 | SVN    | Ljubljana
+      1 | SLB    | Honiara
+      1 | MNG    | Ulaanbaatar
+      1 | MCO    | Monaco
+      1 | DNK    | Københaven (Copenhagen)
+      1 | IRQ    | Baghdād
+      1 | HRV    | Zaghreb
+      2 | LKA    | Colombo
+      1 | KHM    | Phnum Pénh (Phnom Penh)
+      3 | CYM    | George Town
+      1 | KNA    | Basseterre
+      1 | AUS    | Canberra
+      1 | ESP    | Madrid
+      1 | BDI    | Gitega
+      1 | ROU    | Bucureşti (Bucharest)
+      1 | MLI    | Bamako
+      1 | CUB    | La Habana (Havana)
+      1 | PRK    | P'yŏngyang
+      3 | AIA    | The Valley
+      1 | KOR    | Seoul
+      3 | SHN    | Jamestown
+      1 | TUN    | Tunis
+      1 | NER    | Niamey
+      1 | MWI    | Lilongwe
+      1 | LBY    | Ţarābulus (Tripoli)
+      1 | UGA    | Kampala
+      1 | BEN    | Porto-Novo
+      2 | ZAF    | Cape Town
+      1 | JAM    | Kingston
+      1 | LIE    | Vaduz
+      2 | BEN    | Cotonou
+      1 | CPV    | Praia
+      1 | SLV    | San Salvador
+      1 | MLT    | Valletta
+      1 | NPL    | Kathmandu
+      1 | CYP    | Nicosia
+      1 | ITA    | Roma (Rome)
+      1 | FSM    | Palikir
+      1 | ARE    | Abū Ⱬhaby (Abu Dhabi)
+      1 | BLZ    | Belmopan
+      1 | SDN    | Khartoum
+      1 | CZE    | Praha (Prague)
+      1 | BRA    | Brasília
+      1 | KWT    | Al Kuwayt (Kuwait)
+      1 | VCT    | Kingstown
+      3 | GUM    | Hagåtña
+      1 | NLD    | Amsterdam
+      1 | PRY    | Asunción
+      3 | ASM    | Fagatogo
+      1 | MEX    | Mexico
+      1 | COM    | Moroni
+      1 | KGZ    | Bishkek
+      1 | URY    | Montevideo
+      1 | FRA    | Paris
+      1 | TON    | Nuku‘alofa
+      1 | BOL    | La Paz
+      1 | VUT    | Port Vila
+      1 | BLR    | Minsk
+      1 | ZAF    | Pretoria
+      1 | TKM    | Aşgabat (Ashgabat)
+      1 | TCD    | N’Djaména
+      1 | MRT    | Nouakchott
+      1 | GNQ    | Malabo
+      1 | IND    | New Delhi
+      1 | COD    | Kinshasa
+      1 | COK    | Avarua
+      1 | LCA    | Castries
+      1 | SAU    | Ar Riyāḑ (Riyadh)
+      1 | AZE    | Baky
+      1 | ERI    | Asmera (Asmara)
+      1 | WSM    | Apia
+      3 | VIR    | Charlotte Amalie
+      1 | LUX    | Luxembourg
+      3 | ESH    | Laayoune
+      1 | EGY    | Al Qāhirah (Cairo)
+      1 | TZA    | Dodoma
+      1 | GEO    | T'bilisi
+      1 | MNE    | Podgorica
+      1 | FIN    | Helsingfors (Helsinki)
+      1 | BHS    | Nassau
+      2 | ZAF    | Bloemfontein
+      1 | AFG    | Kābul
+      1 | TJK    | Dushanbe
+      1 | PHL    | Manila
+      1 | MDG    | Antananarivo
+      1 | GRD    | St George’s
+      1 | DZA    | Alger (Algiers)
+      1 | MYS    | Kuala Lumpur
+      1 | SYC    | Victoria
+      1 | PAK    | Islāmābād
+      1 | TUV    | Funafuti
+      1 | CIV    | Yamoussoukro
+      1 | BTN    | Thimphu
+      1 | NGA    | Abuja
+      1 | HUN    | Budapest
+      1 | LBN    | Beyrouth (Beirut)
+      1 | CAN    | Ottawa
+      1 | BWA    | Gaborone
+      1 | JPN    | Tōkyō
+      1 | FJI    | Suva
+      1 | KEN    | Nairobi
+      1 | LBR    | Monrovia
+      1 | RWA    | Kigali
+      1 | SOM    | Muqdisho (Mogadishu)
+      1 | IDN    | Jakarta
+      1 | VEN    | Caracas
+      1 | SYR    | Dimashq (Damascus)
+      1 | MDV    | Maale
+      1 | NIU    | Alofi
+      1 | SSD    | Juba
+      3 | VGB    | Road Town
+      1 | PNG    | Port Moresby
+      1 | SEN    | Dakar
+      1 | DMA    | Roseau
+      1 | NIC    | Managua
+      1 | GUY    | Georgetown
+      1 | POL    | Warszawa (Warsaw)
+      1 | MUS    | Port Louis
+      1 | KAZ    | Nur-Sultan
+      1 | ALB    | Tiranë (Tirana)
+      1 | ZWE    | Harare
+      3 | PYF    | Papeete
+      1 | DJI    | Djibouti
+      1 | BRB    | Bridgetown
+      1 | TLS    | Dili
+      1 | CHN    | Beijing
+      1 | NRU    | Yaren
+      1 | NOR    | Oslo
+      1 | DEU    | Berlin
+      1 | VAT    | Vatican
+      1 | BOL    | Sucre
+      1 | ATG    | St John’s
+      1 | IRL    | Dublin
+      1 | MKD    | Skopje
+      1 | LKA    | Sri Jayewardenepura Kotte
+      1 | CAF    | Bangui
+      1 | AGO    | Luanda
+      1 | CRI    | San José
+      1 | UKR    | Kyiv
+      1 | AUT    | Wien (Vienna)
+(219 rows)
+
+
