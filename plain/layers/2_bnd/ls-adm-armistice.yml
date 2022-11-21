@@ -1,0 +1,45 @@
+filter:
+- '=='
+- - get
+  - bdytyp
+- 3
+id: ls-adm-armistice
+layout:
+  line-cap: round
+  line-join: round
+maxzoom: 6
+minzoom: 0
+paint:
+  line-color: !!inc/file other/bnd-clr1.yml
+  line-opacity: !!inc/file other/bnd-line-op.yml
+  line-dasharray:
+  - step
+  - - zoom
+  - - literal
+    - - 8
+      - 5
+  - 2 #ZL
+  - - literal
+    - - 12
+      - 6
+  - 3 #ZL
+  - - literal
+    - - 8.88889 
+      - 5
+  - 4 #ZL
+  - - literal
+    - - 12 
+      - 5
+  line-width:
+  - step
+  - - zoom
+  - 0.3
+  - 2
+  - 0.5
+  - 3
+  - 0.6
+  - 5
+  - 0.666667
+source: v
+source-layer: bndl
+type: line

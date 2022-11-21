@@ -1,14 +1,14 @@
 filter:
-  - all
-  - - '=='
-    - bdytyp
-    - 8
+- '=='
+- - get
+  - bdytyp
+- 8
 id: ls-adm-autonomous
 layout:
   line-cap: round
   line-join: round
 maxzoom: 6
-minzoom: 4.89
+minzoom: 5
 paint:
   line-color: '#7D868C'
   line-dasharray:

@@ -1,8 +1,8 @@
 filter:
-  - all
-  - - '=='
-    - bdytyp
-    - 8
+- '=='
+- - get
+  - bdytyp
+- 8
 id: ls-adm-autonomous-halo
 layout:
   line-cap: round

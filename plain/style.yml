@@ -3,29 +3,30 @@ center:
   - 0
 glyphs: https://ubukawa.github.io/clearmap-style2/font/{fontstack}/{range}.pbf
 layers:
-  - !!inc/file layers/0_base/background.yml
+#  - !!inc/file layers/0_base/background.yml
   - !!inc/file layers/0_base/pg-ocean.yml
   - !!inc/file layers/0_base/pg-landmass.yml
   - !!inc/file layers/0_base/pg-urban.yml
   - !!inc/file layers/0_base/ls-coastline.yml
 # wbya river polygon come here...
   - !!inc/file layers/1_water/ls-dral10.yml
+#bndl
+  - !!inc/file layers/2_bnd/ls-adm-halo.yml
+  - !!inc/file layers/2_bnd/ls-adm-autonomous.yml
+  - !!inc/file layers/2_bnd/ls-adm-other.yml
+  - !!inc/file layers/2_bnd/ls-adm-special.yml
+  - !!inc/file layers/2_bnd/ls-adm-armistice.yml
+  - !!inc/file layers/2_bnd/ls-adm-international.yml
+
+#water polygons are over BNDLs
+  - !!inc/file layers/1_water/ls-wbya10.yml # line should be under the polygon
   - !!inc/file layers/1_water/pg-wbya10.yml
-  - !!inc/file layers/1_water/ls-wbya10.yml
-
-
 
 ##########
 
 
 
-  - !!inc/file layers/ls-adm-autonomous-halo.yml
-  - !!inc/file layers/ls-adm-ISAO-halo.yml
-  - !!inc/file layers/ls-adm-autonomous.yml
-  - !!inc/file layers/ls-adm-other.yml
-  - !!inc/file layers/ls-adm-armistice.yml
-  - !!inc/file layers/ls-adm-special.yml
-  - !!inc/file layers/ls-adm-international.yml
+ 
   - !!inc/file layers/pt-place-capitals3.yml
   - !!inc/file layers/pt-place-capitals2.yml
   - !!inc/file layers/pt-place-capitals1.yml
