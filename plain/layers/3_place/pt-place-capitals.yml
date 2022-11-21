@@ -1,0 +1,52 @@
+filter:
+- match
+- - get
+  - poptyp
+- - 1
+  - 2
+  - 3
+- true
+- false
+id: pt-place-capitals
+layout:
+  icon-allow-overlap: true
+  icon-image:
+  - match
+  - - get
+    - poptyp
+  - 1
+  - PPL_National
+  - 2
+  - PPL_Alternative
+  - PPL_Territorial #3
+  icon-size: 1
+  text-allow-overlap: true
+  text-optional: true
+  text-field: '{cartolb}'
+  text-font:
+    - sans
+  text-offset:
+    - 1
+    - 1
+  text-size:
+    stops:
+      - - 3
+        - 9
+      - - 4
+        - 9.1
+      - - 5
+        - 10
+maxzoom: 6
+minzoom: 4
+paint:
+  text-color: '#3E3F40'
+  text-halo-color: rgba(255, 255, 255, 0.8)
+  text-halo-width:
+    stops:
+      - - 4
+        - 1
+      - - 5
+        - 1.13
+source: v
+source-layer: un_popp
+type: symbol

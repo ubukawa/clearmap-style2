@@ -22,14 +22,17 @@ layers:
   - !!inc/file layers/1_water/ls-wbya10.yml # line should be under the polygon
   - !!inc/file layers/1_water/pg-wbya10.yml
 
+# then, places
+#  - !!inc/file layers/3_place/pt-place-capitals3.yml
+#  - !!inc/file layers/3_place/pt-place-capitals2.yml
+#  - !!inc/file layers/3_place/pt-place-capitals1.yml
+  - !!inc/file layers/3_place/pt-place-capitals.yml
 ##########
 
 
 
  
-  - !!inc/file layers/pt-place-capitals3.yml
-  - !!inc/file layers/pt-place-capitals2.yml
-  - !!inc/file layers/pt-place-capitals1.yml
+
   - !!inc/file layers/pt-lab-cty-ita.yml
   - !!inc/file layers/pt-lab-cty-ant.yml
   - !!inc/file layers/pt-lab-cty-reg2.yml
