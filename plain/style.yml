@@ -3,13 +3,19 @@ center:
   - 0
 glyphs: https://ubukawa.github.io/clearmap-style2/font/{fontstack}/{range}.pbf
 layers:
-  - !!inc/file layers/background.yml
-  - !!inc/file layers/pg-ocean.yml
-  - !!inc/file layers/pg-landmass.yml
-  - !!inc/file layers/ls-coastline.yml
-  - !!inc/file layers/pg-wbya10.yml
-  - !!inc/file layers/pg-urban.yml
-  - !!inc/file layers/ls-dral10.yml
+  - !!inc/file layers/0_base/background.yml
+  - !!inc/file layers/0_base/pg-ocean.yml
+  - !!inc/file layers/0_base/pg-landmass.yml
+  - !!inc/file layers/0_base/pg-urban.yml
+  - !!inc/file layers/0_base/ls-coastline.yml
+  - !!inc/file layers/1_water/pg-wbya10.yml
+  - !!inc/file layers/1_water/ls-dral10.yml
+
+
+##########
+
+
+
   - !!inc/file layers/ls-adm-autonomous-halo.yml
   - !!inc/file layers/ls-adm-ISAO-halo.yml
   - !!inc/file layers/ls-adm-autonomous.yml
