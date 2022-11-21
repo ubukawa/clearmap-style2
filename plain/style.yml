@@ -17,16 +17,13 @@ layers:
   - !!inc/file layers/2_bnd/ls-adm-special.yml
   - !!inc/file layers/2_bnd/ls-adm-armistice.yml
   - !!inc/file layers/2_bnd/ls-adm-international.yml
-
 #water polygons are over BNDLs
   - !!inc/file layers/1_water/ls-wbya10.yml # line should be under the polygon
   - !!inc/file layers/1_water/pg-wbya10.yml
-
-# then, places
-#  - !!inc/file layers/3_place/pt-place-capitals3.yml
-#  - !!inc/file layers/3_place/pt-place-capitals2.yml
-#  - !!inc/file layers/3_place/pt-place-capitals1.yml
+# Places (capitals)
   - !!inc/file layers/3_place/pt-place-capitals.yml
+
+
 ##########
 
 
