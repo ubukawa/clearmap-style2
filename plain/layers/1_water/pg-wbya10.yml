@@ -1,8 +1,8 @@
 filter:
-  - all
-  - - '=='
-    - perenniality
-    - 1
+- '=='
+- - get
+  - perenniality
+- 1
 id: pg-wbya10
 maxzoom: 6
 paint:

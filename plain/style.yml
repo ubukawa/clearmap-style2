@@ -8,8 +8,11 @@ layers:
   - !!inc/file layers/0_base/pg-landmass.yml
   - !!inc/file layers/0_base/pg-urban.yml
   - !!inc/file layers/0_base/ls-coastline.yml
-  - !!inc/file layers/1_water/pg-wbya10.yml
+# wbya river polygon come here...
   - !!inc/file layers/1_water/ls-dral10.yml
+  - !!inc/file layers/1_water/pg-wbya10.yml
+  - !!inc/file layers/1_water/ls-wbya10.yml
+
 
 
 ##########
