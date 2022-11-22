@@ -1,14 +1,12 @@
 filter:
-  - any
-  - - '=='
+  - match
+  - - get
     - annotationclassid
-    - 2
-  - - '=='
-    - annotationclassid
+  - - 2
     - 4
-  - - '=='
-    - annotationclassid
     - 5
+  - true
+  - false
 id: pt-lab-water-sea
 layout:
   text-allow-overlap: true

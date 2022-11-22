@@ -31,10 +31,11 @@ layers:
   - !!inc/file layers/pt-lab-cty-reg1.yml
   - !!inc/file layers/pt-lab-cty-bold.yml
 #water label
-  - !!inc/file layers/5_water-lab/pt-lab-water-island.yml
-  - !!inc/file layers/5_water-lab/pt-lab-water-bay.yml
-  - !!inc/file layers/5_water-lab/pt-lab-water-sea.yml
-  - !!inc/file layers/5_water-lab/pt-lab-water-ocean.yml
+  - !!inc/file layers/5_water-lab/pt-lab-water.yml
+#  - !!inc/file layers/5_water-lab/pt-lab-water-island.yml
+#  - !!inc/file layers/5_water-lab/pt-lab-water-bay.yml
+#  - !!inc/file layers/5_water-lab/pt-lab-water-sea.yml
+#  - !!inc/file layers/5_water-lab/pt-lab-water-ocean.yml
 metadata:
   disclaimer: >-
     The United Nations Clear Map (hereinafter &quot;Clear Map&quot;) is a

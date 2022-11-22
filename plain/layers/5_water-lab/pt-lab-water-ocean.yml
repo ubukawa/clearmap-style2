@@ -1,8 +1,8 @@
 filter:
-  - any
-  - - '=='
+  - '=='
+  - - get
     - annotationclassid
-    - 0
+  - 0
 id: pt-lab-water-ocean
 layout:
   text-allow-overlap: true

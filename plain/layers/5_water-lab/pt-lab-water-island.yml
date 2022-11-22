@@ -1,8 +1,8 @@
 filter:
-  - any
-  - - '=='
+  - '=='
+  - - get
     - annotationclassid
-    - 6
+  - 6
 id: pt-lab-water-island
 layout:
   text-allow-overlap: true
