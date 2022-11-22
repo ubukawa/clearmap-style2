@@ -17,6 +17,8 @@ layout:
   text-field: '{textstring}'
   text-font:
     - Open Sans Semibold Italic
+  text-letter-spacing: !!inc/file other/water-lab-txt-spacing.yml
+  text-max-width: !!inc/file other/water-lab-txt-max-w.yml
   text-size:
   - step
   - - zoom
@@ -79,18 +81,8 @@ maxzoom: 6
 minzoom: 1
 paint:
   text-color: !!inc/file other/water-lab-clr.yml
-  text-halo-color:
-    stops:
-      - - 2
-        - rgba(225,235,240,0.5)
-      - - 3
-        - rgba(206,228,242,0.5)
-  text-halo-width:
-    stops:
-      - - 2
-        - 0.5
-      - - 3
-        - 1
+  text-halo-color: !!inc/file other/water-lab-halo-clr.yml
+  text-halo-width: !!inc/file other/water-lab-halo-w.yml
 source: v
 source-layer: lab_water
 type: symbol

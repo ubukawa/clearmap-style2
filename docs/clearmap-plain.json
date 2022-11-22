@@ -1369,319 +1369,406 @@
     },
     {
       "filter": [
-        "any",
+        "match",
         [
-          "==",
-          "annotationclassid",
+          "get",
+          "annotationclassid"
+        ],
+        [
+          0,
+          2,
+          4,
+          5,
+          3,
           6
-        ]
+        ],
+        true,
+        false
       ],
-      "id": "pt-lab-water-island",
+      "id": "pt-lab-water",
       "layout": {
         "text-allow-overlap": true,
+        "text-optional": true,
         "text-field": "{textstring}",
         "text-font": [
           "Open Sans Semibold Italic"
         ],
-        "text-optional": true,
-        "text-size": {
-          "stops": [
+        "text-letter-spacing": [
+          "step",
+          [
+            "zoom"
+          ],
+          0.3,
+          2,
+          [
+            "match",
             [
-              3,
-              8
+              "get",
+              "annotationclassid"
             ],
+            0,
+            0.8,
+            0.3
+          ],
+          3,
+          [
+            "match",
             [
+              "get",
+              "annotationclassid"
+            ],
+            0,
+            1,
+            0.3
+          ],
+          4,
+          [
+            "match",
+            [
+              "get",
+              "annotationclassid"
+            ],
+            0,
+            1,
+            5,
+            0.7,
+            0.3
+          ],
+          5,
+          [
+            "match",
+            [
+              "get",
+              "annotationclassid"
+            ],
+            0,
+            1,
+            [
+              2,
               4,
-              9.3
-            ]
-          ]
-        }
-      },
-      "maxzoom": 6,
-      "minzoom": 4,
-      "paint": {
-        "text-color": "#717E85",
-        "text-halo-color": {
-          "stops": [
-            [
-              2,
-              "rgba(206,228,242,0.7)"
-            ],
-            [
-              3,
-              "rgba(237,247,252,0.6)"
-            ]
-          ]
-        },
-        "text-halo-width": 0.733
-      },
-      "source": "v",
-      "source-layer": "lab_water",
-      "type": "symbol"
-    },
-    {
-      "filter": [
-        "any",
-        [
-          "==",
-          "annotationclassid",
-          3
-        ]
-      ],
-      "id": "pt-lab-water-bay",
-      "layout": {
-        "text-allow-overlap": true,
-        "text-field": "{textstring}",
-        "text-font": [
-          "Open Sans Semibold Italic"
-        ],
-        "text-optional": true,
-        "text-size": {
-          "stops": [
-            [
-              1,
-              8.5
-            ],
-            [
-              2,
-              9
-            ],
-            [
-              3,
-              14
-            ]
-          ]
-        }
-      },
-      "maxzoom": 6,
-      "minzoom": 2,
-      "paint": {
-        "text-color": {
-          "stops": [
-            [
-              2,
-              "#629BC4"
-            ],
-            [
-              3,
-              "#6094BF"
-            ]
-          ]
-        },
-        "text-halo-color": {
-          "stops": [
-            [
-              2,
-              "rgba(225,235,240,0.5)"
-            ],
-            [
-              3,
-              "rgba(206,228,242,0.5)"
-            ]
-          ]
-        },
-        "text-halo-width": {
-          "stops": [
-            [
-              3,
-              0.7
-            ],
-            [
               5,
-              0.9
-            ]
-          ]
-        }
-      },
-      "source": "v",
-      "source-layer": "lab_water",
-      "type": "symbol"
-    },
-    {
-      "filter": [
-        "any",
-        [
-          "==",
-          "annotationclassid",
-          2
-        ],
-        [
-          "==",
-          "annotationclassid",
-          4
-        ],
-        [
-          "==",
-          "annotationclassid",
-          5
-        ]
-      ],
-      "id": "pt-lab-water-sea",
-      "layout": {
-        "text-allow-overlap": true,
-        "text-field": "{textstring}",
-        "text-font": [
-          "Open Sans Semibold Italic"
-        ],
-        "text-optional": true,
-        "text-size": {
-          "stops": [
-            [
-              1,
-              8.5
+              3
             ],
+            0.3,
+            0.1
+          ]
+        ],
+        "text-max-width": [
+          "step",
+          [
+            "zoom"
+          ],
+          10,
+          2,
+          [
+            "match",
+            [
+              "get",
+              "annotationclassid"
+            ],
+            0,
+            30,
+            8
+          ],
+          3,
+          [
+            "match",
+            [
+              "get",
+              "annotationclassid"
+            ],
+            0,
+            40,
+            10
+          ],
+          4,
+          [
+            "match",
+            [
+              "get",
+              "annotationclassid"
+            ],
+            0,
+            60,
             [
               2,
-              9
-            ],
-            [
-              3,
-              11
-            ],
-            [
               4,
-              12
-            ]
+              5,
+              3
+            ],
+            40,
+            30
+          ],
+          5,
+          [
+            "match",
+            [
+              "get",
+              "annotationclassid"
+            ],
+            0,
+            90,
+            [
+              2,
+              4,
+              5,
+              3
+            ],
+            40,
+            30
           ]
-        }
+        ],
+        "text-size": [
+          "step",
+          [
+            "zoom"
+          ],
+          [
+            "match",
+            [
+              "get",
+              "annotationclassid"
+            ],
+            0,
+            10,
+            0
+          ],
+          2,
+          [
+            "match",
+            [
+              "get",
+              "annotationclassid"
+            ],
+            3,
+            9.3333,
+            6,
+            0,
+            8.66667
+          ],
+          3,
+          [
+            "match",
+            [
+              "get",
+              "annotationclassid"
+            ],
+            0,
+            16,
+            [
+              2,
+              4,
+              5
+            ],
+            10,
+            3,
+            10.6667,
+            0
+          ],
+          4,
+          [
+            "match",
+            [
+              "get",
+              "annotationclassid"
+            ],
+            0,
+            18.6667,
+            [
+              2,
+              4,
+              5
+            ],
+            12,
+            3,
+            14.6667,
+            8
+          ],
+          5,
+          [
+            "match",
+            [
+              "get",
+              "annotationclassid"
+            ],
+            0,
+            24,
+            [
+              2,
+              4
+            ],
+            12,
+            5,
+            16,
+            3,
+            13.3333,
+            9.33333
+          ]
+        ]
       },
       "maxzoom": 6,
-      "minzoom": 2.5,
+      "minzoom": 1,
       "paint": {
-        "text-color": {
-          "stops": [
+        "text-color": [
+          "step",
+          [
+            "zoom"
+          ],
+          "#5F93B8",
+          2,
+          [
+            "match",
             [
-              2,
-              "#639CC7"
+              "get",
+              "annotationclassid"
             ],
-            [
-              3,
-              "#6094BF"
-            ]
-          ]
-        },
-        "text-halo-color": {
-          "stops": [
-            [
-              2,
-              "rgba(225,235,240,0.5)"
-            ],
-            [
-              3,
-              "rgba(206,228,242,0.5)"
-            ]
-          ]
-        },
-        "text-halo-width": {
-          "stops": [
-            [
-              2,
-              0.4
-            ],
-            [
-              3,
-              0.7
-            ],
-            [
-              5,
-              0.9
-            ]
-          ]
-        }
-      },
-      "source": "v",
-      "source-layer": "lab_water",
-      "type": "symbol"
-    },
-    {
-      "filter": [
-        "any",
-        [
-          "==",
-          "annotationclassid",
-          0
-        ]
-      ],
-      "id": "pt-lab-water-ocean",
-      "layout": {
-        "text-allow-overlap": true,
-        "text-field": "{textstring}",
-        "text-font": [
-          "Open Sans Semibold Italic"
-        ],
-        "text-optional": true,
-        "text-size": {
-          "stops": [
             [
               0,
-              9
+              3
+            ],
+            "#629BC4",
+            "#639CC7"
+          ],
+          3,
+          "#6094BF",
+          4,
+          [
+            "match",
+            [
+              "get",
+              "annotationclassid"
             ],
             [
-              1,
-              12
+              6,
+              3
             ],
+            "#717E85",
+            "#6094BF"
+          ]
+        ],
+        "text-halo-color": [
+          "step",
+          [
+            "zoom"
+          ],
+          "rgba(225,235,240,0.5)",
+          2,
+          [
+            "match",
+            [
+              "get",
+              "annotationclassid"
+            ],
+            0,
+            "rgba(225,234,240,0.2)",
+            "rgba(235,241,244,0.6)"
+          ],
+          3,
+          [
+            "match",
+            [
+              "get",
+              "annotationclassid"
+            ],
+            0,
+            "rgba(194,224,242,0.8)",
+            3,
+            "rgba(206,228,242,0.5)",
+            "rgba(206,225,242,0.7)"
+          ],
+          4,
+          [
+            "match",
+            [
+              "get",
+              "annotationclassid"
+            ],
+            0,
+            "rgba(206,228,242,0.5)",
+            "rgba(206,228,242,0.7)"
+          ],
+          5,
+          [
+            "match",
+            [
+              "get",
+              "annotationclassid"
+            ],
+            0,
+            "rgba(206,228,242,0.5)",
+            6,
+            "rgba(237,247,252,0.6)",
+            5,
+            "rgba(206,228,242,0.7)",
+            "rgba(206,228,242,0.5)"
+          ]
+        ],
+        "text-halo-width": [
+          "step",
+          [
+            "zoom"
+          ],
+          0.46667,
+          2,
+          [
+            "match",
+            [
+              "get",
+              "annotationclassid"
+            ],
+            0,
+            1,
+            3,
+            0.73333,
+            0.466667
+          ],
+          3,
+          [
+            "match",
+            [
+              "get",
+              "annotationclassid"
+            ],
+            0,
+            1,
+            0.73333
+          ],
+          4,
+          [
+            "match",
+            [
+              "get",
+              "annotationclassid"
+            ],
+            0,
+            1,
             [
               2,
-              17
-            ],
-            [
-              3,
-              20
-            ],
-            [
               4,
-              22
+              5
             ],
+            0.8,
+            0.73333
+          ],
+          5,
+          [
+            "match",
             [
+              "get",
+              "annotationclassid"
+            ],
+            0,
+            1,
+            [
+              2,
+              4,
               5,
-              24
-            ]
-          ]
-        }
-      },
-      "maxzoom": 6,
-      "minzoom": 0.56,
-      "paint": {
-        "text-color": {
-          "stops": [
-            [
-              2,
-              "#5F93BF"
+              3
             ],
-            [
-              3,
-              "#629BC4"
-            ],
-            [
-              4,
-              "#6094BF"
-            ]
+            0.866667,
+            0.73333
           ]
-        },
-        "text-halo-color": {
-          "stops": [
-            [
-              2,
-              "rgba(225,235,240,0.5)"
-            ],
-            [
-              3,
-              "rgba(206,228,242,0.5)"
-            ]
-          ]
-        },
-        "text-halo-width": {
-          "stops": [
-            [
-              2,
-              0.5
-            ],
-            [
-              3,
-              1
-            ]
-          ]
-        }
+        ]
       },
       "source": "v",
       "source-layer": "lab_water",
