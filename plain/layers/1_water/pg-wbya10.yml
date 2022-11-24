@@ -1,8 +1,9 @@
-filter:
-- '=='
-- - get
-  - perenniality
-- 1
+#filtering was done during the data conversion.
+#filter:
+#- '=='
+#- - get
+#  - perenniality
+#- 1
 id: pg-wbya10
 maxzoom: 6
 paint:

@@ -1,13 +1,14 @@
-filter:
-  - all
-  - - '=='
-    - - get
-      - type
-    - 1
-  - - '=='
-    - - get
-      - perenniality
-    - 1
+#filtering was done during the data conversion.
+#filter:
+#  - all
+#  - - '=='
+#    - - get
+#      - type
+#    - 1
+#  - - '=='
+#    - - get
+#      - perenniality
+#    - 1
 id: ls-dral10
 layout:
   line-cap: round
