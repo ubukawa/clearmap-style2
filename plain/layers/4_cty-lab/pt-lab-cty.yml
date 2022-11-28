@@ -17,7 +17,14 @@ id: pt-lab-cty
 layout:
   text-allow-overlap: true
   text-optional: true
-  text-field: '{textstring}'
+  text-field:
+  - match
+  - - get
+    - textstring
+  - Arunachal Pradesh
+  - ''
+  - - get
+    - textstring
   text-font:
   - step
   - - zoom
@@ -55,12 +62,14 @@ layout:
       - 1
       - 3
       - 5
-      - 7
     - - literal
       - - Open Sans Bold
     - 6
     - - literal
       - - Open Sans Semibold
+    - 7
+    - - literal
+      - - Open Sans Italic
     - - literal
       - - Open Sans Regular
   text-size:
@@ -213,6 +222,12 @@ paint:
   - '#656566'
   - 5
   - '#575859'
+ # - - match
+ #   - - get
+ #     - labtyp
+ #   - 7 
+ #   - red
+ #   - '#575859'
   text-halo-color:
   - step
   - - zoom
