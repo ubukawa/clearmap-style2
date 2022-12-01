@@ -895,19 +895,7 @@
       "layout": {
         "text-allow-overlap": true,
         "text-optional": true,
-        "text-field": [
-          "match",
-          [
-            "get",
-            "textstring"
-          ],
-          "Arunachal Pradesh",
-          "",
-          [
-            "get",
-            "textstring"
-          ]
-        ],
+        "text-field": "{textstring}",
         "text-font": [
           "step",
           [
@@ -1001,9 +989,23 @@
             ],
             7,
             [
-              "literal",
+              "match",
               [
-                "Open Sans Italic"
+                "get",
+                "fontstyle"
+              ],
+              "Bold",
+              [
+                "literal",
+                [
+                  "Open Sans Bold"
+                ]
+              ],
+              [
+                "literal",
+                [
+                  "Open Sans Italic"
+                ]
               ]
             ],
             [
