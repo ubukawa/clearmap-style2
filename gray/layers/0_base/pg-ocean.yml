@@ -2,7 +2,12 @@ id: pg-ocean
 maxzoom: 6
 minzoom: 0
 paint:
-  fill-color: '#D5EBF5'
+  fill-color: 
+  - step
+  - - zoom 
+  - '#CBCDCF'
+  - 2.56
+  - '#D7D9DB'
 source: v
 source-layer: ocean
 type: fill

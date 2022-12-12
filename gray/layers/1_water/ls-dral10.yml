@@ -16,12 +16,17 @@ layout:
 maxzoom: 6
 minzoom: 3
 paint:
-  line-color: rgba(157,189,209,0.7)
+  line-color: 
+  - step
+  - - zoom
+  - rgba(130,139,153,0.45)
+  - 3.89
+  - rgba(130,139,153,0.60)
   line-width:
   - step
   - - zoom
   - 0.4
-  - 4
+  - 3.89
   - 0.5
 source: v
 source-layer: dral10

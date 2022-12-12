@@ -1,0 +1,21 @@
+id: pg-bathymetry
+maxzoom: 6
+minzoom: 2.56
+paint:
+  fill-color: 
+  - match
+  - - get
+    - depth
+  - - 0
+    - 200
+  - '#D5D7D9'
+  - 1000
+  - '#D0D2D4'
+  - 2000
+  - '#CDCFD1'
+  - 3000
+  - '#CACDCF'
+  - '#CACDCF'
+source: v
+source-layer: bathymetry
+type: fill

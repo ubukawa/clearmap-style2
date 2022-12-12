@@ -24,7 +24,7 @@ layout:
   - 12
   text-letter-spacing: 0.3
 paint:
-  text-color: '#66A2CC'
+  text-color: '#686868'
   text-halo-color: rgba(255,255,255,0.75)
   text-halo-width: 0.933333
 

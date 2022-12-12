@@ -7,25 +7,11 @@ id: ls-wbya10
 layout:
   line-cap: round
   line-join: round
-minzoom: 1
+minzoom: 4.89
 maxzoom: 6
 paint:
-  line-color:
-  - step
-  - - zoom
-  - rgba(107,152,179,0.9)
-  - 3
-  - rgba(157,189,209,0.75)
-  - 5
-  - rgba(157,189,209,0.7)
-  line-width: 
-  - step
-  - - zoom
-  - 0.35
-  - 3
-  - 1
-  - 4
-  - 1.5
+  line-color: rgba(87,93,102,0.55)
+  line-width: 0.666667
 source: v
 source-layer: wbya10
 type: line

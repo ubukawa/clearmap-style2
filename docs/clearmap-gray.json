@@ -6,11 +6,52 @@
   "glyphs": "https://ubukawa.github.io/clearmap-style2/font/{fontstack}/{range}.pbf",
   "layers": [
     {
-      "id": "background",
+      "id": "pg-ocean",
+      "maxzoom": 6,
+      "minzoom": 0,
       "paint": {
-        "background-color": "#D6EBF5"
+        "fill-color": [
+          "step",
+          [
+            "zoom"
+          ],
+          "#CBCDCF",
+          2.56,
+          "#D7D9DB"
+        ]
       },
-      "type": "background"
+      "source": "v",
+      "source-layer": "ocean",
+      "type": "fill"
+    },
+    {
+      "id": "pg-bathymetry",
+      "maxzoom": 6,
+      "minzoom": 2.56,
+      "paint": {
+        "fill-color": [
+          "match",
+          [
+            "get",
+            "depth"
+          ],
+          [
+            0,
+            200
+          ],
+          "#D5D7D9",
+          1000,
+          "#D0D2D4",
+          2000,
+          "#CDCFD1",
+          3000,
+          "#CACDCF",
+          "#CACDCF"
+        ]
+      },
+      "source": "v",
+      "source-layer": "bathymetry",
+      "type": "fill"
     },
     {
       "id": "pg-landmass",
@@ -24,24 +65,13 @@
       "type": "fill"
     },
     {
-      "id": "pg-ocean",
-      "maxzoom": 6,
-      "minzoom": 0,
-      "paint": {
-        "fill-color": "#CBCDCF"
-      },
-      "source": "v",
-      "source-layer": "ocean",
-      "type": "fill"
-    },
-    {
       "filter": [
-        "all",
+        "==",
         [
-          "==",
-          "bdytyp",
-          0
-        ]
+          "get",
+          "bdytyp"
+        ],
+        0
       ],
       "id": "ls-coastline",
       "layout": {
@@ -52,79 +82,62 @@
       "minzoom": 0,
       "paint": {
         "line-color": "#575D66",
-        "line-width": {
-          "stops": [
-            [
-              3,
-              0.25
-            ],
-            [
-              4,
-              1
-            ]
-          ]
-        }
+        "line-width": [
+          "interpolate",
+          [
+            "linear"
+          ],
+          [
+            "zoom"
+          ],
+          3,
+          0.25,
+          3.89,
+          0.4,
+          18,
+          0.8
+        ],
+        "line-opacity": [
+          "step",
+          [
+            "zoom"
+          ],
+          0.4,
+          3.89,
+          0.7
+        ]
       },
       "source": "v",
       "source-layer": "bndl",
       "type": "line"
     },
     {
-      "filter": [
-        "all",
-        [
-          "==",
-          "perenniality",
-          1
-        ]
-      ],
-      "id": "pg-wbya10",
-      "maxzoom": 6,
-      "paint": {
-        "fill-color": "#D4D7D9"
-      },
-      "source": "v",
-      "source-layer": "wbya10",
-      "type": "fill"
-    },
-    {
-      "filter": [
-        "all",
-        [
-          "==",
-          "type",
-          1
-        ],
-        [
-          "==",
-          "perenniality",
-          1
-        ]
-      ],
       "id": "ls-dral10",
       "layout": {
         "line-cap": "round",
         "line-join": "round"
       },
       "maxzoom": 6,
+      "minzoom": 3,
       "paint": {
-        "line-color": "#D4D7D9",
-        "line-width": {
-          "stops": [
-            [
-              3,
-              0.4
-            ],
-            [
-              4,
-              0.5
-            ],
-            [
-              5,
-              0.6
-            ]
-          ]
-        }
+        "line-color": [
+          "step",
+          [
+            "zoom"
+          ],
+          "rgba(130,139,153,0.45)",
+          3.89,
+          "rgba(130,139,153,0.60)"
+        ],
+        "line-width": [
+          "step",
+          [
+            "zoom"
+          ],
+          0.4,
+          3.89,
+          0.5
+        ]
       },
       "source": "v",
       "source-layer": "dral10",
@@ -132,77 +145,66 @@
     },
     {
       "filter": [
-        "all",
+        "match",
         [
-          "==",
-          "bdytyp",
+          "get",
+          "bdytyp"
+        ],
+        [
+          1,
+          2,
+          3,
+          4,
           8
-        ]
+        ],
+        true,
+        false
       ],
-      "id": "ls-adm-autonomous-halo",
+      "id": "ls-adm-halo",
       "layout": {
         "line-cap": "round",
         "line-join": "round"
       },
       "maxzoom": 6,
-      "minzoom": 4.89,
-      "paint": {
-        "line-color": "rgba(230, 230, 223, 0.65)",
-        "line-width": 4.09
-      },
-      "source": "v",
-      "source-layer": "bndl",
-      "type": "line"
-    },
-    {
-      "filter": [
-        "any",
-        [
-          "==",
-          "bdytyp",
-          1
-        ],
-        [
-          "==",
-          "bdytyp",
-          2
-        ],
-        [
-          "==",
-          "bdytyp",
-          3
-        ],
-        [
-          "==",
-          "bdytyp",
-          4
-        ]
-      ],
-      "id": "ls-adm-ISAO-halo",
-      "layout": {
-        "line-cap": "round",
-        "line-join": "round"
-      },
-      "maxzoom": 6,
-      "minzoom": 3.89,
+      "minzoom": 4,
       "paint": {
         "line-color": "rgba(230,230,223,0.65)",
-        "line-width": {
-          "stops": [
+        "line-width": [
+          "step",
+          [
+            "zoom"
+          ],
+          [
+            "match",
             [
-              3,
-              3.5
+              "get",
+              "bdytyp"
             ],
             [
-              4,
+              1,
+              2,
+              3,
               4
             ],
+            3.66667,
+            0
+          ],
+          5,
+          [
+            "match",
             [
-              5,
-              4.3
-            ]
+              "get",
+              "bdytyp"
+            ],
+            1,
+            4.26667,
+            2,
+            4.13333,
+            4,
+            3.66667,
+            4.09333
           ]
-        }
+        ]
       },
       "source": "v",
       "source-layer": "bndl",
@@ -210,12 +212,12 @@
     },
     {
       "filter": [
-        "all",
+        "==",
         [
-          "==",
-          "bdytyp",
-          8
-        ]
+          "get",
+          "bdytyp"
+        ],
+        8
       ],
       "id": "ls-adm-autonomous",
       "layout": {
@@ -225,7 +227,7 @@
       "maxzoom": 6,
       "minzoom": 4.89,
       "paint": {
-        "line-color": "#000000",
+        "line-color": "#686868",
         "line-dasharray": [
           7.93333,
           4.93333
@@ -238,156 +240,79 @@
     },
     {
       "filter": [
-        "all",
+        "==",
         [
-          "==",
-          "bdytyp",
-          4
-        ]
+          "get",
+          "bdytyp"
+        ],
+        4
       ],
-      "id": "ls-adm-other",
+      "id": "ls-adm-other(symbol)",
       "layout": {
-        "line-cap": "round",
-        "line-join": "round"
+        "symbol-placement": "line",
+        "icon-image": [
+          "step",
+          [
+            "zoom"
+          ],
+          "ADM_Other_M",
+          4,
+          "ADM_Other_L"
+        ],
+        "symbol-spacing": [
+          "step",
+          [
+            "zoom"
+          ],
+          1.77778,
+          2,
+          2,
+          3,
+          3.33333,
+          4,
+          3,
+          5,
+          5.66667
+        ],
+        "icon-rotation-alignment": "map",
+        "icon-allow-overlap": true
       },
       "maxzoom": 6,
       "minzoom": 0,
       "paint": {
-        "line-color": {
-          "stops": [
-            [
-              2,
-              "#737B80"
-            ],
-            [
-              3,
-              "#000000"
-            ]
-          ]
-        },
-        "line-dasharray": {
-          "stops": [
-            [
-              3,
-              [
-                1,
-                3
-              ]
-            ],
-            [
-              4,
-              [
-                1,
-                5
-              ]
-            ]
-          ]
-        },
-        "line-width": {
-          "stops": [
-            [
-              1,
-              0.2
-            ],
-            [
-              2,
-              0.3
-            ],
-            [
-              3,
-              0.6
-            ],
-            [
-              4,
-              0.8
-            ]
-          ]
-        }
+        "icon-color": [
+          "step",
+          [
+            "zoom"
+          ],
+          "#737B80",
+          4,
+          "#505759",
+          5,
+          "#555C5E"
+        ],
+        "icon-opacity": [
+          "step",
+          [
+            "zoom"
+          ],
+          0.9,
+          4,
+          1
+        ]
       },
       "source": "v",
       "source-layer": "bndl",
-      "type": "line"
+      "type": "symbol"
     },
     {
       "filter": [
-        "all",
+        "==",
         [
-          "==",
-          "bdytyp",
-          3
-        ]
-      ],
-      "id": "ls-adm-armistice",
-      "layout": {
-        "line-cap": "round",
-        "line-join": "round"
-      },
-      "maxzoom": 6,
-      "minzoom": 0,
-      "paint": {
-        "line-color": {
-          "stops": [
-            [
-              2,
-              "#737B80"
-            ],
-            [
-              3,
-              "#000000"
-            ]
-          ]
-        },
-        "line-dasharray": {
-          "stops": [
-            [
-              3,
-              [
-                8,
-                5
-              ]
-            ],
-            [
-              4,
-              [
-                12,
-                5
-              ]
-            ]
-          ]
-        },
-        "line-width": {
-          "stops": [
-            [
-              1,
-              0.2
-            ],
-            [
-              2,
-              0.3
-            ],
-            [
-              3,
-              0.6
-            ],
-            [
-              4,
-              0.666667
-            ]
-          ]
-        }
-      },
-      "source": "v",
-      "source-layer": "bndl",
-      "type": "line"
-    },
-    {
-      "filter": [
-        "all",
-        [
-          "==",
-          "bdytyp",
-          2
-        ]
+          "get",
+          "bdytyp"
+        ],
+        2
       ],
       "id": "ls-adm-special",
       "layout": {
@@ -397,56 +322,82 @@
       "maxzoom": 6,
       "minzoom": 0,
       "paint": {
-        "line-color": {
-          "stops": [
+        "line-color": [
+          "step",
+          [
+            "zoom"
+          ],
+          "#737C80",
+          2.56,
+          "#000000"
+        ],
+        "line-opacity": [
+          "step",
+          [
+            "zoom"
+          ],
+          0.9,
+          4,
+          1
+        ],
+        "line-dasharray": [
+          "step",
+          [
+            "zoom"
+          ],
+          [
+            "literal",
             [
-              2,
-              "#737B80"
-            ],
+              4.66667,
+              4.66667
+            ]
+          ],
+          2,
+          [
+            "literal",
             [
-              3,
-              "#000000"
+              3.8,
+              3
+            ]
+          ],
+          3,
+          [
+            "literal",
+            [
+              2.22222,
+              1.88889
+            ]
+          ],
+          4,
+          [
+            "literal",
+            [
+              6,
+              3
+            ]
+          ],
+          5,
+          [
+            "literal",
+            [
+              6.65,
+              3
             ]
           ]
-        },
-        "line-dasharray": {
-          "stops": [
-            [
-              3,
-              [
-                6,
-                3
-              ]
-            ],
-            [
-              4,
-              [
-                3.8,
-                3
-              ]
-            ]
-          ]
-        },
-        "line-width": {
-          "stops": [
-            [
-              1,
-              0.2
-            ],
-            [
-              2,
-              0.3
-            ],
-            [
-              3,
-              0.6
-            ],
-            [
-              4,
-              0.666667
-            ]
-          ]
-        }
+        ],
+        "line-width": [
+          "step",
+          [
+            "zoom"
+          ],
+          0.2,
+          2,
+          0.333333,
+          3,
+          0.6,
+          5,
+          0.666667
+        ]
       },
       "source": "v",
       "source-layer": "bndl",
@@ -454,12 +405,102 @@
     },
     {
       "filter": [
-        "all",
+        "==",
         [
-          "==",
-          "bdytyp",
+          "get",
+          "bdytyp"
+        ],
+        3
+      ],
+      "id": "ls-adm-armistice",
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round"
+      },
+      "maxzoom": 6,
+      "minzoom": 0,
+      "paint": {
+        "line-color": [
+          "step",
+          [
+            "zoom"
+          ],
+          "#737C80",
+          2.56,
+          "#000000"
+        ],
+        "line-opacity": [
+          "step",
+          [
+            "zoom"
+          ],
+          0.9,
+          4,
           1
+        ],
+        "line-dasharray": [
+          "step",
+          [
+            "zoom"
+          ],
+          [
+            "literal",
+            [
+              8,
+              5
+            ]
+          ],
+          2,
+          [
+            "literal",
+            [
+              12,
+              6
+            ]
+          ],
+          3,
+          [
+            "literal",
+            [
+              8.88889,
+              5
+            ]
+          ],
+          4,
+          [
+            "literal",
+            [
+              12,
+              5
+            ]
+          ]
+        ],
+        "line-width": [
+          "step",
+          [
+            "zoom"
+          ],
+          0.3,
+          2,
+          0.5,
+          3,
+          0.6,
+          5,
+          0.666667
         ]
+      },
+      "source": "v",
+      "source-layer": "bndl",
+      "type": "line"
+    },
+    {
+      "filter": [
+        "==",
+        [
+          "get",
+          "bdytyp"
+        ],
+        1
       ],
       "id": "ls-adm-international",
       "layout": {
@@ -469,42 +510,39 @@
       "maxzoom": 6,
       "minzoom": 0,
       "paint": {
-        "line-color": {
-          "stops": [
-            [
-              2,
-              "#737B80"
-            ],
-            [
-              3,
-              "#000000"
-            ]
-          ]
-        },
-        "line-width": {
-          "stops": [
-            [
-              0,
-              0.2
-            ],
-            [
-              1,
-              0.3
-            ],
-            [
-              2,
-              0.4
-            ],
-            [
-              4,
-              0.5
-            ],
-            [
-              5,
-              0.666667
-            ]
-          ]
-        }
+        "line-color": [
+          "step",
+          [
+            "zoom"
+          ],
+          "#737C80",
+          2.56,
+          "#000000"
+        ],
+        "line-opacity": [
+          "step",
+          [
+            "zoom"
+          ],
+          0.9,
+          4,
+          1
+        ],
+        "line-width": [
+          "step",
+          [
+            "zoom"
+          ],
+          0.2,
+          2,
+          0.4,
+          3,
+          0.466667,
+          4,
+          0.5,
+          5,
+          0.666667
+        ]
       },
       "source": "v",
       "source-layer": "bndl",
@@ -512,727 +550,1139 @@
     },
     {
       "filter": [
-        "all",
+        "==",
         [
-          "==",
-          "poptyp",
+          "get",
+          "perenniality"
+        ],
+        1
+      ],
+      "id": "ls-wbya10",
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round"
+      },
+      "minzoom": 4.89,
+      "maxzoom": 6,
+      "paint": {
+        "line-color": "rgba(87,93,102,0.55)",
+        "line-width": 0.666667
+      },
+      "source": "v",
+      "source-layer": "wbya10",
+      "type": "line"
+    },
+    {
+      "id": "pg-wbya10",
+      "maxzoom": 6,
+      "paint": {
+        "fill-color": "#D4D7D9"
+      },
+      "source": "v",
+      "source-layer": "wbya10",
+      "type": "fill"
+    },
+    {
+      "filter": [
+        "match",
+        [
+          "get",
+          "poptyp"
+        ],
+        [
+          1,
+          2,
           3
-        ]
+        ],
+        true,
+        false
       ],
-      "id": "pt-place-capitals3",
+      "id": "pt-place-capitals",
       "layout": {
         "icon-allow-overlap": true,
-        "icon-image": "PPL_Territorial",
+        "icon-image": [
+          "match",
+          [
+            "get",
+            "poptyp"
+          ],
+          1,
+          "PPL_National",
+          2,
+          "PPL_Alternative",
+          "PPL_Territorial"
+        ],
         "icon-size": 1,
         "text-allow-overlap": true,
+        "text-optional": true,
         "text-field": "{cartolb}",
         "text-font": [
-          "sans"
+          "NotoSans-Regular"
+        ],
+        "text-size": [
+          "step",
+          [
+            "zoom"
+          ],
+          9,
+          5,
+          10
+        ],
+        "text-anchor": [
+          "match",
+          [
+            "get",
+            "iso3cd"
+          ],
+          [
+            "TUR",
+            "CAN",
+            "GTM",
+            "HND",
+            "JAM",
+            "PAN",
+            "COL",
+            "VEN",
+            "TTO",
+            "VGB",
+            "BRA",
+            "BOL",
+            "ARG",
+            "MLI",
+            "COG",
+            "BDI",
+            "ZAF",
+            "DJI",
+            "CYP",
+            "DEU",
+            "ESP",
+            "SMR",
+            "VAT",
+            "BGR",
+            "POL",
+            "LTU",
+            "LVA",
+            "GBR",
+            "BTN",
+            "IND",
+            "MMR",
+            "KHM",
+            "LAO",
+            "SYC"
+          ],
+          "bottom",
+          [
+            "USA",
+            "ECU",
+            "PER",
+            "MEX",
+            "NIC",
+            "GRD",
+            "DMA",
+            "MSR",
+            "SEN",
+            "GHA",
+            "EGY",
+            "AUT",
+            "ALB",
+            "MNE",
+            "CAM",
+            "GIN",
+            "CAF"
+          ],
+          "right",
+          [
+            "ARM",
+            "URY",
+            "SOM",
+            "HTI",
+            "DOM",
+            "VCT",
+            "KNA",
+            "TGO",
+            "CIV",
+            "COD",
+            "MWI",
+            "LBN",
+            "DNK",
+            "IRL",
+            "YEM",
+            "BRN",
+            "TUV",
+            "VIR",
+            "GNB",
+            "SLE",
+            "LBR",
+            "BFA"
+          ],
+          "top",
+          "left"
         ],
         "text-offset": [
-          1,
-          1
-        ],
-        "text-optional": true,
-        "text-size": {
-          "stops": [
+          "match",
+          [
+            "get",
+            "iso3cd"
+          ],
+          [
+            "TUR",
+            "CAN",
+            "GTM",
+            "HND",
+            "JAM",
+            "PAN",
+            "COL",
+            "VEN",
+            "TTO",
+            "VGB",
+            "BRA",
+            "BOL",
+            "ARG",
+            "MLI",
+            "COG",
+            "BDI",
+            "ZAF",
+            "DJI",
+            "CYP",
+            "DEU",
+            "ESP",
+            "SMR",
+            "VAT",
+            "BGR",
+            "POL",
+            "LTU",
+            "LVA",
+            "GBR",
+            "BTN",
+            "IND",
+            "MMR",
+            "KHM",
+            "LAO",
+            "SYC"
+          ],
+          [
+            "literal",
             [
-              3,
-              9
-            ],
-            [
-              4,
-              9.1
-            ],
-            [
-              5,
-              10
+              0,
+              -1
             ]
-          ]
-        }
-      },
-      "maxzoom": 6,
-      "minzoom": 3.89,
-      "paint": {
-        "text-color": "#3E3F40",
-        "text-halo-color": "#F7F9FF",
-        "text-halo-width": {
-          "stops": [
+          ],
+          [
+            "USA",
+            "ECU",
+            "PER",
+            "MEX",
+            "NIC",
+            "GRD",
+            "DMA",
+            "MSR",
+            "SEN",
+            "GHA",
+            "EGY",
+            "AUT",
+            "ALB",
+            "MNE",
+            "CAM",
+            "GIN",
+            "CAF"
+          ],
+          [
+            "literal",
             [
-              4,
-              1
-            ],
-            [
-              5,
-              1.13
+              -1,
+              0
             ]
-          ]
-        }
-      },
-      "source": "v",
-      "source-layer": "un_popp",
-      "type": "symbol"
-    },
-    {
-      "filter": [
-        "all",
-        [
-          "==",
-          "poptyp",
-          2
-        ]
-      ],
-      "id": "pt-place-capitals2",
-      "layout": {
-        "icon-allow-overlap": true,
-        "icon-image": "PPL_Alternative",
-        "icon-size": 1,
-        "text-allow-overlap": true,
-        "text-field": "{cartolb}",
-        "text-font": [
-          "sans"
-        ],
-        "text-offset": [
-          1,
-          1
-        ],
-        "text-optional": true,
-        "text-size": {
-          "stops": [
+          ],
+          [
+            "ARM",
+            "URY",
+            "SOM",
+            "HTI",
+            "DOM",
+            "VCT",
+            "KNA",
+            "TGO",
+            "CIV",
+            "COD",
+            "MWI",
+            "LBN",
+            "DNK",
+            "IRL",
+            "YEM",
+            "BRN",
+            "TUV",
+            "VIR",
+            "GNB",
+            "SLE",
+            "LBR",
+            "BFA"
+          ],
+          [
+            "literal",
             [
-              3,
-              9
-            ],
-            [
-              4,
-              9.1
-            ],
-            [
-              5,
-              10
-            ]
-          ]
-        }
-      },
-      "maxzoom": 6,
-      "minzoom": 3.89,
-      "paint": {
-        "text-color": "#3E3F40",
-        "text-halo-color": "#F7F9FF",
-        "text-halo-width": {
-          "stops": [
-            [
-              4,
-              1
-            ],
-            [
-              5,
-              1.13
-            ]
-          ]
-        }
-      },
-      "source": "v",
-      "source-layer": "un_popp",
-      "type": "symbol"
-    },
-    {
-      "filter": [
-        "all",
-        [
-          "==",
-          "poptyp",
-          1
-        ]
-      ],
-      "id": "pt-place-capitals1",
-      "layout": {
-        "icon-allow-overlap": true,
-        "icon-image": "PPL_National",
-        "icon-size": 1,
-        "text-allow-overlap": true,
-        "text-field": "{cartolb}",
-        "text-font": [
-          "sans"
-        ],
-        "text-offset": [
-          1,
-          1
-        ],
-        "text-optional": true,
-        "text-size": {
-          "stops": [
-            [
-              3,
-              9
-            ],
-            [
-              4,
-              9.1
-            ],
-            [
-              5,
-              10
-            ]
-          ]
-        }
-      },
-      "maxzoom": 6,
-      "minzoom": 3.89,
-      "paint": {
-        "text-color": "#3E3F40",
-        "text-halo-color": "#F7F9FF",
-        "text-halo-width": {
-          "stops": [
-            [
-              4,
-              1
-            ],
-            [
-              5,
-              1.13
-            ]
-          ]
-        }
-      },
-      "source": "v",
-      "source-layer": "un_popp",
-      "type": "symbol"
-    },
-    {
-      "filter": [
-        "any",
-        [
-          "==",
-          "annotationclassid",
-          7
-        ]
-      ],
-      "id": "pt-lab-cty-ita",
-      "layout": {
-        "text-allow-overlap": true,
-        "text-field": "{textstring}",
-        "text-font": [
-          "Open Sans Italic"
-        ],
-        "text-optional": true,
-        "text-size": {
-          "stops": [
-            [
-              3,
-              8
-            ],
-            [
-              4,
-              12
-            ],
-            [
-              5,
-              13
-            ]
-          ]
-        }
-      },
-      "maxzoom": 6,
-      "minzoom": 1.56,
-      "paint": {
-        "text-color": "#4A4C4C",
-        "text-halo-color": "#F7F9FF",
-        "text-halo-width": {
-          "stops": [
-            [
-              2,
-              0.7
-            ],
-            [
-              3,
+              0,
               1
             ]
-          ]
-        }
-      },
-      "source": "v",
-      "source-layer": "lab_cty",
-      "type": "symbol"
-    },
-    {
-      "filter": [
-        "any",
-        [
-          "==",
-          "annotationclassid",
-          4
-        ]
-      ],
-      "id": "pt-lab-cty-ant",
-      "layout": {
-        "text-allow-overlap": true,
-        "text-field": "{textstring}",
-        "text-font": [
-          "Open Sans Italic"
-        ],
-        "text-optional": true,
-        "text-size": {
-          "stops": [
+          ],
+          [
+            "literal",
             [
-              3,
-              8
-            ],
-            [
-              4,
-              12
-            ],
-            [
-              5,
-              13
+              1,
+              0
             ]
           ]
-        }
-      },
-      "maxzoom": 6,
-      "minzoom": 1.56,
-      "paint": {
-        "text-color": "#4A4C4C",
-        "text-halo-color": "#F7F9FF",
-        "text-halo-width": {
-          "stops": [
-            [
-              2,
-              0.7
-            ],
-            [
-              3,
-              1
-            ]
-          ]
-        }
-      },
-      "source": "v",
-      "source-layer": "lab_cty",
-      "type": "symbol"
-    },
-    {
-      "filter": [
-        "any",
-        [
-          "==",
-          "annotationclassid",
-          8
-        ]
-      ],
-      "id": "pt-lab-cty-reg2",
-      "layout": {
-        "text-allow-overlap": true,
-        "text-field": "{textstring}",
-        "text-font": [
-          "sans"
         ],
-        "text-optional": true,
-        "text-size": {
-          "stops": [
-            [
-              3,
-              8
-            ],
-            [
-              4,
-              12
-            ],
-            [
-              5,
-              13
-            ]
-          ]
-        }
-      },
-      "maxzoom": 6,
-      "minzoom": 5,
-      "paint": {
-        "text-color": "#4A4C4C",
-        "text-halo-color": "#F7F9FF",
-        "text-halo-width": {
-          "stops": [
-            [
-              2,
-              0.7
-            ],
-            [
-              3,
-              1
-            ]
-          ]
-        }
-      },
-      "source": "v",
-      "source-layer": "lab_cty",
-      "type": "symbol"
-    },
-    {
-      "filter": [
-        "any",
-        [
-          "==",
-          "annotationclassid",
-          2
+        "text-letter-spacing": [
+          "match",
+          [
+            "get",
+            "iso3cd"
+          ],
+          "ARE",
+          0.1,
+          0.05
         ],
-        [
-          "==",
-          "annotationclassid",
-          5
-        ],
-        [
-          "==",
-          "annotationclassid",
-          6
-        ]
-      ],
-      "id": "pt-lab-cty-reg1",
-      "layout": {
-        "text-allow-overlap": true,
-        "text-field": "{textstring}",
-        "text-font": [
-          "sans"
-        ],
-        "text-optional": true,
-        "text-size": {
-          "stops": [
-            [
-              3,
-              8
-            ],
-            [
-              4,
-              12
-            ],
-            [
-              5,
-              13
-            ]
-          ]
-        }
-      },
-      "maxzoom": 6,
-      "minzoom": 1.56,
-      "paint": {
-        "text-color": "#4A4C4C",
-        "text-halo-color": "#F7F9FF",
-        "text-halo-width": {
-          "stops": [
-            [
-              2,
-              0.7
-            ],
-            [
-              3,
-              1
-            ]
-          ]
-        }
-      },
-      "source": "v",
-      "source-layer": "lab_cty",
-      "type": "symbol"
-    },
-    {
-      "filter": [
-        "any",
-        [
-          "==",
-          "annotationclassid",
-          0
-        ],
-        [
-          "==",
-          "annotationclassid",
-          1
-        ],
-        [
-          "==",
-          "annotationclassid",
-          3
-        ]
-      ],
-      "id": "pt-lab-cty-bold",
-      "layout": {
-        "text-allow-overlap": true,
-        "text-field": "{textstring}",
-        "text-font": [
-          "Open Sans Bold"
-        ],
-        "text-optional": true,
-        "text-size": {
-          "stops": [
-            [
-              3,
-              8
-            ],
-            [
-              4,
-              12
-            ],
-            [
-              5,
-              13
-            ]
-          ]
-        }
-      },
-      "maxzoom": 6,
-      "minzoom": 1.56,
-      "paint": {
-        "text-color": "#4A4C4C",
-        "text-halo-color": "#F7F9FF",
-        "text-halo-width": {
-          "stops": [
-            [
-              2,
-              0.7
-            ],
-            [
-              3,
-              1
-            ]
-          ]
-        }
-      },
-      "source": "v",
-      "source-layer": "lab_cty",
-      "type": "symbol"
-    },
-    {
-      "filter": [
-        "any",
-        [
-          "==",
-          "annotationclassid",
-          6
-        ]
-      ],
-      "id": "pt-lab-water-island",
-      "layout": {
-        "text-allow-overlap": true,
-        "text-field": "{textstring}",
-        "text-font": [
-          "Open Sans Semibold Italic"
-        ],
-        "text-optional": true,
-        "text-size": {
-          "stops": [
-            [
-              3,
-              8
-            ],
-            [
-              4,
-              9.3
-            ]
-          ]
-        }
+        "text-max-width": 50
       },
       "maxzoom": 6,
       "minzoom": 4,
       "paint": {
-        "text-color": "#4E4E4E",
-        "text-halo-color": "#FFFFFF",
-        "text-halo-width": 0.733
+        "text-color": "#3E3F40",
+        "text-halo-color": "rgba(255, 255, 255, 0.5)",
+        "text-halo-width": [
+          "step",
+          [
+            "zoom"
+          ],
+          1,
+          5,
+          1.13333
+        ]
       },
       "source": "v",
-      "source-layer": "lab_water",
+      "source-layer": "un_popp",
       "type": "symbol"
     },
     {
       "filter": [
-        "any",
+        "match",
         [
-          "==",
-          "annotationclassid",
-          3
-        ]
+          "get",
+          "labtyp"
+        ],
+        [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ],
+        true,
+        false
       ],
-      "id": "pt-lab-water-bay",
+      "id": "pt-lab-cty",
       "layout": {
         "text-allow-overlap": true,
+        "text-optional": true,
         "text-field": "{textstring}",
         "text-font": [
-          "Open Sans Semibold Italic"
-        ],
-        "text-optional": true,
-        "text-size": {
-          "stops": [
+          "step",
+          [
+            "zoom"
+          ],
+          [
+            "match",
             [
+              "get",
+              "labtyp"
+            ],
+            4,
+            [
+              "literal",
+              [
+                "Open Sans Semibold Italic"
+              ]
+            ],
+            [
+              "literal",
+              [
+                "Open Sans Semibold"
+              ]
+            ]
+          ],
+          3,
+          [
+            "match",
+            [
+              "get",
+              "labtyp"
+            ],
+            4,
+            [
+              "literal",
+              [
+                "Open Sans Semibold Italic"
+              ]
+            ],
+            [
+              0,
               1,
-              8.5
-            ],
-            [
-              2,
-              9
-            ],
-            [
               3,
-              14
+              5
+            ],
+            [
+              "literal",
+              [
+                "Open Sans Bold"
+              ]
+            ],
+            [
+              "literal",
+              [
+                "Open Sans Regular"
+              ]
+            ]
+          ],
+          4,
+          [
+            "match",
+            [
+              "get",
+              "labtyp"
+            ],
+            4,
+            [
+              "literal",
+              [
+                "Open Sans Semibold Italic"
+              ]
+            ],
+            [
+              0,
+              1,
+              3,
+              5
+            ],
+            [
+              "literal",
+              [
+                "Open Sans Bold"
+              ]
+            ],
+            6,
+            [
+              "literal",
+              [
+                "Open Sans Semibold"
+              ]
+            ],
+            7,
+            [
+              "match",
+              [
+                "get",
+                "fontstyle"
+              ],
+              "Bold",
+              [
+                "literal",
+                [
+                  "Open Sans Bold"
+                ]
+              ],
+              [
+                "literal",
+                [
+                  "Open Sans Italic"
+                ]
+              ]
+            ],
+            [
+              "literal",
+              [
+                "Open Sans Regular"
+              ]
             ]
           ]
-        }
+        ],
+        "text-size": [
+          "step",
+          [
+            "zoom"
+          ],
+          [
+            "match",
+            [
+              "get",
+              "labtyp"
+            ],
+            4,
+            9.33333,
+            2,
+            7.73333,
+            [
+              0,
+              1,
+              3,
+              5
+            ],
+            8.33333,
+            0
+          ],
+          3,
+          [
+            "match",
+            [
+              "get",
+              "labtyp"
+            ],
+            4,
+            12,
+            2,
+            9,
+            [
+              0,
+              1,
+              3
+            ],
+            9.66667,
+            5,
+            9.33333,
+            0
+          ],
+          4,
+          [
+            "match",
+            [
+              "get",
+              "labtyp"
+            ],
+            [
+              0,
+              1,
+              3,
+              7
+            ],
+            12,
+            2,
+            11,
+            4,
+            15.3333,
+            5,
+            11.3333,
+            6,
+            8,
+            0
+          ],
+          5,
+          [
+            "match",
+            [
+              "get",
+              "labtyp"
+            ],
+            0,
+            14.6667,
+            1,
+            15.3333,
+            2,
+            12.6667,
+            [
+              3,
+              5
+            ],
+            14,
+            4,
+            17.33333,
+            6,
+            10.6667,
+            7,
+            13.3333,
+            8,
+            12,
+            0
+          ]
+        ],
+        "text-letter-spacing": [
+          "step",
+          [
+            "zoom"
+          ],
+          [
+            "match",
+            [
+              "get",
+              "labtyp"
+            ],
+            0,
+            0.15,
+            1,
+            0.8,
+            [
+              2,
+              5
+            ],
+            0.1,
+            4,
+            4,
+            0
+          ],
+          3,
+          [
+            "match",
+            [
+              "get",
+              "labtyp"
+            ],
+            [
+              0,
+              3
+            ],
+            0.1,
+            1,
+            1.5,
+            2,
+            0.05,
+            4,
+            6,
+            5,
+            0.15,
+            0
+          ],
+          4,
+          [
+            "match",
+            [
+              "get",
+              "labtyp"
+            ],
+            0,
+            0.2,
+            1,
+            2,
+            2,
+            0.05,
+            3,
+            0.1,
+            4,
+            5,
+            5,
+            0.15,
+            0
+          ],
+          5,
+          [
+            "match",
+            [
+              "get",
+              "labtyp"
+            ],
+            0,
+            0.6,
+            1,
+            3,
+            [
+              2,
+              3,
+              6
+            ],
+            0.05,
+            4,
+            6.35,
+            5,
+            0.15,
+            7,
+            0.02,
+            0
+          ]
+        ]
       },
       "maxzoom": 6,
       "minzoom": 2,
       "paint": {
-        "text-color": "#686868",
-        "text-halo-color": "#FFFFFF",
-        "text-halo-width": {
-          "stops": [
-            [
-              3,
-              0.7
-            ],
-            [
-              5,
-              0.9
-            ]
-          ]
-        }
-      },
-      "source": "v",
-      "source-layer": "lab_water",
-      "type": "symbol"
-    },
-    {
-      "filter": [
-        "any",
-        [
-          "==",
-          "annotationclassid",
-          2
+        "text-color": [
+          "step",
+          [
+            "zoom"
+          ],
+          "#4D5459",
+          3,
+          "#586166",
+          4,
+          "#4A4C4D"
         ],
-        [
-          "==",
-          "annotationclassid",
-          4
+        "text-halo-color": [
+          "step",
+          [
+            "zoom"
+          ],
+          "rgba(255,255,255,0.25)",
+          3,
+          "rgba(250,251,252,0.5)",
+          4,
+          "rgba(255,255,255,0.5)"
         ],
-        [
-          "==",
-          "annotationclassid",
-          5
-        ]
-      ],
-      "id": "pt-lab-water-sea",
-      "layout": {
-        "text-allow-overlap": true,
-        "text-field": "{textstring}",
-        "text-font": [
-          "Open Sans Semibold Italic"
-        ],
-        "text-optional": true,
-        "text-size": {
-          "stops": [
+        "text-halo-width": [
+          "step",
+          [
+            "zoom"
+          ],
+          [
+            "match",
             [
-              1,
-              8.5
+              "get",
+              "labtyp"
             ],
+            4,
+            1,
+            0.733333
+          ],
+          3,
+          0.733333,
+          4,
+          [
+            "match",
             [
-              2,
-              9
+              "get",
+              "labtyp"
             ],
-            [
-              3,
-              11
-            ],
-            [
-              4,
-              12
-            ]
-          ]
-        }
-      },
-      "maxzoom": 6,
-      "minzoom": 2.5,
-      "paint": {
-        "text-color": "#686868",
-        "text-halo-color": "#FFFFFF",
-        "text-halo-width": {
-          "stops": [
-            [
-              2,
-              0.4
-            ],
-            [
-              3,
-              0.7
-            ],
-            [
-              5,
-              0.9
-            ]
-          ]
-        }
-      },
-      "source": "v",
-      "source-layer": "lab_water",
-      "type": "symbol"
-    },
-    {
-      "filter": [
-        "any",
-        [
-          "==",
-          "annotationclassid",
-          0
-        ]
-      ],
-      "id": "pt-lab-water-ocean",
-      "layout": {
-        "text-allow-overlap": true,
-        "text-field": "{textstring}",
-        "text-font": [
-          "Open Sans Semibold Italic"
-        ],
-        "text-optional": true,
-        "text-size": {
-          "stops": [
             [
               0,
-              9
-            ],
-            [
               1,
-              12
-            ],
-            [
-              2,
-              17
-            ],
-            [
               3,
-              20
-            ],
-            [
               4,
-              22
+              5
             ],
-            [
-              5,
-              24
-            ]
-          ]
-        }
+            1,
+            8,
+            0,
+            0.733333
+          ],
+          5,
+          1
+        ]
       },
+      "source": "v",
+      "source-layer": "lab_cty",
+      "type": "symbol"
+    },
+    {
+      "id": "pg-lab-inwater",
+      "minzoom": 4,
       "maxzoom": 6,
-      "minzoom": 0.56,
+      "source": "v",
+      "source-layer": "wbya10",
+      "type": "symbol",
+      "layout": {
+        "text-field": "{name}",
+        "text-font": [
+          "Open Sans Bold Italic"
+        ],
+        "text-optional": true,
+        "text-size": [
+          "step",
+          [
+            "zoom"
+          ],
+          8,
+          5,
+          12
+        ],
+        "text-letter-spacing": 0.3
+      },
       "paint": {
         "text-color": "#686868",
-        "text-halo-color": "#FFFFFF",
-        "text-halo-width": {
-          "stops": [
+        "text-halo-color": "rgba(255,255,255,0.75)",
+        "text-halo-width": 0.933333
+      }
+    },
+    {
+      "filter": [
+        "match",
+        [
+          "get",
+          "annotationclassid"
+        ],
+        [
+          0,
+          2,
+          4,
+          5,
+          3,
+          6
+        ],
+        true,
+        false
+      ],
+      "id": "pt-lab-water",
+      "layout": {
+        "text-allow-overlap": true,
+        "text-optional": true,
+        "text-field": "{textstring}",
+        "text-font": [
+          "Open Sans Semibold Italic"
+        ],
+        "text-letter-spacing": [
+          "step",
+          [
+            "zoom"
+          ],
+          0.3,
+          2,
+          [
+            "match",
+            [
+              "get",
+              "annotationclassid"
+            ],
+            0,
+            0.8,
+            0.3
+          ],
+          3,
+          [
+            "match",
+            [
+              "get",
+              "annotationclassid"
+            ],
+            0,
+            1,
+            0.3
+          ],
+          4,
+          [
+            "match",
+            [
+              "get",
+              "annotationclassid"
+            ],
+            0,
+            1,
+            5,
+            0.7,
+            0.3
+          ],
+          5,
+          [
+            "match",
+            [
+              "get",
+              "annotationclassid"
+            ],
+            0,
+            1,
             [
               2,
-              0.5
+              4,
+              5,
+              3
             ],
-            [
-              3,
-              1
-            ]
+            0.3,
+            0.1
           ]
-        }
+        ],
+        "text-max-width": [
+          "step",
+          [
+            "zoom"
+          ],
+          10,
+          2,
+          [
+            "match",
+            [
+              "get",
+              "annotationclassid"
+            ],
+            0,
+            30,
+            8
+          ],
+          3,
+          [
+            "match",
+            [
+              "get",
+              "annotationclassid"
+            ],
+            0,
+            40,
+            10
+          ],
+          4,
+          [
+            "match",
+            [
+              "get",
+              "annotationclassid"
+            ],
+            0,
+            60,
+            [
+              2,
+              4,
+              5,
+              3
+            ],
+            40,
+            30
+          ],
+          5,
+          [
+            "match",
+            [
+              "get",
+              "annotationclassid"
+            ],
+            0,
+            90,
+            [
+              2,
+              4,
+              5,
+              3
+            ],
+            40,
+            30
+          ]
+        ],
+        "text-size": [
+          "step",
+          [
+            "zoom"
+          ],
+          [
+            "match",
+            [
+              "get",
+              "annotationclassid"
+            ],
+            0,
+            10,
+            0
+          ],
+          2,
+          [
+            "match",
+            [
+              "get",
+              "annotationclassid"
+            ],
+            3,
+            9.3333,
+            6,
+            0,
+            8.66667
+          ],
+          3,
+          [
+            "match",
+            [
+              "get",
+              "annotationclassid"
+            ],
+            0,
+            16,
+            [
+              2,
+              4,
+              5
+            ],
+            10,
+            3,
+            10.6667,
+            0
+          ],
+          4,
+          [
+            "match",
+            [
+              "get",
+              "annotationclassid"
+            ],
+            0,
+            18.6667,
+            [
+              2,
+              4,
+              5
+            ],
+            12,
+            3,
+            14.6667,
+            8
+          ],
+          5,
+          [
+            "match",
+            [
+              "get",
+              "annotationclassid"
+            ],
+            0,
+            24,
+            [
+              2,
+              4
+            ],
+            12,
+            5,
+            16,
+            3,
+            13.3333,
+            9.33333
+          ]
+        ]
+      },
+      "maxzoom": 6,
+      "minzoom": 1,
+      "paint": {
+        "text-color": [
+          "step",
+          [
+            "zoom"
+          ],
+          "#686868",
+          4,
+          [
+            "match",
+            [
+              "get",
+              "annotationclassid"
+            ],
+            6,
+            "#343434",
+            "#686868"
+          ]
+        ],
+        "text-halo-color": [
+          "step",
+          [
+            "zoom"
+          ],
+          "rgba(225,235,240,0.5)",
+          2,
+          [
+            "match",
+            [
+              "get",
+              "annotationclassid"
+            ],
+            0,
+            "rgba(225,234,240,0.2)",
+            "rgba(235,241,244,0.6)"
+          ],
+          3,
+          [
+            "match",
+            [
+              "get",
+              "annotationclassid"
+            ],
+            0,
+            "rgba(194,224,242,0.8)",
+            3,
+            "rgba(206,228,242,0.5)",
+            "rgba(206,225,242,0.7)"
+          ],
+          4,
+          [
+            "match",
+            [
+              "get",
+              "annotationclassid"
+            ],
+            0,
+            "rgba(206,228,242,0.5)",
+            "rgba(206,228,242,0.7)"
+          ],
+          5,
+          [
+            "match",
+            [
+              "get",
+              "annotationclassid"
+            ],
+            0,
+            "rgba(206,228,242,0.5)",
+            6,
+            "rgba(237,247,252,0.6)",
+            5,
+            "rgba(206,228,242,0.7)",
+            "rgba(206,228,242,0.5)"
+          ]
+        ],
+        "text-halo-width": [
+          "step",
+          [
+            "zoom"
+          ],
+          0.46667,
+          2,
+          [
+            "match",
+            [
+              "get",
+              "annotationclassid"
+            ],
+            0,
+            1,
+            3,
+            0.73333,
+            0.466667
+          ],
+          3,
+          [
+            "match",
+            [
+              "get",
+              "annotationclassid"
+            ],
+            0,
+            1,
+            0.73333
+          ],
+          4,
+          [
+            "match",
+            [
+              "get",
+              "annotationclassid"
+            ],
+            0,
+            1,
+            [
+              2,
+              4,
+              5
+            ],
+            0.8,
+            0.73333
+          ],
+          5,
+          [
+            "match",
+            [
+              "get",
+              "annotationclassid"
+            ],
+            0,
+            1,
+            [
+              2,
+              4,
+              5,
+              3
+            ],
+            0.866667,
+            0.73333
+          ]
+        ]
       },
       "source": "v",
       "source-layer": "lab_water",
@@ -1242,7 +1692,6 @@
   "metadata": {
     "disclaimer": "The United Nations Clear Map (hereinafter &quot;Clear Map&quot;) is a background reference web mapping service produced to facilitate &quot;the issuance of any map at any duty station, including dissemination via public electronic networks such as Internet&quot; and &quot;to ensure that maps meet publication standards and that they are not in contravention of existing United Nations policies&quot; in accordance with the in the Administrative Instruction on &quot;Regulations for the Control and Limitation of Documentation - Guidelines for the Publication of Maps&quot; of 20 January 1997 (http://undocs.org/ST/AI/189/Add.25/Rev.1). Clear Map is created for the use of the United Nations Secretariat and community. All departments, offices and regional commissions of the United Nations Secretariat including offices away from Headquarters using Clear Map remain bound to the instructions as contained in the Administrative Instruction and should therefore seek clearance from the UN Geospatial Information Section (formerly Cartographic Section) prior to the issuance of their thematic maps using Clear Map as background reference."
   },
-  "site_root": "https://localhost:9966",
   "sources": {
     "v": {
       "attribution": "<a href='https://geoportal.un.org/arcgis/apps/sites/#/unitemaps'><img src='https://geoportal.un.org/webapps/resources/LOGOS/PoweredbyUniteMaps.png' alt='Powered by Unite Maps'></a> <a href='http://unopengis.org/unopengis/main/main.php'><img src='https://unopengis.github.io/watermark/watermark.png' alt='UN OpenGIS' style='width:40px;height:40px;'></a>",

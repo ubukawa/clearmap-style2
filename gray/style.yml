@@ -3,10 +3,11 @@ center:
   - 0
 glyphs: https://ubukawa.github.io/clearmap-style2/font/{fontstack}/{range}.pbf
 layers:
-#  - !!inc/file layers/0_base/background.yml
   - !!inc/file layers/0_base/pg-ocean.yml
+  - !!inc/file layers/0_base/pg-bathymetry.yml
   - !!inc/file layers/0_base/pg-landmass.yml
-  - !!inc/file layers/0_base/pg-urban.yml
+  # We could possibly add hill shade
+#  - !!inc/file layers/0_base/pg-urban.yml # This layer is used in the style, but does not appear in the actual map. So, I turn it off.
   - !!inc/file layers/0_base/ls-coastline.yml
 # wbya river polygon come here...
   - !!inc/file layers/1_water/ls-dral10.yml

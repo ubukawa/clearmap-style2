@@ -7,7 +7,12 @@ id: pg-urban
 maxzoom: 6
 minzoom: 4
 paint:
-  fill-color: '#E6E6E1'
+  fill-color:
+  - step
+  - - zoom
+  - '#E6E6E1'
+  - 3.89
+  - '#575D66'
 source: v
 source-layer: landcover
 type: fill

@@ -73,7 +73,7 @@ maxzoom: 6
 minzoom: 4
 paint:
   text-color: '#3E3F40'
-  text-halo-color: rgba(255, 255, 255, 0.8)
+  text-halo-color: rgba(255, 255, 255, 0.5)
   text-halo-width:
   - step
   - - zoom

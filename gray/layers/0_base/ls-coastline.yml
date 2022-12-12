@@ -10,22 +10,23 @@ layout:
 maxzoom: 6
 minzoom: 0
 paint:
-  line-color:
-  - step
-  - - zoom
-  - '#5B808C'
-  - 4
-  - '#69838C'
+  line-color: '#575D66'
   line-width:
   - interpolate
   - - linear
   - - zoom
   - 3 #ZL
   - 0.25
-  - 4 #ZL
+  - 3.89 #ZL
   - 0.4
-  - 6
-  - 0.5
+  - 18
+  - 0.8
+  line-opacity:
+  - step
+  - - zoom
+  - 0.4
+  - 3.89
+  - 0.7
 source: v
 source-layer: bndl
 type: line
