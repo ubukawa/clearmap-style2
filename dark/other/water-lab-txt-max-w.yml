@@ -1,0 +1,41 @@
+- step
+- - zoom
+- 10
+- 2 #ZL
+- - match
+  - - get
+    - annotationclassid
+  - 0  
+  - 30
+  - 8
+- 3 #ZL
+- - match
+  - - get
+    - annotationclassid
+  - 0  
+  - 40
+  - 10
+- 4 #ZL
+- - match
+  - - get
+    - annotationclassid
+  - 0  
+  - 60
+  - - 2
+    - 4
+    - 5
+    - 3
+  - 40
+  - 30
+- 5 #ZL
+- - match
+  - - get
+    - annotationclassid
+  - 0  
+  - 90
+  - - 2
+    - 4
+    - 5
+    - 3
+  - 40
+  - 30

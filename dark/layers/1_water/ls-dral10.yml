@@ -1,0 +1,28 @@
+#filtering was done during the data conversion.
+#filter:
+#  - all
+#  - - '=='
+#    - - get
+#      - type
+#    - 1
+#  - - '=='
+#    - - get
+#      - perenniality
+#    - 1
+id: ls-dral10
+layout:
+  line-cap: round
+  line-join: round
+maxzoom: 6
+minzoom: 2.56
+paint:
+  line-color: '#27303D'
+  line-width:
+  - step
+  - - zoom
+  - 1
+  - 3.89
+  - 1.5
+source: v
+source-layer: dral10
+type: line

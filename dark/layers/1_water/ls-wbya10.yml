@@ -1,0 +1,17 @@
+filter:
+- '=='
+- - get
+  - perenniality
+- 1
+id: ls-wbya10
+layout:
+  line-cap: round
+  line-join: round
+minzoom: 4.89
+maxzoom: 6
+paint:
+  line-color: rgba(39,48,61,0.7)
+  line-width: 0.666667
+source: v
+source-layer: wbya10
+type: line

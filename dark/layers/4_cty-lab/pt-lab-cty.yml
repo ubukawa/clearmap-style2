@@ -218,19 +218,9 @@ paint:
   text-color:
   - step
   - - zoom
-  - - match
-    - - get
-      - labtyp
-    - 2
-    - '#505559'
-    - '#4D5459'
+  - '#4D5459'
   - 3
-  - - match
-    - - get
-      - labtyp
-    - 2
-    - '#4D5559'
-    - '#586166'
+  - '#586166'
   - 4
   - '#4A4C4D'
  # - - match

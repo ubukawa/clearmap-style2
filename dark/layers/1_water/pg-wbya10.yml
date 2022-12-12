@@ -1,0 +1,13 @@
+#filtering was done during the data conversion.
+#filter:
+#- '=='
+#- - get
+#  - perenniality
+#- 1
+id: pg-wbya10
+maxzoom: 6
+paint:
+  fill-color: '#D4D7D9'
+source: v
+source-layer: wbya10
+type: fill

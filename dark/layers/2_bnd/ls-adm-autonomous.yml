@@ -1,0 +1,20 @@
+filter:
+- '=='
+- - get
+  - bdytyp
+- 8
+id: ls-adm-autonomous
+layout:
+  line-cap: round
+  line-join: round
+maxzoom: 6
+minzoom: 4.89
+paint:
+  line-color: '#686868'
+  line-dasharray:
+    - 7.93333
+    - 4.93333
+  line-width: 1
+source: v
+source-layer: bndl
+type: line
