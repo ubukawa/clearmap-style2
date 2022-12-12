@@ -1265,8 +1265,8 @@
         "text-letter-spacing": 0.3
       },
       "paint": {
-        "text-color": "#686868",
-        "text-halo-color": "rgba(255,255,255,0.75)",
+        "text-color": "#9098A5",
+        "text-halo-color": "#000000",
         "text-halo-width": 0.933333
       }
     },
