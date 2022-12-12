@@ -80,7 +80,7 @@
         "line-join": "round"
       },
       "maxzoom": 6,
-      "minzoom": 0,
+      "minzoom": 4,
       "paint": {
         "line-color": "#47606E",
         "line-width": [

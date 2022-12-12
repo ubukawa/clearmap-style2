@@ -7,7 +7,7 @@ id: ls-coastline
 layout:
   line-cap: round
   line-join: round
-maxzoom: 6
+maxzoom: 4
 minzoom: 0
 paint:
   line-color: '#575D66'
