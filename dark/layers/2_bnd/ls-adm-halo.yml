@@ -6,7 +6,7 @@ filter:
   - 2
   - 3
   - 4
-  - 8
+#  - 8
 - true 
 - false
 id: ls-adm-halo
@@ -14,7 +14,7 @@ layout:
   line-cap: round
   line-join: round
 maxzoom: 6
-minzoom: 4
+minzoom: 3.89
 paint:
   line-color: !!inc/file other/bnd-halo.yml
   line-width:

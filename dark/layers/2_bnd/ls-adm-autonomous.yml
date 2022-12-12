@@ -10,7 +10,7 @@ layout:
 maxzoom: 6
 minzoom: 4.89
 paint:
-  line-color: '#686868'
+  line-color: '#698DA6'
   line-dasharray:
     - 7.93333
     - 4.93333
