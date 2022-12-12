@@ -1,1 +1,10 @@
-'#9098A5'
+- step
+- - zoom
+- '#686868'
+- 4
+- - match
+  - - get
+    - annotationclassid
+  - 6 #island
+  - '#343434'
+  - '#686868'

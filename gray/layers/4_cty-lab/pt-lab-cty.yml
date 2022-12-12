@@ -215,8 +215,28 @@ layout:
 maxzoom: 6
 minzoom: 2
 paint:
-  text-color: '#698DA6'
-  text-halo-color: '#000000'
+  text-color:
+  - step
+  - - zoom
+  - '#4D5459'
+  - 3
+  - '#586166'
+  - 4
+  - '#4A4C4D'
+ # - - match
+ #   - - get
+ #     - labtyp
+ #   - 7 
+ #   - red
+ #   - '#575859'
+  text-halo-color:
+  - step
+  - - zoom
+  - rgba(255,255,255,0.25)
+  - 3
+  - rgba(250,251,252,0.5)
+  - 4
+  - rgba(255,255,255,0.5)
   text-halo-width:
   - step
   - - zoom

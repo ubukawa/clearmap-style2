@@ -1194,28 +1194,8 @@
       "maxzoom": 6,
       "minzoom": 2,
       "paint": {
-        "text-color": [
-          "step",
-          [
-            "zoom"
-          ],
-          "#4D5459",
-          3,
-          "#586166",
-          4,
-          "#4A4C4D"
-        ],
-        "text-halo-color": [
-          "step",
-          [
-            "zoom"
-          ],
-          "rgba(255,255,255,0.25)",
-          3,
-          "rgba(250,251,252,0.5)",
-          4,
-          "rgba(255,255,255,0.5)"
-        ],
+        "text-color": "#698DA6",
+        "text-halo-color": "#000000",
         "text-halo-width": [
           "step",
           [
@@ -1532,81 +1512,8 @@
       "maxzoom": 6,
       "minzoom": 1,
       "paint": {
-        "text-color": [
-          "step",
-          [
-            "zoom"
-          ],
-          "#686868",
-          4,
-          [
-            "match",
-            [
-              "get",
-              "annotationclassid"
-            ],
-            6,
-            "#343434",
-            "#686868"
-          ]
-        ],
-        "text-halo-color": [
-          "step",
-          [
-            "zoom"
-          ],
-          "rgba(225,235,240,0.5)",
-          2,
-          [
-            "match",
-            [
-              "get",
-              "annotationclassid"
-            ],
-            0,
-            "rgba(225,234,240,0.2)",
-            "rgba(235,241,244,0.6)"
-          ],
-          3,
-          [
-            "match",
-            [
-              "get",
-              "annotationclassid"
-            ],
-            0,
-            "rgba(194,224,242,0.8)",
-            3,
-            "rgba(206,228,242,0.5)",
-            "rgba(206,225,242,0.7)"
-          ],
-          4,
-          [
-            "match",
-            [
-              "get",
-              "annotationclassid"
-            ],
-            0,
-            "rgba(206,228,242,0.5)",
-            "rgba(206,228,242,0.7)"
-          ],
-          5,
-          [
-            "match",
-            [
-              "get",
-              "annotationclassid"
-            ],
-            0,
-            "rgba(206,228,242,0.5)",
-            6,
-            "rgba(237,247,252,0.6)",
-            5,
-            "rgba(206,228,242,0.7)",
-            "rgba(206,228,242,0.5)"
-          ]
-        ],
+        "text-color": "#9098A5",
+        "text-halo-color": "#000000",
         "text-halo-width": [
           "step",
           [
