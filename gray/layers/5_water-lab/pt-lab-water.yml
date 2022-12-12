@@ -1,0 +1,88 @@
+filter:
+  - match
+  - - get
+    - annotationclassid
+  - - 0 #ocean
+    - 2 #sea
+    - 4 #sea(red sea, caspian)
+    - 5 #sea(mediterrean)
+    - 3 #bay
+    - 6 #island
+  - true
+  - false
+id: pt-lab-water
+layout:
+  text-allow-overlap: true
+  text-optional: true
+  text-field: '{textstring}'
+  text-font:
+    - Open Sans Semibold Italic
+  text-letter-spacing: !!inc/file other/water-lab-txt-spacing.yml
+  text-max-width: !!inc/file other/water-lab-txt-max-w.yml
+  text-size:
+  - step
+  - - zoom
+  - - match
+    - - get
+      - annotationclassid
+    - 0
+    - 10
+    - 0
+  - 2 #ZL
+  - - match
+    - - get
+      - annotationclassid
+    - 3
+    - 9.3333
+    - 6
+    - 0
+    - 8.66667
+  - 3 #ZL
+  - - match
+    - - get
+      - annotationclassid
+    - 0
+    - 16
+    - - 2
+      - 4
+      - 5
+    - 10
+    - 3
+    - 10.6667
+    - 0
+  - 4 #ZL
+  - - match
+    - - get
+      - annotationclassid
+    - 0
+    - 18.6667
+    - - 2
+      - 4
+      - 5
+    - 12
+    - 3
+    - 14.6667
+    - 8
+  - 5 #ZL
+  - - match
+    - - get
+      - annotationclassid
+    - 0
+    - 24
+    - - 2
+      - 4
+    - 12
+    - 5
+    - 16
+    - 3
+    - 13.3333
+    - 9.33333
+maxzoom: 6
+minzoom: 1
+paint:
+  text-color: !!inc/file other/water-lab-clr.yml
+  text-halo-color: !!inc/file other/water-lab-halo-clr.yml
+  text-halo-width: !!inc/file other/water-lab-halo-w.yml
+source: v
+source-layer: lab_water
+type: symbol
