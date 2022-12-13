@@ -1271,14 +1271,14 @@
       "type": "symbol"
     },
     {
-      "id": "pg-lab-inwater",
+      "id": "pt-lab-inwater",
       "minzoom": 4,
       "maxzoom": 6,
       "source": "v",
-      "source-layer": "wbya10",
+      "source-layer": "lab_inwater",
       "type": "symbol",
       "layout": {
-        "text-field": "{name}",
+        "text-field": "{textstring}",
         "text-font": [
           "Open Sans Bold Italic"
         ],

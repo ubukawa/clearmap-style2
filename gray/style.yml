@@ -26,7 +26,7 @@ layers:
 #Labels
   - !!inc/file layers/4_cty-lab/pt-lab-cty.yml
 #water label
-  - !!inc/file layers/5_water-lab/pg-lab-inwater.yml # need more improvement
+  - !!inc/file layers/5_water-lab/pt-lab-inwater.yml # need more improvement
   - !!inc/file layers/5_water-lab/pt-lab-water.yml
 
 metadata:

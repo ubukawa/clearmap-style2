@@ -4,14 +4,14 @@
 #- - get
 #  - perenniality
 #- 1
-id: pg-lab-inwater
+id: pt-lab-inwater
 minzoom: 4
 maxzoom: 6
 source: v
-source-layer: wbya10
+source-layer: lab_inwater
 type: symbol
 layout:
-  text-field: '{name}'
+  text-field: '{textstring}'
   text-font:
   - Open Sans Bold Italic
   text-optional: true
@@ -24,8 +24,8 @@ layout:
   - 12
   text-letter-spacing: 0.3
 paint:
-  text-color: '#686868'
-  text-halo-color: rgba(255,255,255,0.75)
+  text-color: '#9098A5'
+  text-halo-color: '#000000'
   text-halo-width: 0.933333
 
 
