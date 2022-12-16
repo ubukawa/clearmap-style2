@@ -1,0 +1,85 @@
+filter:
+- match
+- - get
+  - poptyp
+- - 1
+  - 2
+  - 3
+- true
+- false
+id: pt-place-capitals
+layout:
+  icon-allow-overlap: true
+  icon-image:
+  - match
+  - - get
+    - poptyp
+  - 1
+  - PPL_National
+  - 2
+  - PPL_Alternative
+  - PPL_Territorial #3
+  icon-size: 1
+  text-allow-overlap: true
+  text-optional: true
+  text-field: '{cartolb}'
+  text-font:
+    - NotoSans-Regular
+  text-size:
+  - step
+  - - zoom
+  - 9
+  - 5
+  - 10
+  text-anchor: #this should be edited with offset
+  - match
+  - - get
+    - iso3cd
+  - !!inc/file other/capital-top.yml
+  - bottom
+  - !!inc/file other/capital-left.yml
+  - right
+  - !!inc/file other/capital-bottom.yml
+  - top
+  - left
+  text-offset:
+  - match
+  - - get
+    - iso3cd
+  - !!inc/file other/capital-top.yml
+  - - literal
+    - - 0
+      - -1
+  - !!inc/file other/capital-left.yml
+  - - literal
+    - - -1
+      - 0
+  - !!inc/file other/capital-bottom.yml
+  - - literal
+    - - 0
+      - 1
+  - - literal
+    - - 1
+      - 0
+  text-letter-spacing:
+  - match
+  - - get
+    - iso3cd
+  - ARE
+  - 0.1
+  - 0.05
+  text-max-width: 50
+maxzoom: 6
+minzoom: 4
+paint:
+  text-color: '#3E3F40'
+  text-halo-color: rgba(255, 255, 255, 0.8)
+  text-halo-width:
+  - step
+  - - zoom
+  - 1
+  - 5
+  - 1.13333
+source: v
+source-layer: un_popp
+type: symbol

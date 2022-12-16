@@ -1,0 +1,35 @@
+#filtering was done during the data conversion.
+#filter:
+#- '=='
+#- - get
+#  - perenniality
+#- 1
+id: pt-lab-inwater
+minzoom: 4
+maxzoom: 6
+source: v
+source-layer: lab_inwater
+type: symbol
+layout:
+  text-field: '{textstring}'
+  text-font:
+  - Open Sans Bold Italic
+  text-optional: true
+#  text-allow-overlap: true
+  text-size:
+  - step
+  - - zoom
+  - 8
+  - 5
+  - 12
+  text-letter-spacing: 0.3
+paint:
+  text-color: '#66A2CC'
+  text-halo-color: rgba(255,255,255,0.75)
+  text-halo-width: 0.933333
+
+
+
+
+
+

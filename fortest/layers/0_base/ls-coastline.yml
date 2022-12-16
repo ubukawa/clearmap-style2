@@ -1,0 +1,31 @@
+filter:
+  - '=='
+  - - get
+    - bdytyp
+  - 0
+id: ls-coastline
+layout:
+  line-cap: round
+  line-join: round
+maxzoom: 6
+minzoom: 4
+paint:
+  line-color:
+  - step
+  - - zoom
+  - '#5B808C'
+  - 4
+  - '#69838C'
+  line-width:
+  - interpolate
+  - - linear
+  - - zoom
+  - 3 #ZL
+  - 0.25
+  - 4 #ZL
+  - 0.4
+  - 6
+  - 0.5
+source: v
+source-layer: bndl
+type: line

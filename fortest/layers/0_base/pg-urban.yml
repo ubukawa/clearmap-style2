@@ -1,0 +1,13 @@
+filter:
+  - '=='
+  - - get
+    - gridcode
+  - 80
+id: pg-urban
+maxzoom: 6
+minzoom: 4
+paint:
+  fill-color: '#E6E6E1'
+source: v
+source-layer: landcover
+type: fill

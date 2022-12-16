@@ -1,0 +1,45 @@
+filter:
+- match
+- - get
+  - bdytyp
+- - 1
+  - 2
+  - 3
+  - 4
+  - 8
+- true 
+- false
+id: ls-adm-halo
+layout:
+  line-cap: round
+  line-join: round
+maxzoom: 6
+minzoom: 4
+paint:
+  line-color: !!inc/file other/bnd-halo.yml
+  line-width:
+  - step
+  - - zoom
+  - - match
+    - - get
+      - bdytyp
+    - - 1
+      - 2
+      - 3
+      - 4
+    - 3.66667
+    - 0 #autonomous
+  - 5 #ZL
+  - - match
+    - - get
+      - bdytyp
+    - 1
+    - 4.26667
+    - 2
+    - 4.13333
+    - 4
+    - 3.66667
+    - 4.09333 #3, 8
+source: v
+source-layer: bndl
+type: line

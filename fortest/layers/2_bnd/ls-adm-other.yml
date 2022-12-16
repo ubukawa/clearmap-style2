@@ -1,0 +1,43 @@
+filter:
+- '=='
+- - get
+  - bdytyp
+- 4
+id: ls-adm-other(symbol)
+layout:
+  symbol-placement: line
+  icon-image:
+  - step
+  - - zoom
+  - ADM_Other_M
+  - 4
+  - ADM_Other_L
+  symbol-spacing:
+  - step
+  - - zoom
+  - 1.77778
+  - 2
+  - 2
+  - 3
+  - 3.33333
+  - 4 
+  - 3
+  - 5
+  - 5.66667
+  icon-rotation-alignment: map
+  icon-allow-overlap: true
+maxzoom: 6
+minzoom: 0
+paint:
+  icon-color:
+  - step
+  - - zoom
+  - '#737B80'
+  - 4
+  - '#505759'
+  - 5
+  - '#555C5E'
+  icon-opacity: !!inc/file other/bnd-line-op.yml
+source: v
+source-layer: bndl
+type: symbol

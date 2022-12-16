@@ -1,0 +1,21 @@
+- step
+- - zoom
+- '#5F93B8'
+- 2 #ZL
+- - match
+  - - get
+    - annotationclassid
+  - - 0 #ocean
+    - 3  
+  - '#629BC4'
+  - '#639CC7'
+- 3 #ZL
+- '#6094BF'
+- 4
+- - match
+  - - get
+    - annotationclassid
+  - - 6 #island
+    - 3  
+  - '#717E85'
+  - '#6094BF'
