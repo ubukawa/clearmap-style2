@@ -1,0 +1,540 @@
+{
+  "center": [
+    0,
+    0
+  ],
+  "glyphs": "https://ubukawa.github.io/clearmap-style2/font/{fontstack}/{range}.pbf",
+  "layers": [
+    {
+      "id": "pg-ocean",
+      "maxzoom": 6,
+      "minzoom": 0,
+      "paint": {
+        "fill-color": "#D5EBF5"
+      },
+      "source": "v",
+      "source-layer": "ocean",
+      "type": "fill"
+    },
+    {
+      "filter": [
+        "==",
+        [
+          "get",
+          "bdytyp"
+        ],
+        0
+      ],
+      "id": "ls-coastline",
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round"
+      },
+      "maxzoom": 6,
+      "minzoom": 0,
+      "paint": {
+        "line-color": "#0000FF",
+        "line-width": 1
+      },
+      "source": "v",
+      "source-layer": "bndl",
+      "type": "line"
+    },
+    {
+      "id": "pg-wbya10",
+      "maxzoom": 6,
+      "paint": {
+        "fill-color": "#DFEFF7"
+      },
+      "source": "v",
+      "source-layer": "wbya10",
+      "type": "fill"
+    },
+    {
+      "filter": [
+        "match",
+        [
+          "get",
+          "bdytyp"
+        ],
+        [
+          1,
+          2,
+          3,
+          4,
+          8
+        ],
+        true,
+        false
+      ],
+      "id": "ls-adm-halo",
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round"
+      },
+      "maxzoom": 6,
+      "minzoom": 4,
+      "paint": {
+        "line-color": "rgba(230,230,223,0.65)",
+        "line-width": [
+          "step",
+          [
+            "zoom"
+          ],
+          [
+            "match",
+            [
+              "get",
+              "bdytyp"
+            ],
+            [
+              1,
+              2,
+              3,
+              4
+            ],
+            3.66667,
+            0
+          ],
+          5,
+          [
+            "match",
+            [
+              "get",
+              "bdytyp"
+            ],
+            1,
+            4.26667,
+            2,
+            4.13333,
+            4,
+            3.66667,
+            4.09333
+          ]
+        ]
+      },
+      "source": "v",
+      "source-layer": "bndl",
+      "type": "line"
+    },
+    {
+      "filter": [
+        "==",
+        [
+          "get",
+          "bdytyp"
+        ],
+        8
+      ],
+      "id": "ls-adm-autonomous",
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round"
+      },
+      "maxzoom": 6,
+      "minzoom": 5,
+      "paint": {
+        "line-color": "#7D868C",
+        "line-dasharray": [
+          7.93333,
+          4.93333
+        ],
+        "line-width": 1
+      },
+      "source": "v",
+      "source-layer": "bndl",
+      "type": "line"
+    },
+    {
+      "filter": [
+        "==",
+        [
+          "get",
+          "bdytyp"
+        ],
+        4
+      ],
+      "id": "ls-adm-other(symbol)",
+      "layout": {
+        "symbol-placement": "line",
+        "icon-image": [
+          "step",
+          [
+            "zoom"
+          ],
+          "ADM_Other_M",
+          4,
+          "ADM_Other_L"
+        ],
+        "symbol-spacing": [
+          "step",
+          [
+            "zoom"
+          ],
+          1.77778,
+          2,
+          2,
+          3,
+          3.33333,
+          4,
+          3,
+          5,
+          5.66667
+        ],
+        "icon-rotation-alignment": "map",
+        "icon-allow-overlap": true
+      },
+      "maxzoom": 6,
+      "minzoom": 0,
+      "paint": {
+        "icon-color": [
+          "step",
+          [
+            "zoom"
+          ],
+          "#737B80",
+          4,
+          "#505759",
+          5,
+          "#555C5E"
+        ],
+        "icon-opacity": [
+          "step",
+          [
+            "zoom"
+          ],
+          0.9,
+          4,
+          1
+        ]
+      },
+      "source": "v",
+      "source-layer": "bndl",
+      "type": "symbol"
+    },
+    {
+      "filter": [
+        "==",
+        [
+          "get",
+          "bdytyp"
+        ],
+        2
+      ],
+      "id": "ls-adm-special",
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round"
+      },
+      "maxzoom": 6,
+      "minzoom": 0,
+      "paint": {
+        "line-color": [
+          "step",
+          [
+            "zoom"
+          ],
+          "#737C80",
+          4,
+          "#454A4C",
+          5,
+          "#505659"
+        ],
+        "line-opacity": [
+          "step",
+          [
+            "zoom"
+          ],
+          0.9,
+          4,
+          1
+        ],
+        "line-dasharray": [
+          "step",
+          [
+            "zoom"
+          ],
+          [
+            "literal",
+            [
+              4.66667,
+              4.66667
+            ]
+          ],
+          2,
+          [
+            "literal",
+            [
+              3.8,
+              3
+            ]
+          ],
+          3,
+          [
+            "literal",
+            [
+              2.22222,
+              1.88889
+            ]
+          ],
+          4,
+          [
+            "literal",
+            [
+              6,
+              3
+            ]
+          ],
+          5,
+          [
+            "literal",
+            [
+              6.65,
+              3
+            ]
+          ]
+        ],
+        "line-width": [
+          "step",
+          [
+            "zoom"
+          ],
+          0.2,
+          2,
+          0.333333,
+          3,
+          0.6,
+          5,
+          0.666667
+        ]
+      },
+      "source": "v",
+      "source-layer": "bndl",
+      "type": "line"
+    },
+    {
+      "filter": [
+        "==",
+        [
+          "get",
+          "bdytyp"
+        ],
+        3
+      ],
+      "id": "ls-adm-armistice",
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round"
+      },
+      "maxzoom": 6,
+      "minzoom": 0,
+      "paint": {
+        "line-color": [
+          "step",
+          [
+            "zoom"
+          ],
+          "#737C80",
+          4,
+          "#454A4C",
+          5,
+          "#505659"
+        ],
+        "line-opacity": [
+          "step",
+          [
+            "zoom"
+          ],
+          0.9,
+          4,
+          1
+        ],
+        "line-dasharray": [
+          "step",
+          [
+            "zoom"
+          ],
+          [
+            "literal",
+            [
+              8,
+              5
+            ]
+          ],
+          2,
+          [
+            "literal",
+            [
+              12,
+              6
+            ]
+          ],
+          3,
+          [
+            "literal",
+            [
+              8.88889,
+              5
+            ]
+          ],
+          4,
+          [
+            "literal",
+            [
+              12,
+              5
+            ]
+          ]
+        ],
+        "line-width": [
+          "step",
+          [
+            "zoom"
+          ],
+          0.3,
+          2,
+          0.5,
+          3,
+          0.6,
+          5,
+          0.666667
+        ]
+      },
+      "source": "v",
+      "source-layer": "bndl",
+      "type": "line"
+    },
+    {
+      "filter": [
+        "==",
+        [
+          "get",
+          "bdytyp"
+        ],
+        1
+      ],
+      "id": "ls-adm-international",
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round"
+      },
+      "maxzoom": 6,
+      "minzoom": 0,
+      "paint": {
+        "line-color": [
+          "step",
+          [
+            "zoom"
+          ],
+          "#737C80",
+          4,
+          "#454A4C",
+          5,
+          "#505659"
+        ],
+        "line-opacity": [
+          "step",
+          [
+            "zoom"
+          ],
+          0.9,
+          4,
+          1
+        ],
+        "line-width": [
+          "step",
+          [
+            "zoom"
+          ],
+          0.2,
+          2,
+          0.4,
+          3,
+          0.466667,
+          4,
+          0.5,
+          5,
+          0.666667
+        ]
+      },
+      "source": "v",
+      "source-layer": "bndl",
+      "type": "line"
+    },
+    {
+      "filter": [
+        "match",
+        [
+          "get",
+          "poptyp"
+        ],
+        [
+          1,
+          2,
+          3
+        ],
+        true,
+        false
+      ],
+      "id": "pt-place-capitals",
+      "layout": {
+        "icon-allow-overlap": true,
+        "icon-image": [
+          "match",
+          [
+            "get",
+            "poptyp"
+          ],
+          1,
+          "PPL_National",
+          2,
+          "PPL_Alternative",
+          "PPL_Territorial"
+        ],
+        "icon-size": 1
+      },
+      "maxzoom": 6,
+      "minzoom": 2,
+      "source": "v",
+      "source-layer": "un_popp",
+      "type": "symbol"
+    },
+    {
+      "id": "ls-latlong",
+      "maxzoom": 6,
+      "minzoom": 0,
+      "paint": {
+        "line-color": "#FF9999",
+        "line-width": 0.5
+      },
+      "source": "ne",
+      "source-layer": "grid30",
+      "type": "line"
+    }
+  ],
+  "metadata": {
+    "disclaimer": "The United Nations Clear Map (hereinafter &quot;Clear Map&quot;) is a background reference web mapping service produced to facilitate &quot;the issuance of any map at any duty station, including dissemination via public electronic networks such as Internet&quot; and &quot;to ensure that maps meet publication standards and that they are not in contravention of existing United Nations policies&quot; in accordance with the in the Administrative Instruction on &quot;Regulations for the Control and Limitation of Documentation - Guidelines for the Publication of Maps&quot; of 20 January 1997 (http://undocs.org/ST/AI/189/Add.25/Rev.1). Clear Map is created for the use of the United Nations Secretariat and community. All departments, offices and regional commissions of the United Nations Secretariat including offices away from Headquarters using Clear Map remain bound to the instructions as contained in the Administrative Instruction and should therefore seek clearance from the UN Geospatial Information Section (formerly Cartographic Section) prior to the issuance of their thematic maps using Clear Map as background reference."
+  },
+  "sources": {
+    "v": {
+      "attribution": "<a href='https://geoportal.un.org/arcgis/apps/sites/#/unitemaps'><img src='https://geoportal.un.org/webapps/resources/LOGOS/PoweredbyUniteMaps.png' alt='Powered by Unite Maps'></a> <a href='http://unopengis.org/unopengis/main/main.php'><img src='https://unopengis.github.io/watermark/watermark.png' alt='UN OpenGIS' style='width:40px;height:40px;'></a>",
+      "maxzoom": 5,
+      "minzoom": 0,
+      "tiles": [
+        "https://dev-geoportal.dfs.un.org/unvt/temp/clearmapVT-zxy/{z}/{x}/{y}.pbf"
+      ],
+      "type": "vector"
+    },
+    "ne": {
+      "attribution": "NaturalEarth",
+      "maxzoom": 5,
+      "minzoom": 0,
+      "tiles": [
+        "https://ubukawa.github.io/graticules-vt/zxy/{z}/{x}/{y}.pbf"
+      ],
+      "type": "vector"
+    }
+  },
+  "sprite": "https://ubukawa.github.io/clearmap-style2/sprite_un/sprite_S",
+  "version": 8
+}

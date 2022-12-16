@@ -1,0 +1,9 @@
+id: ls-latlong
+maxzoom: 6
+minzoom: 0
+paint:
+  line-color: '#FF9999'
+  line-width: 0.5
+source: ne
+source-layer: grid30
+type: line
